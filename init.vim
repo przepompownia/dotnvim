@@ -11,7 +11,7 @@ endif
 
 let g:mapleader=','
 let g:bundle_dirs = [expand(s:path.'/pack/bundle/start'), expand(s:path.'/pack/bundle/opt')]
-packadd! arctgx
+" packadd! arctgx
 
 if has('mouse')
   set mouse=a

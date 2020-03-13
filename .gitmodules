@@ -1,0 +1,3 @@
+[submodule "pack/bundle/opt/arctgx"]
+	path = pack/bundle/opt/arctgx
+	url = bucket:arctgx/vim-arctgx.git
