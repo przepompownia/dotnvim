@@ -1,6 +1,8 @@
 scriptencoding utf-8
 
 let s:path = expand('<sfile>:p:h')
+let &runtimepath = s:path.','.&runtimepath.','.s:path.'/after'
+let &packpath = &runtimepath
 
 let g:vimrc_init_per_host = s:path . '/' . 'vimrc_init_per_host'
 if filereadable(expand(g:vimrc_init_per_host))
