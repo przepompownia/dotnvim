@@ -7,3 +7,6 @@
 [submodule "pack/bundle/start/phpactor"]
 	path = pack/bundle/start/phpactor
 	url = https://github.com/phpactor/phpactor.git
+[submodule "pack/bundle/start/vim-airline"]
+	path = pack/bundle/start/vim-airline
+	url = https://github.com/bling/vim-airline
