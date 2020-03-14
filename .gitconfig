@@ -1,3 +1,5 @@
 [alias]
 	list-submodules = submodule foreach --quiet 'echo $toplevel/$sm_path'
 	vim-bundle-list-submodules = "!f(){ git list-submodules | command grep \"$(git rev-parse --show-toplevel)/pack/bundle\"; }; f"
+	vim-bundle-add-submodules = !"bash -c 'mapfile -t submodules < <(git vim-bundle-list-submodules); git add --verbose \"${submodules[@]}\"'"
+	cvs = !git vim-bundle-add-submodules && git commit -m 'Upgrade vim plugins'
