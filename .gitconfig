@@ -1,0 +1,3 @@
+[alias]
+	list-submodules = submodule foreach --quiet 'echo $toplevel/$sm_path'
+	vim-bundle-list-submodules = "!f(){ git list-submodules | command grep \"$(git rev-parse --show-toplevel)/pack/bundle\"; }; f"
