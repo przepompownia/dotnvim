@@ -10,3 +10,6 @@
 [submodule "pack/bundle/start/vim-airline"]
 	path = pack/bundle/start/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "pack/bundle/start/vim-lucius"]
+	path = pack/bundle/start/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius.git
