@@ -1,3 +1,9 @@
 [submodule "pack/bundle/opt/arctgx"]
 	path = pack/bundle/opt/arctgx
 	url = bucket:arctgx/vim-arctgx.git
+[submodule "pack/bundle/start/coc.nvim"]
+	path = pack/bundle/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "pack/bundle/start/phpactor"]
+	path = pack/bundle/start/phpactor
+	url = https://github.com/phpactor/phpactor.git
