@@ -3,3 +3,4 @@
 	vim-bundle-list-submodules = "!f(){ git list-submodules | command grep \"$(git rev-parse --show-toplevel)/pack/bundle\"; }; f"
 	vim-bundle-add-submodules = !"bash -c 'mapfile -t submodules < <(git vim-bundle-list-submodules); git add --verbose \"${submodules[@]}\"'"
 	cvs = !git vim-bundle-add-submodules && git commit -m 'Upgrade vim plugins'
+	ci-coc-extensions = "!git add --update \"$(git rev-parse --show-toplevel)/.config/coc/extensions\"; git commit -m 'Upgrade CoC extensions'"
