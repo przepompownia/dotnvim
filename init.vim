@@ -13,7 +13,7 @@ let g:mapleader=','
 let g:bundle_dirs = [expand(s:path.'/pack/bundle/start'), expand(s:path.'/pack/bundle/opt')]
 let g:coc_config_home = s:path
 let g:coc_data_home = expand(s:path . '/.config/coc')
-" packadd! arctgx
+packadd! arctgx
 
 if has('mouse')
   set mouse=a
