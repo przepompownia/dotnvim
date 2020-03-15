@@ -16,3 +16,6 @@
 [submodule "pack/bundle/start/fzf.vim.git"]
 	path = pack/bundle/start/fzf.vim.git
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/bundle/start/fzf.git"]
+	path = pack/bundle/start/fzf.git
+	url = https://github.com/junegunn/fzf.vim.git
