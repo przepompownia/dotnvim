@@ -8,3 +8,8 @@ phpactor-install-extensions:
 
 gitconfig-include-local:
 	git config --local include.path '../.gitconfig'
+
+.ONESHELL:
+coc-install:
+	cd pack/bundle/start/coc.nvim
+	yarn install --frozen-lockfile
