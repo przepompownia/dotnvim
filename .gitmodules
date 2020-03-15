@@ -13,9 +13,9 @@
 [submodule "pack/bundle/start/vim-lucius"]
 	path = pack/bundle/start/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
-[submodule "pack/bundle/start/fzf.vim.git"]
-	path = pack/bundle/start/fzf.vim.git
+[submodule "pack/bundle/start/fzf.vim"]
+	path = pack/bundle/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
-[submodule "pack/bundle/start/fzf.git"]
-	path = pack/bundle/start/fzf.git
-	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/bundle/start/fzf"]
+	path = pack/bundle/start/fzf
+	url = https://github.com/junegunn/fzf.git
