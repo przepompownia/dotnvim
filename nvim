@@ -5,4 +5,6 @@ initFile="${currentDir}/init.vim"
 VIMINIT="$(printf 'source %s' "$initFile")"
 export VIMINIT
 
-command nvim -i "${currentDir}/.config/nvim/shada/main.shada" "$@"
+command nvim \
+    -i "${currentDir}/.config/nvim/shada/main.shada" \
+    "$@"
