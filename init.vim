@@ -1,18 +1,18 @@
 scriptencoding utf-8
 
-let s:path = expand('<sfile>:p:h')
-let &runtimepath = s:path.','.&runtimepath.','.s:path.'/after'
+let g:initialVimDirectory = expand('<sfile>:p:h')
+let &runtimepath = g:initialVimDirectory.','.&runtimepath.','.g:initialVimDirectory.'/after'
 let &packpath = &runtimepath
 
-let g:vimrc_init_per_host = s:path . '/' . 'vimrc_init_per_host'
+let g:vimrc_init_per_host = g:initialVimDirectory . '/' . 'vimrc_init_per_host'
 if filereadable(expand(g:vimrc_init_per_host))
   execute 'source ' . expand(g:vimrc_init_per_host)
 endif
 
 let g:mapleader=','
-let g:bundle_dirs = [expand(s:path.'/pack/bundle/start'), expand(s:path.'/pack/bundle/opt')]
-let g:coc_config_home = s:path
-let g:coc_data_home = expand(s:path . '/.config/coc')
+let g:bundle_dirs = [expand(g:initialVimDirectory.'/pack/bundle/start'), expand(g:initialVimDirectory.'/pack/bundle/opt')]
+let g:coc_config_home = g:initialVimDirectory
+let g:coc_data_home = expand(g:initialVimDirectory . '/.config/coc')
 packadd! arctgx
 
 if has('mouse')
@@ -102,7 +102,7 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set title
 let &titleold=printf('%s %s', strftime('%F %H:%M:%S'), getcwd())
 
-let s:vimrc_per_host = s:path . '/' . 'vimrc_per_host'
+let s:vimrc_per_host = g:initialVimDirectory . '/' . 'vimrc_per_host'
 if filereadable(expand(s:vimrc_per_host))
   execute 'source ' . expand(s:vimrc_per_host)
 endif
