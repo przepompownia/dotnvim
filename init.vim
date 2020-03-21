@@ -11,8 +11,6 @@ endif
 
 let g:mapleader=','
 let g:bundle_dirs = [expand(g:initialVimDirectory.'/pack/bundle/start'), expand(g:initialVimDirectory.'/pack/bundle/opt')]
-let g:coc_config_home = g:initialVimDirectory
-let g:coc_data_home = expand(g:initialVimDirectory . '/.config/coc')
 packadd! arctgx
 
 if has('mouse')
