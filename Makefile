@@ -5,14 +5,14 @@ SHELL := /bin/bash
 
 .ONESHELL:
 phpactor-install-extensions:
-	cd pack/bundle/start/phpactor
+	cd pack/bundle/opt/phpactor
 	composer install
 	mapfile -t exts < config/travis/extensions-to-test
 	./bin/phpactor extension:install "$${exts[@]}"
 
 .ONESHELL:
 phpactor-start-server:
-	cd pack/bundle/start/phpactor
+	cd pack/bundle/opt/phpactor
 	./bin/phpactor language-server --address=127.0.0.1:8888
 
 gitconfig-include-local:
@@ -20,5 +20,5 @@ gitconfig-include-local:
 
 .ONESHELL:
 coc-install:
-	cd pack/bundle/start/coc.nvim
+	cd pack/bundle/opt/coc.nvim
 	yarn install --frozen-lockfile
