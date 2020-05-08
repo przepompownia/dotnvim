@@ -2,21 +2,21 @@
 	path = pack/bundle/opt/arctgx
 	url = bucket:arctgx/vim-arctgx.git
 [submodule "pack/bundle/start/coc.nvim"]
-	path = pack/bundle/start/coc.nvim
+	path = pack/bundle/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
 [submodule "pack/bundle/start/phpactor"]
-	path = pack/bundle/start/phpactor
+	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
 	branch = develop
 [submodule "pack/bundle/start/vim-airline"]
-	path = pack/bundle/start/vim-airline
+	path = pack/bundle/opt/vim-airline
 	url = https://github.com/bling/vim-airline
 [submodule "pack/bundle/start/vim-lucius"]
-	path = pack/bundle/start/vim-lucius
+	path = pack/bundle/opt/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
 [submodule "pack/bundle/start/fzf.vim"]
-	path = pack/bundle/start/fzf.vim
+	path = pack/bundle/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/bundle/start/fzf"]
-	path = pack/bundle/start/fzf
+	path = pack/bundle/opt/fzf
 	url = https://github.com/junegunn/fzf.git

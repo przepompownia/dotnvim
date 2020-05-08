@@ -11,6 +11,13 @@ endif
 
 let g:mapleader=','
 let g:bundle_dirs = [expand(g:initialVimDirectory.'/pack/bundle/start'), expand(g:initialVimDirectory.'/pack/bundle/opt')]
+
+packadd! coc.nvim
+packadd! fzf
+packadd! fzf.vim
+packadd! phpactor
+packadd! vim-airline
+packadd! vim-lucius
 packadd! arctgx
 
 if has('mouse')
