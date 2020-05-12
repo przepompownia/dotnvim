@@ -32,4 +32,8 @@ gitconfig-prepare:
 submodule-update:
 	git su
 
-start: gitconfig-prepare submodule-update coc-install phpactor-install
+fzf-build:
+	cd $(DIR)/pack/bundle/opt/fzf
+	make -j4 install -o
+
+start: gitconfig-prepare submodule-update coc-install phpactor-install fzf-build
