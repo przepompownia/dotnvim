@@ -2,9 +2,10 @@
 MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
+DIR := ${CURDIR}
 
 .ONESHELL:
-phpactor-install-extensions:
+phpactor-install:
 	cd pack/bundle/opt/phpactor
 	composer install
 	mapfile -t exts < config/travis/extensions-to-test
@@ -20,5 +21,15 @@ gitconfig-include-local:
 
 .ONESHELL:
 coc-install:
-	cd pack/bundle/opt/coc.nvim
+	cd $(DIR)/pack/bundle/opt/coc.nvim
 	yarn install --frozen-lockfile
+	cd $(DIR)/.config/coc/extensions
+	yarn
+
+gitconfig-prepare:
+	git config include.path = ../.gitconfig
+	
+submodule-update:
+	git su
+
+start: gitconfig-prepare submodule-update coc-install phpactor-install
