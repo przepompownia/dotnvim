@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+git matches-filename-changed-after-merge '^\.go$' && make -j4 install -o
+
+exit 0

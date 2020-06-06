@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+git matches-filename-changed-between-commits '\.go$' $1 $2 && make -j4 install
+
+exit 0

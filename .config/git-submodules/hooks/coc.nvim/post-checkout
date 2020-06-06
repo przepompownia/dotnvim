@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+git matches-filename-changed-between-commits '(\.ts$|^yarn.lock$)' "$1" "$2" && yarn install --frozen-lockfile && echo 'post-checkout script done'
+
+exit 0

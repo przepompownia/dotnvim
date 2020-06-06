@@ -36,4 +36,7 @@ fzf-build:
 	cd $(DIR)/pack/bundle/opt/fzf
 	make -j4 install -o
 
+git-submodules-hooks-install:
+	git-submodules-hooks-install . .config/git-submodules/.config
+
 start: gitconfig-prepare submodule-update coc-install phpactor-install fzf-build
