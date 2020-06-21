@@ -25,9 +25,6 @@ coc-install:
 	yarn install --frozen-lockfile
 	cd $(DIR)/.config/coc/extensions
 	yarn
-
-gitconfig-prepare:
-	git config include.path = ../.gitconfig
 	
 submodule-update:
 	git su
@@ -39,4 +36,4 @@ fzf-build:
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
-start: gitconfig-prepare gitconfig-include-local git-submodules-hooks-install submodule-update coc-install phpactor-install fzf-build
+start: gitconfig-include-local git-submodules-hooks-install submodule-update coc-install phpactor-install fzf-build
