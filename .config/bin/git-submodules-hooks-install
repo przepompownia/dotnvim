@@ -8,5 +8,6 @@ configFile="${2?$usage}" || exit 1
 while IFS=':' read -r submoduleDir hooksRelativeDir; do
     echo "Entering ${baseDirectory}/${submoduleDir}" >&2
     cd "${baseDirectory}/${submoduleDir}" || exit 1
+    [[ -a '.githooks' ]] && continue
     ln --symbolic --verbose "${hooksRelativeDir}" '.githooks' >&2
 done < "$configFile"
