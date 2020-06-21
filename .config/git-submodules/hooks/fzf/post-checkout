@@ -2,6 +2,13 @@
 
 set -e
 
-git matches-filename-changed-between-commits '\.go$' $1 $2 && make -j4 install
+needRebuild() {
+    [[ ! -x bin/fzf ]] && return 0
+    git matches-filename-changed-between-commits '\.go$' "$1" "$2" && return 0
+
+    return 1
+}
+
+needRebuild "$1" "$2" && make -j4 install
 
 exit 0
