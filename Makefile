@@ -6,7 +6,7 @@ DIR := ${CURDIR}
 
 .ONESHELL:
 phpactor-install:
-	cd pack/bundle/opt/phpactor
+	cd $(DIR)/pack/bundle/opt/phpactor
 	composer install
 	mapfile -t exts < config/travis/extensions-to-test
 	./bin/phpactor extension:install "$${exts[@]}"
