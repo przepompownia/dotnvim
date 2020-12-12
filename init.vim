@@ -10,15 +10,7 @@ if filereadable(expand(g:vimrc_init_per_host))
 endif
 
 let g:mapleader=','
-let g:bundle_dirs = [expand(g:initialVimDirectory.'/pack/bundle/start'), expand(g:initialVimDirectory.'/pack/bundle/opt')]
-
-packadd! coc.nvim
-packadd! fzf
-packadd! fzf.vim
-packadd! phpactor
-packadd! vim-airline
-packadd! vim-lucius
-packadd! arctgx
+let g:bundle_dirs = [expand(g:initialVimDirectory . '/pack/bundle/opt')]
 
 if has('mouse')
   set mouse=a
@@ -59,7 +51,6 @@ set modeline modelines=5
 
 set diffopt+=vertical
 if has('folding')
-  set foldmethod=syntax
   set foldlevelstart=99
 
   let g:javaScript_fold=1
@@ -94,7 +85,6 @@ set path=.,,
 set showcmd
 set noswapfile
 set autoread
-set sessionoptions-=buffers
 set sessionoptions-=help
 set sessionoptions-=folds
 set grepprg=grep\ --with-filename\ --extended-regexp\ --no-messages\ --color=never\ --binary-files=without-match\ --exclude-dir=.svn\ --exclude=tags\ --exclude=taglist.vim\ --exclude-dir=.git\ --line-number
@@ -106,6 +96,14 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 set title
 let &titleold=printf('%s %s', strftime('%F %H:%M:%S'), getcwd())
+
+packadd! coc.nvim
+packadd! fzf
+packadd! fzf.vim
+packadd! phpactor
+packadd! vim-airline
+packadd! vim-lucius
+packadd! arctgx
 
 let s:vimrc_per_host = g:initialVimDirectory . '/' . 'vimrc_per_host'
 if filereadable(expand(s:vimrc_per_host))
