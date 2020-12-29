@@ -31,7 +31,7 @@ submodule-update:
 
 fzf-build:
 	cd $(DIR)/pack/bundle/opt/fzf
-	make -j4 install -o
+	make -j4 install
 
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
