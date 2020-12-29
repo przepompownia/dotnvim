@@ -1,22 +1,154 @@
-[submodule "pack/bundle/opt/arctgx"]
-	path = pack/bundle/opt/arctgx
-	url = bucket:arctgx/vim-arctgx.git
-[submodule "pack/bundle/start/coc.nvim"]
-	path = pack/bundle/opt/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
-[submodule "pack/bundle/start/phpactor"]
+[submodule "pack/bundle/opt/fugitive"]
+	path = pack/bundle/opt/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+	branch = master
+[submodule "pack/bundle/opt/nerdtree"]
+	path = pack/bundle/opt/nerdtree
+	url = https://github.com/preservim/nerdtree
+	branch = master
+[submodule "pack/bundle/opt/surround"]
+	path = pack/bundle/opt/surround
+	url = https://github.com/tpope/vim-surround.git
+	branch = master
+[submodule "pack/bundle/opt/vim-javascript"]
+	path = pack/bundle/opt/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+	branch = master
+[submodule "pack/bundle/opt/snippets"]
+	path = pack/bundle/opt/snippets
+	url = https://github.com/honza/vim-snippets.git
+	branch = master
+[submodule "pack/bundle/opt/vim-lucius"]
+	path = pack/bundle/opt/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius.git
+[submodule "pack/bundle/opt/vim-move"]
+	path = pack/bundle/opt/vim-move
+	url = https://github.com/matze/vim-move.git
+	branch = master
+[submodule "pack/bundle/opt/vim-unimpaired"]
+	path = pack/bundle/opt/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+	branch = master
+[submodule "pack/bundle/opt/vim-commentary"]
+	path = pack/bundle/opt/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+	branch = master
+[submodule "pack/bundle/opt/vim-markdown-folding"]
+	path = pack/bundle/opt/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
+	branch = master
+[submodule "pack/bundle/opt/vim-spacejam"]
+	path = pack/bundle/opt/vim-spacejam
+	url = https://github.com/rondale-sc/vim-spacejam.git
+	branch = master
+[submodule "pack/bundle/opt/vim-markdown"]
+	path = pack/bundle/opt/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+	branch = master
+[submodule "pack/bundle/opt/PHP-Indenting-for-VIm"]
+	path = pack/bundle/opt/PHP-Indenting-for-VIm
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git
+	branch = master
+[submodule "pack/bundle/opt/vim-pasta"]
+	path = pack/bundle/opt/vim-pasta
+	url = https://github.com/sickill/vim-pasta.git
+	branch = master
+[submodule "pack/bundle/opt/vim-twig"]
+	path = pack/bundle/opt/vim-twig
+	url = https://github.com/evidens/vim-twig.git
+	branch = master
+[submodule "pack/bundle/opt/tmux.vim"]
+	path = pack/bundle/opt/tmux.vim
+	url = https://github.com/keith/tmux.vim.git
+	branch = master
+[submodule "pack/bundle/opt/auto-pairs"]
+	path = pack/bundle/opt/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+	branch = master
+[submodule "pack/bundle/opt/vim-dispatch"]
+	path = pack/bundle/opt/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+	branch = master
+[submodule "pack/bundle/opt/vim-test"]
+	path = pack/bundle/opt/vim-test
+	url = https://github.com/janko-m/vim-test.git
+	branch = master
+[submodule "pack/bundle/opt/nginx.vim"]
+	path = pack/bundle/opt/nginx.vim
+	url = https://github.com/chr4/nginx.vim.git
+	branch = master
+[submodule "pack/bundle/opt/vim-tmux-focus-events"]
+	path = pack/bundle/opt/vim-tmux-focus-events
+	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
+	branch = master
+[submodule "pack/bundle/opt/vim-repeat"]
+	path = pack/bundle/opt/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+	branch = master
+[submodule "pack/bundle/opt/vim-rhubarb"]
+	path = pack/bundle/opt/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+	branch = master
+[submodule "pack/bundle/opt/ale"]
+	path = pack/bundle/opt/ale
+	url = https://github.com/w0rp/ale.git
+	branch = master
+[submodule "pack/bundle/opt/neopairs.vim"]
+	path = pack/bundle/opt/neopairs.vim
+	url = https://github.com/Shougo/neopairs.vim.git
+	branch = master
+[submodule "pack/bundle/opt/fzf.vim"]
+	path = pack/bundle/opt/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/bundle/opt/vim-toml"]
+	path = pack/bundle/opt/vim-toml
+	url = https://github.com/cespare/vim-toml.git
+	branch = master
+[submodule "pack/bundle/opt/phpactor"]
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
 	branch = develop
-[submodule "pack/bundle/start/vim-lucius"]
-	path = pack/bundle/opt/vim-lucius
-	url = https://github.com/jonathanfilip/vim-lucius.git
-[submodule "pack/bundle/start/fzf.vim"]
-	path = pack/bundle/opt/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
-[submodule "pack/bundle/start/fzf"]
+[submodule "pack/bundle/opt/coc.nvim"]
+	path = pack/bundle/opt/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "pack/bundle/opt/vader.vim"]
+	path = pack/bundle/opt/vader.vim
+	url = https://github.com/junegunn/vader.vim
+	branch = master
+[submodule "pack/bundle/opt/jsonc.vim"]
+	path = pack/bundle/opt/jsonc.vim
+	url = https://github.com/neoclide/jsonc.vim
+	branch = master
+[submodule "pack/bundle/opt/fzf"]
 	path = pack/bundle/opt/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "pack/bundle/opt/arctgx"]
+	path = pack/bundle/opt/arctgx
+	url = bucket:arctgx/vim-arctgx.git
+[submodule "pack/bundle/opt/vim-scriptease"]
+	path = pack/bundle/opt/vim-scriptease
+	url = https://github.com/tpope/vim-scriptease.git
+	branch = master
+[submodule "pack/bundle/opt/vim-project"]
+	path = pack/bundle/opt/vim-project
+	url = przepompownia:przepompownia/vim-project
+	branch = master
+[submodule "pack/bundle/opt/ultisnips"]
+	path = pack/bundle/opt/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+	branch = master
+[submodule "pack/bundle/opt/vimspector"]
+	path = pack/bundle/opt/vimspector
+	url = https://github.com/puremourning/vimspector.git
+	branch = master
+[submodule "pack/bundle/opt/vim-dadbod"]
+	path = pack/bundle/opt/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod
+	branch = master
+[submodule "pack/bundle/opt/vim-dadbod-ui"]
+	path = pack/bundle/opt/vim-dadbod-ui
+	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
+	branch = master
 [submodule "pack/bundle/opt/lightline.vim"]
 	path = pack/bundle/opt/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
