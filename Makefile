@@ -22,6 +22,7 @@ gitconfig-include-local:
 .ONESHELL:
 coc-install:
 	cd $(DIR)/pack/bundle/opt/coc.nvim
+	git remote set-head origin master
 	yarn install --frozen-lockfile
 	cd $(DIR)/.config/coc/extensions
 	yarn
