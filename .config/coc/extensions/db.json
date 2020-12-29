@@ -1,3 +1,14 @@
 {
-  "lastUpdate": 1591468112747
+  "lastUpdate": 1609200485501,
+  "extension": {
+    "coc-phpls": {
+      "disabled": false
+    },
+    "coc-vimlsp": {
+      "disabled": false
+    },
+    "coc-phpactor": {
+      "disabled": true
+    }
+  }
 }
