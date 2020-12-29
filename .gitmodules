@@ -8,9 +8,6 @@
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
 	branch = develop
-[submodule "pack/bundle/start/vim-airline"]
-	path = pack/bundle/opt/vim-airline
-	url = https://github.com/bling/vim-airline
 [submodule "pack/bundle/start/vim-lucius"]
 	path = pack/bundle/opt/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
@@ -20,3 +17,6 @@
 [submodule "pack/bundle/start/fzf"]
 	path = pack/bundle/opt/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "pack/bundle/opt/lightline.vim"]
+	path = pack/bundle/opt/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
