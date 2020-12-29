@@ -5,6 +5,13 @@ set -e
 PHP=${PHPVERSION:-php} # to be used in such form or to be replaced (e.g. by git-install-hooks)
 composer=$(which composer)
 
-git matches-filename-changed-between-commits '^composer\.(json|lock)$' $1 $2 && "$PHP" "$composer" install -o
+needRebuild() {
+    [[ ! -d ./vendor ]] && return 0
+    git matches-filename-changed-between-commits '^composer\.(json|lock)$'  "$1" "$2" && return 0
+
+    return 1
+}
+
+needRebuild "$1" "$2" && "$PHP" "$composer" install -o
 
 exit 0

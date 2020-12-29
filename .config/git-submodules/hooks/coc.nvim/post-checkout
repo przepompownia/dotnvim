@@ -2,6 +2,13 @@
 
 set -e
 
-git matches-filename-changed-between-commits '(\.ts$|^yarn.lock$)' "$1" "$2" && yarn install --frozen-lockfile && echo 'post-checkout script done'
+needRebuild() {
+    [[ ! -x ./build ]] && return 0
+    git matches-filename-changed-between-commits '(\.ts$|^yarn.lock$)' "$1" "$2" && return 0
+
+    return 1
+}
+
+needRebuild "$1" "$2" && yarn install --frozen-lockfile
 
 exit 0

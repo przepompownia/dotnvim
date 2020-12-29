@@ -6,7 +6,7 @@ DIR := ${CURDIR}
 
 .ONESHELL:
 phpactor-install:
-	cd pack/bundle/opt/phpactor
+	cd $(DIR)/pack/bundle/opt/phpactor
 	composer install
 	mapfile -t exts < config/travis/extensions-to-test
 	./bin/phpactor extension:install "$${exts[@]}"
@@ -25,9 +25,6 @@ coc-install:
 	yarn install --frozen-lockfile
 	cd $(DIR)/.config/coc/extensions
 	yarn
-
-gitconfig-prepare:
-	git config include.path = ../.gitconfig
 	
 submodule-update:
 	git su
@@ -39,4 +36,4 @@ fzf-build:
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
-start: gitconfig-prepare git-submodules-hooks-install submodule-update coc-install phpactor-install fzf-build
+start: gitconfig-include-local submodule-update git-submodules-hooks-install coc-install phpactor-install fzf-build
