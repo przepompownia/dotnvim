@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-currentDir="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+currentDir="$(realpath "$(dirname "$(dirname "${BASH_SOURCE[0]}")")")"
 initFile="${currentDir}/init.vim"
 VIMINIT="$(printf 'source %s' "$initFile")"
 export VIMINIT
 
-command nvim \
+command -p nvim \
     -i "${currentDir}/.config/nvim/shada/main.shada" \
     "$@"
