@@ -17,7 +17,7 @@ phpactor-start-server:
 	./bin/phpactor language-server --address=127.0.0.1:8888
 
 gitconfig-include-local:
-	git config --local include.path '../.gitconfig'
+	git config --local include.path "$$(git rev-parse --show-toplevel)/.gitconfig"
 
 .ONESHELL:
 coc-install:
