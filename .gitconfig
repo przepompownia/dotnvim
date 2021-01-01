@@ -4,7 +4,7 @@
 	add-submodules = !"bash -c 'mapfile -t submodules < <(git list-submodules); git add --verbose \"${submodules[@]}\"'"
 	list-changed-submodules = !"bash -c 'mapfile -t submodules < <(git list-submodules); git diff --name-only --ignore-submodules=dirty \"${submodules[@]}\"'"
 	list-non-submodules = !bash -c 'git list-submodules | sort | comm -13 - <(ls -1d "$(git top)/pack/bundle/"*/*)'
-	ci-submodules = commit -m 'Upgrade vim plugins'
+	ci-submodules = commit -m 'Upgrade extensions'
 	cvs = !git add-submodules && git ci-submodules
 	ci-coc-extensions = "!git add --update \"$(git top)/.config/coc/extensions\"; git commit -m 'Upgrade CoC extensions'"
 	su = submodule update --init --recursive
