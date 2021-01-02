@@ -124,14 +124,14 @@
 	url = https://github.com/junegunn/fzf.git
 [submodule "pack/bundle/opt/arctgx"]
 	path = pack/bundle/opt/arctgx
-	url = bucket:arctgx/vim-arctgx.git
+	url = https://github.com/przepompownia/vim-arctgx
 [submodule "pack/bundle/opt/vim-scriptease"]
 	path = pack/bundle/opt/vim-scriptease
 	url = https://github.com/tpope/vim-scriptease.git
 	branch = master
 [submodule "pack/bundle/opt/vim-project"]
 	path = pack/bundle/opt/vim-project
-	url = przepompownia:przepompownia/vim-project
+	url = https://github.com/przepompownia/vim-project
 	branch = master
 [submodule "pack/bundle/opt/ultisnips"]
 	path = pack/bundle/opt/ultisnips
