@@ -28,6 +28,11 @@
   "snippets.priority": 3,
   "snippets.trace": "error",
   "codeLens.enable": true,
+  "git.addedSign.hlGroup": "IdeGutterAdd",
+  "git.changedSign.hlGroup": "IdeGutterChange",
+  "git.removedSign.hlGroup": "IdeGutterDelete",
+  "git.topRemovedSign.hlGroup": "IdeGutterTopDelete",
+  "git.changeRemovedSign.text": "IdeGutterChangeDelete",
   "xml.java.home": "/usr/lib/jvm/java-11-openjdk-amd64/",
   "xml.server.workDir": "~/.cache/xmlls-schemas",
   "yaml.schemas": {
