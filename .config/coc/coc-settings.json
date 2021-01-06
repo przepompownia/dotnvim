@@ -40,7 +40,8 @@
   },
   "diagnostic-languageserver.filetypes": {
     "sh": ["shellcheck"],
-    "php": ["phpcs", "phpstan", "phpmd"]
+    "php": ["phpcs", "phpstan", "phpmd"],
+    "vim": ["vint"]
   },
   "vimlsp.filetypes": [
     "vim",
@@ -60,6 +61,24 @@
   ],
   "diagnostic-languageserver.enable": true,
   "diagnostic-languageserver.linters": {
+    "vint": {
+      "sourceName": "vint",
+      "command": "vint",
+      "debounce": 100,
+      "args": ["--json", "--enable-neovim", "%file"],
+      "parseJson": {
+        "line": "line_number",
+        "column": "column_number",
+        "message": "${policy_name} ${description} (see ${reference})",
+        "security": "severity"
+      },
+      "securities": {
+        "error": "error",
+        "warning": "warning",
+        "info": "info",
+        "style": "hint"
+      }
+    },
     "shellcheck": {
       "command": "shellcheck",
       "debounce": 100,
