@@ -14,4 +14,4 @@
 ./bin/nvim
 ```
 
-You can append "</path/to/this/project>/bin" to "$PATH" in your shell environment if you want to use some copy of this project as a regular vim environment. Then check if the above executables replace the previously used `vim` and `neovim` (`command -V nvim` for example). It also simplifies using this executables by GUI (nvim-qt, vim -G).
+You can append `"</path/to/this/project>/bin"` to `"$PATH"` in your shell environment if you want to use some copy of this project as a regular vim environment. Then check if the above executables replace the previously used `vim` and `neovim` (`command -V nvim` for example). It also simplifies using this executables by GUI (`nvim-qt`, `vim -G`).
