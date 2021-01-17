@@ -1,4 +1,4 @@
-# Personal portable vim environment
+# Portable vim environment
 
 ## Goals
 - Have more than one independent vim environment that not share data and configuration with any other. You can test plugin combinations unusual for you without changing your regular vim environment.
