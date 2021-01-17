@@ -4,9 +4,9 @@ mapfile -t executables <"$(dirname "$(dirname "${BASH_SOURCE[0]}")")/requirement
 
 for executable in "${executables[@]}"; do
     if path="$(command -v "$executable")"; then
-        printf '\e[32m✓\e[0m %s: %s\n' "$executable" "$path"
+        printf '\t\e[32m✓\e[0m %s: %s\n' "$executable" "$path"
         continue
     fi
 
-    printf '\e[31m✗\e[0m %s not found\n' "$executable"
+    printf '\t\e[31m✗\e[0m %s not found\n' "$executable"
 done
