@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+git matches-filename-changed-after-merge '(\.py$|^requirements.txt$)' && python3 -m chadtree deps && echo 'post-merge script done'
+
+exit 0
