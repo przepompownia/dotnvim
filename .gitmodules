@@ -2,10 +2,6 @@
 	path = pack/bundle/opt/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
-[submodule "pack/bundle/opt/nerdtree"]
-	path = pack/bundle/opt/nerdtree
-	url = https://github.com/preservim/nerdtree
-	branch = master
 [submodule "pack/bundle/opt/surround"]
 	path = pack/bundle/opt/surround
 	url = https://github.com/tpope/vim-surround.git
