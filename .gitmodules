@@ -155,3 +155,6 @@
 [submodule "pack/bundle/opt/nvim-bqf"]
 	path = pack/bundle/opt/nvim-bqf
 	url = https://github.com/kevinhwang91/nvim-bqf
+[submodule "pack/bundle/opt/FixCursorHold.nvim"]
+	path = pack/bundle/opt/FixCursorHold.nvim
+	url = https://github.com/antoinemadec/FixCursorHold.nvim.git
