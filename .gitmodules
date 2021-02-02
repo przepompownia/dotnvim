@@ -152,3 +152,6 @@
 [submodule "pack/bundle/opt/lightline.vim"]
 	path = pack/bundle/opt/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/bundle/opt/nvim-bqf"]
+	path = pack/bundle/opt/nvim-bqf
+	url = https://github.com/kevinhwang91/nvim-bqf
