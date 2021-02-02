@@ -13,11 +13,13 @@ packadd! ale
 packadd! auto-pairs
 packadd! coc.nvim
 packadd! fugitive
+packadd! FixCursorHold.nvim
+packadd! nvim-bqf
+packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! jsonc.vim
 packadd! neopairs.vim
-packadd! nerdtree
 packadd! nginx.vim
 packadd! phpactor
 packadd! PHP-Indenting-for-VIm
