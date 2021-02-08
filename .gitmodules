@@ -103,7 +103,6 @@
 [submodule "pack/bundle/opt/phpactor"]
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
-	branch = develop
 [submodule "pack/bundle/opt/coc.nvim"]
 	path = pack/bundle/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
