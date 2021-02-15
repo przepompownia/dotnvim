@@ -2,13 +2,19 @@
 
 set -e
 
-PHP=${PHPVERSION:-php} # to be used in such form or to be replaced (e.g. by git-install-hooks)
+currentDir="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+mapfile -t composerPatterns < "${currentDir}/filepattern-composer.sample"
+
+PHP=${PHPVERSION:-php}
 composer=$(which composer)
+printf '\nFrom: %s\nto: %s\n\n' "$1" "$2"
 
 needRebuild() {
-    printf '\nArg 1: %s\nArg2: %s\n\n' "$1" "$2"
     [[ ! -d ./vendor ]] && return 0
-    git matches-filename-changed-between-commits '^composer\.(json|lock)$' "$1" "$2" && return 0
+
+    for pattern in "${composerPatterns[@]}"; do
+        git matches-filename-changed-between-commits "$pattern" "$1" "$2" && return 0
+    done
 
     return 1
 }

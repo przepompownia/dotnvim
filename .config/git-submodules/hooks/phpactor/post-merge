@@ -2,9 +2,14 @@
 
 set -e
 
-PHP=${PHPVERSION:-php} # to be used in such form or to be replaced (e.g. by git-install-hooks)
+currentDir="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+mapfile -t composerPatterns < "${currentDir}/filepattern-composer.sample"
+
+PHP=${PHPVERSION:-php}
 composer=$(which composer)
 
-git matches-filename-changed-after-merge '^composer\.(json|lock)$' && "$PHP" "$composer" install -o
+    for pattern in "${composerPatterns[@]}"; do
+        git matches-filename-changed-after-merge "$pattern" && "$PHP" "$composer" install -o
+    done
 
 exit 0
