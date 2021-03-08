@@ -2,6 +2,6 @@
 
 set -e
 
-git matches-filename-changed-after-merge '^\.go$' && make -j4 install -o
+git matches-filename-changed-after-merge '\.go$' && make -j4 install -o
 
 exit 0
