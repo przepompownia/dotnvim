@@ -21,8 +21,9 @@ packadd! fzf.vim
 packadd! jsonc.vim
 packadd! neopairs.vim
 packadd! nginx.vim
+packadd! nvim-treesitter
 packadd! phpactor
-packadd! PHP-Indenting-for-VIm
+" packadd! PHP-Indenting-for-VIm
 packadd! surround
 packadd! tmux.vim
 packadd! vim-commentary
