@@ -10,7 +10,7 @@ if filereadable(expand(g:vimrc_init_per_host))
 endif
 
 packadd! ale
-packadd! auto-pairs
+" packadd! auto.pairs
 packadd! coc.nvim
 packadd! fugitive
 packadd! FixCursorHold.nvim
