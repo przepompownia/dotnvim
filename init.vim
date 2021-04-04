@@ -14,14 +14,16 @@ packadd! ale
 packadd! coc.nvim
 packadd! fugitive
 packadd! FixCursorHold.nvim
-packadd! nvim-bqf
 packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! jsonc.vim
 packadd! neopairs.vim
 packadd! nginx.vim
-packadd! nvim-treesitter
+if has('nvim')
+  packadd! nvim-bqf
+  packadd! nvim-treesitter
+endif
 packadd! phpactor
 " packadd! PHP-Indenting-for-VIm
 packadd! surround
