@@ -36,7 +36,7 @@ packadd! vim-markdown
 packadd! vim-markdown-folding
 packadd! vim-move
 packadd! vim-pasta
-packadd! vim-project
+" packadd! vim-project
 packadd! vim-repeat
 packadd! vim-rhubarb
 packadd! vim-spacejam
