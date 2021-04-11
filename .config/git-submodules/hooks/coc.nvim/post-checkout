@@ -3,12 +3,12 @@
 set -e
 
 needRebuild() {
-    git show --format='%ci %s' --quiet "$1" "$2"
     git matches-filename-changed-between-commits '(\.ts$|^yarn.lock$)' "$1" "$2" && return 0
 
     return 1
 }
 
+git show --format='%ci %s' --quiet "$1" "$2"
 needRebuild "$1" "$2" && {
     yarn install --frozen-lockfile
 }

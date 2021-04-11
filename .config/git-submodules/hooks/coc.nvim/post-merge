@@ -2,6 +2,6 @@
 
 set -e
 
-git matches-filename-changed-after-merge '(\.ts$|^yarn.lock$)' && yarn install --frozen-lockfile && echo 'post-merge script done'
+git matches-filename-changed-after-merge '(\.ts$|^yarn.lock$)' && yarn install --frozen-lockfile
 
 exit 0
