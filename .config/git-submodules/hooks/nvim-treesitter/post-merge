@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e
+
+needRebuild() {
+    git matches-filename-changed-after-merge '^lockfile\.json$' && return 0
+
+    return 1
+}
+
+needRebuild && {
+    nvim --headless -c "lua require 'nvim-treesitter.install'.update(); vim.cmd('q')"
+}
+
+exit 0

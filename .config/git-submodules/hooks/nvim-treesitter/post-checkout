@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+needRebuild() {
+    git matches-filename-changed-between-commits '^lockfile\.json$' "$1" "$2" && return 0
+
+    return 1
+}
+
+git show --format='%ci %s' --quiet "$1" "$2"
+needRebuild "$1" "$2" && {
+    nvim --headless -c "lua require 'nvim-treesitter.install'.update(); vim.cmd('q')"
+}
+
+exit 0
