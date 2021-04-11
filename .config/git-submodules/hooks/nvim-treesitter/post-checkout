@@ -11,6 +11,7 @@ needRebuild() {
 git show --format='%ci %s' --quiet "$1" "$2"
 needRebuild "$1" "$2" && {
     nvim --headless -c "lua require 'nvim-treesitter.install'.update(); vim.cmd('q')"
+    echo
 }
 
 exit 0
