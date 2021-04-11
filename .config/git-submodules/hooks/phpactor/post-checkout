@@ -7,7 +7,7 @@ mapfile -t composerPatterns < "${currentDir}/filepattern-composer.sample"
 
 PHP=${PHPVERSION:-php}
 composer=$(which composer)
-printf '\nFrom: %s\nto: %s\n\n' "$1" "$2"
+git show --format='%ci %s' --quiet "$1" "$2"
 
 needRebuild() {
     [[ ! -d ./vendor ]] && return 0
