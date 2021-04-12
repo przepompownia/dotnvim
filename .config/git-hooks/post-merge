@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+git matches-filename-changed-after-merge '^.config/git-submodules/.config$' && make git-submodules-hooks-install
+
+exit 0
