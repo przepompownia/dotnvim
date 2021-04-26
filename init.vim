@@ -25,7 +25,7 @@ if has('nvim')
   packadd! nvim-treesitter
 endif
 packadd! phpactor
-" packadd! PHP-Indenting-for-VIm
+packadd! PHP-Indenting-for-VIm
 packadd! surround
 packadd! tmux.vim
 packadd! vim-commentary
