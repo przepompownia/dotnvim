@@ -41,7 +41,6 @@ packadd! vim-repeat
 packadd! vim-rhubarb
 packadd! vim-spacejam
 packadd! vim-test
-packadd! vim-tmux-focus-events
 packadd! vim-toml
 packadd! vim-twig
 packadd! vim-unimpaired

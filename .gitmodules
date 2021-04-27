@@ -73,10 +73,6 @@
 	path = pack/bundle/opt/nginx.vim
 	url = https://github.com/chr4/nginx.vim.git
 	branch = master
-[submodule "pack/bundle/opt/vim-tmux-focus-events"]
-	path = pack/bundle/opt/vim-tmux-focus-events
-	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
-	branch = master
 [submodule "pack/bundle/opt/vim-repeat"]
 	path = pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat
