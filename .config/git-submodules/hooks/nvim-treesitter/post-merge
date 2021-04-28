@@ -9,7 +9,7 @@ needRebuild() {
 }
 
 needRebuild && {
-    nvim --headless -c "lua require 'nvim-treesitter.install'.update(); vim.cmd('q')"
+    nvim --headless -c 'packadd nvim-treesitter' -c "lua require 'nvim-treesitter.install'.update(); vim.cmd('q')"
     echo
 }
 
