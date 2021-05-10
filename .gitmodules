@@ -25,10 +25,6 @@
 	path = pack/bundle/opt/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 	branch = master
-[submodule "pack/bundle/opt/vim-commentary"]
-	path = pack/bundle/opt/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
-	branch = master
 [submodule "pack/bundle/opt/vim-markdown-folding"]
 	path = pack/bundle/opt/vim-markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding.git
@@ -155,3 +151,6 @@
 [submodule "pack/bundle/opt/nvim-treesitter"]
 	path = pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "pack/bundle/opt/tcomment_vim"]
+	path = pack/bundle/opt/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim
