@@ -28,7 +28,7 @@ packadd! phpactor
 packadd! PHP-Indenting-for-VIm
 packadd! surround
 packadd! tmux.vim
-packadd! tcomment_vim
+packadd! vim-commentary
 packadd! vim-dispatch
 packadd! vim-javascript
 packadd! vim-lucius

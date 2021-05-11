@@ -151,6 +151,6 @@
 [submodule "pack/bundle/opt/nvim-treesitter"]
 	path = pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
-[submodule "pack/bundle/opt/tcomment_vim"]
-	path = pack/bundle/opt/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim
+[submodule "pack/bundle/opt/vim-commentary"]
+	path = pack/bundle/opt/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
