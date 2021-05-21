@@ -1,3 +1,5 @@
+[core]
+    hooksPath = .githooks
 [alias]
 	top = rev-parse --show-toplevel
 	list-submodules = submodule foreach --quiet 'echo $toplevel/$sm_path'
