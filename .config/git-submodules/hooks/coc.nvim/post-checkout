@@ -2,15 +2,7 @@
 
 set -e
 
-needRebuild() {
-    git matches-filename-changed-between-commits '(\.ts$|^yarn.lock$)' "$1" "$2" && return 0
-
-    return 1
-}
-
-git show --format='%ci %s' --quiet "$1" "$2"
-needRebuild "$1" "$2" && {
-    yarn install --frozen-lockfile
-}
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-checkout-actions"
 
 exit 0

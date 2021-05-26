@@ -2,16 +2,7 @@
 
 set -e
 
-needRebuild() {
-    git matches-filename-changed-between-commits '^lockfile\.json$' "$1" "$2" && return 0
-
-    return 1
-}
-
-git show --format='%ci %s' --quiet "$1" "$2"
-needRebuild "$1" "$2" && {
-    nvim --headless -c 'packadd nvim-treesitter' -c 'TSUpdate' -c 'q'
-    echo
-}
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-checkout-actions"
 
 exit 0

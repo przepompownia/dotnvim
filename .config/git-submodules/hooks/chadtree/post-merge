@@ -2,6 +2,7 @@
 
 set -e
 
-git matches-filename-changed-after-merge '(\.py$|^requirements.txt$)' && python3 -m chadtree deps && echo 'post-merge script done'
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-merge-actions"
 
 exit 0

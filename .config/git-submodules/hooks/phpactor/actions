@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+PHP=${PHPVERSION:-php}
+composer=$(command -v composer)
+
+runComposer() {
+    "$PHP" "$composer" install -o
+}
+
+declare -A patternToAction
+
+patternToAction['^composer\.(json|lock)$']='runComposer'
+[[ ! -d ./vendor ]] && runComposer

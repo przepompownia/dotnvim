@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+runUpdateDeps() {
+    python3 -m chadtree deps
+}
+
+declare -A patternToAction
+
+patternToAction['(\.py$|^requirements.txt$)']='runUpdateDeps'

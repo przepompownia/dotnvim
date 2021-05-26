@@ -2,23 +2,7 @@
 
 set -e
 
-currentDir="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
-mapfile -t composerPatterns < "${currentDir}/filepattern-composer.sample"
-
-PHP=${PHPVERSION:-php}
-composer=$(which composer)
-git show --format='%ci %s' --quiet "$1" "$2"
-
-needRebuild() {
-    [[ ! -d ./vendor ]] && return 0
-
-    for pattern in "${composerPatterns[@]}"; do
-        git matches-filename-changed-between-commits "$pattern" "$1" "$2" && return 0
-    done
-
-    return 1
-}
-
-needRebuild "$1" "$2" && "$PHP" "$composer" install -o
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-checkout-actions"
 
 exit 0

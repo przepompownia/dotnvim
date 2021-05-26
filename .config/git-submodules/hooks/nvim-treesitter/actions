@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+runTsUpdate() {
+    nvim --headless -c 'packadd nvim-treesitter' -c 'TSUpdate' -c 'q'
+    echo
+}
+
+declare -A patternToAction
+
+patternToAction['^lockfile\.json$']='runTsUpdate'

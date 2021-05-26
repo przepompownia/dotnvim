@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+runMakeInstall() {
+    make -j4 install
+}
+
+declare -A patternToAction
+
+[[ ! -x bin/fzf ]] && runMakeInstall && return
+patternToAction['\.go$']='runMakeInstall'

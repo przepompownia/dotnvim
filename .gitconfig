@@ -16,3 +16,7 @@
     matches-filename-changed-after-merge = "!f(){ test -z \"$1\" && { echo 'Required regex to match files'>&2; return 1; }; git list-files-changed-after-merge | command grep -Eq -- \"$1\"; }; f"
     list-files-changed-between-commits = "!f(){ git diff-tree -r --name-only --no-commit-id $1 $2; }; f"
 	matches-filename-changed-between-commits = "!f(){ test -z \"$1\" && { echo 'Required regex to match files'>&2; return 1; }; git list-files-changed-between-commits $2 $3 | command grep -Eq -- \"$1\"; }; f"
+[pretty]
+	showInHook = %cd %s
+[log]
+	date = format-local:%Y-%m-%d %H:%M:%S %z

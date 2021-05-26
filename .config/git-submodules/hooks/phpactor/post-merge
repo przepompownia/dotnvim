@@ -2,22 +2,7 @@
 
 set -e
 
-currentDir="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
-mapfile -t composerPatterns < "${currentDir}/filepattern-composer.sample"
-
-PHP=${PHPVERSION:-php}
-composer=$(which composer)
-
-needRebuild() {
-    [[ ! -d ./vendor ]] && return 0
-
-    for pattern in "${composerPatterns[@]}"; do
-        git matches-filename-changed-after-merge "$pattern" && return 0
-    done
-
-    return 1
-}
-
-needRebuild && "$PHP" "$composer" install -o
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-merge-actions"
 
 exit 0
