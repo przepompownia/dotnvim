@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+runInstallHooks() {
+    make git-submodules-hooks-install
+}
+
+declare -A patternToAction
+
+patternToAction['^.config/git-submodules/.config$']='runInstallHooks'

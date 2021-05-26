@@ -2,6 +2,7 @@
 
 set -e
 
-git matches-filename-changed-after-merge '^.config/git-submodules/.config$' && make git-submodules-hooks-install
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../bin")/run-post-merge-actions"
 
 exit 0
