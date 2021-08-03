@@ -4,4 +4,4 @@ for pattern in "${!patternToAction[@]}" ; do
     git matches-filename-changed-between-commits "$pattern" "$1" "$2" && "${patternToAction[$pattern]}"
 done
 
-git show --pretty=showinhook --quiet "$1" "$2"
+git show --pretty=showinhook --quiet "$1"..."$2"
