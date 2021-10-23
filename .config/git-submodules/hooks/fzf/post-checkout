@@ -2,14 +2,6 @@
 
 set -e
 
-needRebuild() {
-    git show --format='%ci %s' --quiet "$1" "$2"
-    [[ ! -x bin/fzf ]] && return 0
-    git matches-filename-changed-between-commits '\.go$' "$1" "$2" && return 0
-
-    return 1
-}
-
 . "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
 . "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-checkout-actions"
 
