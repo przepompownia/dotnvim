@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+runVimspectorUpdate() {
+    nvim --headless -c 'packadd vimspector' -c 'VimspectorUpdate' -c 'q'
+    echo
+}
+
+declare -A patternToAction
+
+patternToAction['^python3/vimspector/gadgets\.py$']='runVimspectorUpdate'
