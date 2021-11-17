@@ -53,10 +53,6 @@
 	path = pack/bundle/opt/tmux.vim
 	url = https://github.com/keith/tmux.vim.git
 	branch = master
-[submodule "pack/bundle/opt/auto-pairs"]
-	path = pack/bundle/opt/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs.git
-	branch = master
 [submodule "pack/bundle/opt/vim-dispatch"]
 	path = pack/bundle/opt/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
@@ -81,10 +77,6 @@
 	path = pack/bundle/opt/ale
 	url = https://github.com/w0rp/ale.git
 	branch = master
-[submodule "pack/bundle/opt/neopairs.vim"]
-	path = pack/bundle/opt/neopairs.vim
-	url = https://github.com/Shougo/neopairs.vim.git
-	branch = master
 [submodule "pack/bundle/opt/fzf.vim"]
 	path = pack/bundle/opt/fzf.vim
 	url = https://github.com/przepompownia/fzf.vim
@@ -96,9 +88,6 @@
 [submodule "pack/bundle/opt/phpactor"]
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
-[submodule "pack/bundle/opt/coc.nvim"]
-	path = pack/bundle/opt/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
 [submodule "pack/bundle/opt/vader.vim"]
 	path = pack/bundle/opt/vader.vim
 	url = https://github.com/junegunn/vader.vim
@@ -158,3 +147,27 @@
 [submodule "pack/bundle/opt/vim-tmux-focus-events"]
 	path = pack/bundle/opt/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
+[submodule "pack/bundle/opt/cmp-nvim-lsp"]
+	path = pack/bundle/opt/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp
+[submodule "pack/bundle/opt/lsp_signature"]
+	path = pack/bundle/opt/lsp_signature
+	url = https://github.com/ray-x/lsp_signature.nvim.git
+[submodule "pack/bundle/opt/nvim-cmp"]
+	path = pack/bundle/opt/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+[submodule "pack/bundle/opt/nvim-lspconfig"]
+	path = pack/bundle/opt/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/bundle/opt/nvim-treesitter-context"]
+	path = pack/bundle/opt/nvim-treesitter-context
+	url = https://github.com/romgrk/nvim-treesitter-context.git
+[submodule "pack/bundle/opt/symbols-outline"]
+	path = pack/bundle/opt/symbols-outline
+	url = https://github.com/simrat39/symbols-outline.nvim.git
+[submodule "pack/bundle/opt/vim-gitgutter"]
+	path = pack/bundle/opt/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "pack/bundle/opt/nvim-autopairs"]
+	path = pack/bundle/opt/nvim-autopairs
+	url = https://github.com/windwp/nvim-autopairs

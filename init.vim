@@ -10,19 +10,23 @@ if filereadable(expand(g:vimrc_init_per_host))
 endif
 
 packadd! ale
-" packadd! auto.pairs
-packadd! coc.nvim
 packadd! fugitive
 packadd! FixCursorHold.nvim
 packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! jsonc.vim
-packadd! neopairs.vim
 packadd! nginx.vim
 if has('nvim')
   packadd! nvim-bqf
   packadd! nvim-treesitter
+  packadd! nvim-cmp
+  packadd! nvim-lspconfig
+  packadd! cmp-nvim-lsp
+  packadd! nvim-autopairs
+  packadd! symbols-outline
+  packadd! lsp_signature
+  packadd! nvim-treesitter-context
 endif
 packadd! phpactor
 packadd! PHP-Indenting-for-VIm
@@ -30,6 +34,7 @@ packadd! surround
 packadd! tmux.vim
 packadd! vim-commentary
 packadd! vim-dispatch
+packadd! vim-gitgutter
 packadd! vim-javascript
 packadd! vim-lucius
 packadd! vim-markdown
@@ -46,6 +51,7 @@ packadd! vim-twig
 packadd! vim-unimpaired
 packadd! vim-dadbod
 packadd! vim-dadbod-ui
+packadd! ultisnips
 packadd! arctgx
 packadd! lightline.vim
 
