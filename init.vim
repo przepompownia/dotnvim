@@ -23,6 +23,7 @@ if has('nvim')
   packadd! nvim-cmp
   packadd! nvim-lspconfig
   packadd! cmp-nvim-lsp
+  packadd! cmp-nvim-ultisnips
   packadd! nvim-autopairs
   packadd! symbols-outline
   packadd! lsp_signature

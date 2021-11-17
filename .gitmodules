@@ -171,3 +171,6 @@
 [submodule "pack/bundle/opt/nvim-autopairs"]
 	path = pack/bundle/opt/nvim-autopairs
 	url = https://github.com/windwp/nvim-autopairs
+[submodule "pack/bundle/opt/cmp-nvim-ultisnips"]
+	path = pack/bundle/opt/cmp-nvim-ultisnips
+	url = https://github.com/quangnguyen30192/cmp-nvim-ultisnips
