@@ -6,10 +6,6 @@
 	path = pack/bundle/opt/surround
 	url = https://github.com/tpope/vim-surround.git
 	branch = master
-[submodule "pack/bundle/opt/vim-javascript"]
-	path = pack/bundle/opt/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-	branch = master
 [submodule "pack/bundle/opt/snippets"]
 	path = pack/bundle/opt/snippets
 	url = https://github.com/honza/vim-snippets.git

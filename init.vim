@@ -36,7 +36,6 @@ packadd! tmux.vim
 packadd! vim-commentary
 packadd! vim-dispatch
 packadd! vim-gitgutter
-packadd! vim-javascript
 packadd! vim-lucius
 packadd! vim-markdown
 packadd! vim-markdown-folding
