@@ -33,10 +33,6 @@
 	path = pack/bundle/opt/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
 	branch = master
-[submodule "pack/bundle/opt/PHP-Indenting-for-VIm"]
-	path = pack/bundle/opt/PHP-Indenting-for-VIm
-	url = https://github.com/2072/PHP-Indenting-for-VIm.git
-	branch = master
 [submodule "pack/bundle/opt/vim-pasta"]
 	path = pack/bundle/opt/vim-pasta
 	url = https://github.com/sickill/vim-pasta.git
