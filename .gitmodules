@@ -84,10 +84,6 @@
 	path = pack/bundle/opt/vader.vim
 	url = https://github.com/junegunn/vader.vim
 	branch = master
-[submodule "pack/bundle/opt/jsonc.vim"]
-	path = pack/bundle/opt/jsonc.vim
-	url = https://github.com/neoclide/jsonc.vim
-	branch = master
 [submodule "pack/bundle/opt/fzf"]
 	path = pack/bundle/opt/fzf
 	url = https://github.com/junegunn/fzf.git
