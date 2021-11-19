@@ -15,7 +15,6 @@ packadd! FixCursorHold.nvim
 packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
-packadd! nginx.vim
 if has('nvim')
   packadd! nvim-bqf
   packadd! nvim-treesitter

@@ -57,10 +57,6 @@
 	path = pack/bundle/opt/vim-test
 	url = https://github.com/janko-m/vim-test.git
 	branch = master
-[submodule "pack/bundle/opt/nginx.vim"]
-	path = pack/bundle/opt/nginx.vim
-	url = https://github.com/chr4/nginx.vim.git
-	branch = master
 [submodule "pack/bundle/opt/vim-repeat"]
 	path = pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat
