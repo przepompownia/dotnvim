@@ -77,10 +77,6 @@
 	path = pack/bundle/opt/fzf.vim
 	url = https://github.com/przepompownia/fzf.vim
 	branch = unmerged-to-upstream
-[submodule "pack/bundle/opt/vim-toml"]
-	path = pack/bundle/opt/vim-toml
-	url = https://github.com/cespare/vim-toml.git
-	branch = master
 [submodule "pack/bundle/opt/phpactor"]
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
