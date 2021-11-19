@@ -45,10 +45,6 @@
 	path = pack/bundle/opt/vim-twig
 	url = https://github.com/evidens/vim-twig.git
 	branch = master
-[submodule "pack/bundle/opt/tmux.vim"]
-	path = pack/bundle/opt/tmux.vim
-	url = https://github.com/keith/tmux.vim.git
-	branch = master
 [submodule "pack/bundle/opt/vim-dispatch"]
 	path = pack/bundle/opt/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
