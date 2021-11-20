@@ -20,6 +20,7 @@ if has('nvim')
   packadd! nvim-treesitter
   packadd! nvim-cmp
   packadd! nvim-lspconfig
+  packadd! nvim-ts-context-commentstring
   packadd! cmp-nvim-lsp
   packadd! cmp-nvim-ultisnips
   packadd! nvim-autopairs
