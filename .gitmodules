@@ -153,3 +153,6 @@
 [submodule "pack/bundle/opt/nvim-ts-context-commentstring"]
 	path = pack/bundle/opt/nvim-ts-context-commentstring
 	url = https://github.com/JoosepAlviste/nvim-ts-context-commentstring
+[submodule "pack/bundle/opt/colorscheme-modus"]
+	path = pack/bundle/opt/colorscheme-modus
+	url = https://github.com/ishan9299/modus-theme-vim

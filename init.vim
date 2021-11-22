@@ -33,7 +33,7 @@ packadd! surround
 packadd! vim-commentary
 packadd! vim-dispatch
 packadd! vim-gitgutter
-packadd! vim-lucius
+packadd! colorscheme-modus
 packadd! vim-markdown
 packadd! vim-markdown-folding
 packadd! vim-move
