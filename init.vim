@@ -27,6 +27,7 @@ if has('nvim')
   packadd! symbols-outline
   packadd! lsp_signature
   packadd! nvim-treesitter-context
+  packadd! nvim-echo-diagnostics
 endif
 packadd! phpactor
 packadd! surround
