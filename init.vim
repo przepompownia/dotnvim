@@ -30,7 +30,10 @@ if has('nvim')
   packadd! nvim-echo-diagnostics
   packadd! nvim-treesitter-refactor
   packadd! nvim-ts-rainbow
+  packadd! nvim-revJ
 endif
+packadd! vim-textobj-user
+packadd! vim-textobj-parameter
 packadd! phpactor
 packadd! surround
 packadd! vim-commentary
