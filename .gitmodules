@@ -78,10 +78,6 @@
 [submodule "pack/bundle/opt/arctgx"]
 	path = pack/bundle/opt/arctgx
 	url = https://github.com/przepompownia/vim-arctgx
-[submodule "pack/bundle/opt/vim-scriptease"]
-	path = pack/bundle/opt/vim-scriptease
-	url = https://github.com/tpope/vim-scriptease.git
-	branch = master
 [submodule "pack/bundle/opt/vim-project"]
 	path = pack/bundle/opt/vim-project
 	url = https://github.com/przepompownia/vim-project
