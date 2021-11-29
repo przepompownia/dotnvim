@@ -28,6 +28,7 @@ if has('nvim')
   packadd! lsp_signature
   packadd! nvim-treesitter-context
   packadd! nvim-echo-diagnostics
+  packadd! nvim-treesitter-refactor
 endif
 packadd! phpactor
 packadd! surround
