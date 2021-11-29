@@ -158,3 +158,6 @@
 [submodule "pack/bundle/opt/nvim-treesitter-refactor"]
 	path = pack/bundle/opt/nvim-treesitter-refactor
 	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
+[submodule "pack/bundle/opt/nvim-ts-rainbow"]
+	path = pack/bundle/opt/nvim-ts-rainbow
+	url = https://github.com/p00f/nvim-ts-rainbow

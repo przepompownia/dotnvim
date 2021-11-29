@@ -29,6 +29,7 @@ if has('nvim')
   packadd! nvim-treesitter-context
   packadd! nvim-echo-diagnostics
   packadd! nvim-treesitter-refactor
+  packadd! nvim-ts-rainbow
 endif
 packadd! phpactor
 packadd! surround
