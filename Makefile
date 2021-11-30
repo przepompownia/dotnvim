@@ -37,7 +37,7 @@ fzf-build:
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
-start: gitconfig-include-local submodule-update git-submodules-hooks-install coc-install phpactor-install fzf-build
+start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install fzf-build
 
 check-requirements:
 	$(DIR)/.config/bin/check-requirements
