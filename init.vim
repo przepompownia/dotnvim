@@ -40,8 +40,6 @@ packadd! vim-commentary
 packadd! vim-dispatch
 packadd! vim-gitgutter
 packadd! colorscheme-modus
-packadd! vim-markdown
-packadd! vim-markdown-folding
 packadd! vim-move
 packadd! vim-pasta
 " packadd! vim-project
