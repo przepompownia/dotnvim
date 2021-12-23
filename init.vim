@@ -19,9 +19,12 @@ if has('nvim')
   packadd! nvim-bqf
   packadd! nvim-treesitter
   packadd! nvim-cmp
+  packadd! nvim-dap
+  packadd! nvim-dap-ui
   packadd! nvim-lspconfig
   packadd! nvim-ts-context-commentstring
   packadd! cmp-nvim-lsp
+  packadd! cmp-buffer
   packadd! cmp-nvim-ultisnips
   packadd! nvim-autopairs
   packadd! symbols-outline
@@ -31,6 +34,10 @@ if has('nvim')
   packadd! nvim-treesitter-refactor
   packadd! nvim-ts-rainbow
   packadd! nvim-revJ
+  packadd! nvim-treehopper
+  packadd! hop.nvim
+  packadd! lightspeed.nvim
+  packadd! colorscheme-modus
 endif
 packadd! vim-textobj-user
 packadd! vim-textobj-parameter
@@ -39,7 +46,7 @@ packadd! surround
 packadd! vim-commentary
 packadd! vim-dispatch
 packadd! vim-gitgutter
-packadd! colorscheme-modus
+" packadd! colorscheme-github-colors
 packadd! vim-move
 packadd! vim-pasta
 " packadd! vim-project
