@@ -74,10 +74,6 @@
 	path = pack/bundle/opt/vim-project
 	url = https://github.com/przepompownia/vim-project
 	branch = master
-[submodule "pack/bundle/opt/ultisnips"]
-	path = pack/bundle/opt/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-	branch = master
 [submodule "pack/bundle/opt/vimspector"]
 	path = pack/bundle/opt/vimspector
 	url = https://github.com/puremourning/vimspector.git
@@ -135,9 +131,6 @@
 [submodule "pack/bundle/opt/nvim-autopairs"]
 	path = pack/bundle/opt/nvim-autopairs
 	url = https://github.com/windwp/nvim-autopairs
-[submodule "pack/bundle/opt/cmp-nvim-ultisnips"]
-	path = pack/bundle/opt/cmp-nvim-ultisnips
-	url = https://github.com/quangnguyen30192/cmp-nvim-ultisnips
 [submodule "pack/bundle/opt/nvim-ts-context-commentstring"]
 	path = pack/bundle/opt/nvim-ts-context-commentstring
 	url = https://github.com/JoosepAlviste/nvim-ts-context-commentstring

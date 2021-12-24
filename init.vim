@@ -22,7 +22,8 @@ if has('nvim')
   packadd! nvim-lspconfig
   packadd! nvim-ts-context-commentstring
   packadd! cmp-nvim-lsp
-  packadd! cmp-nvim-ultisnips
+  packadd! luasnip
+  packadd! cmp-luasnip
   packadd! nvim-autopairs
   packadd! symbols-outline
   packadd! lsp_signature
@@ -51,7 +52,6 @@ packadd! vim-twig
 packadd! vim-unimpaired
 packadd! vim-dadbod
 packadd! vim-dadbod-ui
-packadd! ultisnips
 packadd! arctgx
 packadd! lightline.vim
 
