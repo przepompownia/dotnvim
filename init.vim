@@ -24,6 +24,7 @@ if has('nvim')
   packadd! cmp-nvim-lsp
   packadd! luasnip
   packadd! cmp-luasnip
+  packadd! cmp-buffer
   packadd! nvim-autopairs
   packadd! symbols-outline
   packadd! lsp_signature
