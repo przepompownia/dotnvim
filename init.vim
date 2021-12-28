@@ -34,6 +34,9 @@ if has('nvim')
   packadd! nvim-ts-rainbow
   packadd! nvim-revJ
   packadd! colorscheme-modus
+  packadd! plenary.nvim
+  packadd! telescope.nvim
+  packadd! telescope-fzf-native.nvim
 endif
 packadd! vim-textobj-user
 packadd! vim-textobj-parameter
