@@ -37,6 +37,8 @@ if has('nvim')
   packadd! plenary.nvim
   packadd! telescope.nvim
   packadd! telescope-fzf-native.nvim
+  packadd! nvim-dap
+  packadd! nvim-dap-ui
 endif
 packadd! vim-textobj-user
 packadd! vim-textobj-parameter

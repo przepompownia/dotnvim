@@ -173,3 +173,9 @@
 [submodule "pack/bundle/opt/telescope-fzf-native.nvim"]
 	path = pack/bundle/opt/telescope-fzf-native.nvim
 	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
+[submodule "pack/bundle/opt/nvim-dap"]
+	path = pack/bundle/opt/nvim-dap
+	url = https://github.com/mfussenegger/nvim-dap
+[submodule "pack/bundle/opt/nvim-dap-ui"]
+	path = pack/bundle/opt/nvim-dap-ui
+	url = https://github.com/rcarriga/nvim-dap-ui
