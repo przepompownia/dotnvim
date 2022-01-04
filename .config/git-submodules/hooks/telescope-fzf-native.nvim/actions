@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+runMakeInstall() {
+    make -j
+}
+
+declare -A patternToAction
+
+[[ ! -x bin/fzf ]] && runMakeInstall && return
+patternToAction['\.(c|h)$']='runMakeInstall'
