@@ -179,3 +179,6 @@
 [submodule "pack/bundle/opt/nvim-dap-ui"]
 	path = pack/bundle/opt/nvim-dap-ui
 	url = https://github.com/rcarriga/nvim-dap-ui
+[submodule "pack/bundle/opt/cmp-path"]
+	path = pack/bundle/opt/cmp-path
+	url = https://github.com/hrsh7th/cmp-path
