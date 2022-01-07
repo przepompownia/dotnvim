@@ -40,6 +40,7 @@ if has('nvim')
   packadd! telescope-fzf-native.nvim
   packadd! nvim-dap
   packadd! nvim-dap-ui
+  packadd! schemastore.nvim
 endif
 packadd! vim-textobj-user
 packadd! vim-textobj-parameter
