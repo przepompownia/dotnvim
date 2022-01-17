@@ -122,9 +122,6 @@
 [submodule "pack/bundle/opt/nvim-treesitter-context"]
 	path = pack/bundle/opt/nvim-treesitter-context
 	url = https://github.com/romgrk/nvim-treesitter-context.git
-[submodule "pack/bundle/opt/symbols-outline"]
-	path = pack/bundle/opt/symbols-outline
-	url = https://github.com/simrat39/symbols-outline.nvim.git
 [submodule "pack/bundle/opt/vim-gitgutter"]
 	path = pack/bundle/opt/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
@@ -185,3 +182,9 @@
 [submodule "pack/bundle/opt/schemastore.nvim"]
 	path = pack/bundle/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
+[submodule "pack/bundle/opt/litee.nvim"]
+	path = pack/bundle/opt/litee.nvim
+	url = https://github.com/ldelossa/litee.nvim
+[submodule "pack/bundle/opt/litee-symboltree.nvim"]
+	path = pack/bundle/opt/litee-symboltree.nvim
+	url = https://github.com/ldelossa/litee-symboltree.nvim

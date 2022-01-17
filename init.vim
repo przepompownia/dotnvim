@@ -27,7 +27,8 @@ if has('nvim')
   packadd! cmp-buffer
   packadd! cmp-path
   packadd! nvim-autopairs
-  packadd! symbols-outline
+  packadd! litee.nvim
+  packadd! litee-symboltree.nvim
   packadd! lsp_signature
   packadd! nvim-treesitter-context
   packadd! nvim-echo-diagnostics
