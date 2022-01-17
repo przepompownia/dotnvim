@@ -31,6 +31,7 @@ if has('nvim')
   packadd! litee-symboltree.nvim
   packadd! lsp_signature
   packadd! nvim-treesitter-context
+  packadd! nvim-treesitter-textobjects
   packadd! nvim-echo-diagnostics
   packadd! nvim-treesitter-refactor
   packadd! nvim-ts-rainbow

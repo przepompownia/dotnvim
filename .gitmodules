@@ -188,3 +188,6 @@
 [submodule "pack/bundle/opt/litee-symboltree.nvim"]
 	path = pack/bundle/opt/litee-symboltree.nvim
 	url = https://github.com/ldelossa/litee-symboltree.nvim
+[submodule "pack/bundle/opt/nvim-treesitter-textobjects"]
+	path = pack/bundle/opt/nvim-treesitter-textobjects
+	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
