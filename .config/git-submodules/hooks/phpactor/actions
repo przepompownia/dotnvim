@@ -4,7 +4,7 @@ PHP=${PHPVERSION:-php}
 composer=$(command -v composer)
 
 runComposer() {
-    "$PHP" "$composer" install -o
+    "$PHP" "$composer" install --classmap-authoritative
 }
 
 declare -A patternToAction
