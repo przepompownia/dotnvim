@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-currentDir="$(realpath "$(dirname "$(dirname "${BASH_SOURCE[0]}")")")"
+currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
 initFile="${currentDir}/init.vim"
 VIMINIT="$(printf 'source %s' "$initFile")"
 export VIMINIT
