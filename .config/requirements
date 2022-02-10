@@ -1,6 +1,7 @@
 yarn https://github.com/yarnpkg/yarn
 go
 php
+node
 python3
 vint https://github.com/Vimjas/vint
 vim-language-server https://github.com/iamcco/vim-language-server
