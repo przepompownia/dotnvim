@@ -9,40 +9,40 @@ if filereadable(expand(g:vimrc_init_per_host))
   execute 'source ' . expand(g:vimrc_init_per_host)
 endif
 
-packadd! ale
+" packadd! ale
 packadd! fugitive
 packadd! FixCursorHold.nvim
 packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 if has('nvim')
-  packadd! nvim-bqf
-  packadd! nvim-treesitter
-  packadd! nvim-cmp
-  packadd! nvim-lspconfig
-  packadd! nvim-ts-context-commentstring
-  packadd! cmp-nvim-lsp
-  packadd! luasnip
-  packadd! cmp-luasnip
   packadd! cmp-buffer
+  packadd! cmp-luasnip
+  packadd! cmp-nvim-lsp
   packadd! cmp-path
-  packadd! nvim-autopairs
+  packadd! colorscheme-modus
   packadd! litee.nvim
   packadd! litee-symboltree.nvim
   packadd! lsp_signature
-  packadd! nvim-treesitter-context
-  packadd! nvim-treesitter-textobjects
-  packadd! nvim-echo-diagnostics
-  packadd! nvim-treesitter-refactor
-  packadd! nvim-ts-rainbow
-  packadd! nvim-revJ
-  packadd! colorscheme-modus
-  packadd! plenary.nvim
-  packadd! telescope.nvim
-  packadd! telescope-fzf-native.nvim
+  packadd! luasnip
+  packadd! nvim-autopairs
+  packadd! nvim-bqf
+  packadd! nvim-cmp
   packadd! nvim-dap
   packadd! nvim-dap-ui
+  packadd! nvim-echo-diagnostics
+  packadd! nvim-lspconfig
+  packadd! nvim-revJ
+  packadd! nvim-treesitter
+  packadd! nvim-treesitter-context
+  packadd! nvim-treesitter-refactor
+  packadd! nvim-treesitter-textobjects
+  packadd! nvim-ts-context-commentstring
+  packadd! nvim-ts-rainbow
+  packadd! plenary.nvim
   packadd! schemastore.nvim
+  packadd! telescope-fzf-native.nvim
+  packadd! telescope.nvim
 endif
 packadd! vim-textobj-user
 packadd! vim-textobj-parameter
