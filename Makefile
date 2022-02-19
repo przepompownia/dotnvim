@@ -37,7 +37,11 @@ fzf-build:
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
-start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install fzf-build
+start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install fzf-build install-vscode-php-debug
 
 check-requirements:
 	$(DIR)/.config/bin/check-requirements
+
+install-vscode-php-debug:
+	$(DIR)/bin/vscode-php-debug install $(vscodePhpDebugVersion)
+	$(DIR)/bin/vscode-php-debug setAsCurrent $(vscodePhpDebugVersion)
