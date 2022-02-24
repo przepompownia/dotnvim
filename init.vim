@@ -71,4 +71,3 @@ if filereadable(expand(s:vimrc_per_host))
 endif
 
 set secure
-set exrc
