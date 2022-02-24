@@ -191,3 +191,6 @@
 [submodule "pack/bundle/opt/nvim-treesitter-textobjects"]
 	path = pack/bundle/opt/nvim-treesitter-textobjects
 	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[submodule "pack/bundle/opt/osv-dap-nvim"]
+	path = pack/bundle/opt/osv-dap-nvim
+	url = https://github.com/jbyuki/one-small-step-for-vimkind
