@@ -3,7 +3,7 @@ MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
 DIR := ${CURDIR}
-vscodePhpDebugVersion := '1.24.2'
+vscodePhpDebugVersion := '1.24.3'
 
 .ONESHELL:
 phpactor-install:
