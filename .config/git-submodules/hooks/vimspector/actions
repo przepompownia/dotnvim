@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 runVimspectorUpdate() {
-    nvim --headless -c 'packadd vimspector' -c 'VimspectorUpdate' -c 'q'
+    nvim --headless -c 'packadd vimspector' -c 'VimspectorUpdate' -c 'qall'
     echo
 }
 
