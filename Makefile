@@ -9,8 +9,6 @@ vscodePhpDebugVersion := '1.25.0'
 phpactor-install:
 	cd $(DIR)/pack/bundle/opt/phpactor
 	composer install
-	mapfile -t exts < config/travis/extensions-to-test
-	./bin/phpactor extension:install "$${exts[@]}"
 
 .ONESHELL:
 phpactor-start-server:
