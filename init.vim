@@ -15,12 +15,13 @@ packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 if has('nvim')
-  packadd! nlua.nvim
+  " packadd! nlua.nvim
   packadd! cmp-buffer
   packadd! cmp-luasnip
   packadd! cmp-nvim-lsp
   packadd! cmp-path
   packadd! colorscheme-modus
+  packadd! gitsigns.nvim
   packadd! lightspeed.nvim
   packadd! litee.nvim
   packadd! litee-symboltree.nvim
@@ -53,7 +54,6 @@ packadd! phpactor
 packadd! surround
 packadd! vim-commentary
 packadd! vim-dispatch
-packadd! vim-gitgutter
 packadd! vim-move
 packadd! vim-pasta
 packadd! vim-repeat
