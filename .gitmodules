@@ -49,10 +49,6 @@
 	path = pack/bundle/opt/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
 	branch = master
-[submodule "pack/bundle/opt/ale"]
-	path = pack/bundle/opt/ale
-	url = https://github.com/w0rp/ale.git
-	branch = master
 [submodule "pack/bundle/opt/fzf.vim"]
 	path = pack/bundle/opt/fzf.vim
 	url = https://github.com/przepompownia/fzf.vim
@@ -194,3 +190,6 @@
 [submodule "pack/bundle/opt/osv-dap-nvim"]
 	path = pack/bundle/opt/osv-dap-nvim
 	url = https://github.com/jbyuki/one-small-step-for-vimkind
+[submodule "pack/bundle/opt/null-ls.nvim"]
+	path = pack/bundle/opt/null-ls.nvim
+	url = https://github.com/jose-elias-alvarez/null-ls.nvim

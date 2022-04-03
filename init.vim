@@ -9,13 +9,13 @@ if filereadable(expand(g:vimrc_init_per_host))
   execute 'source ' . expand(g:vimrc_init_per_host)
 endif
 
-" packadd! ale
 packadd! fugitive
 packadd! FixCursorHold.nvim
 packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 if has('nvim')
+  packadd! nlua.nvim
   packadd! cmp-buffer
   packadd! cmp-luasnip
   packadd! cmp-nvim-lsp
@@ -25,6 +25,7 @@ if has('nvim')
   packadd! litee-symboltree.nvim
   packadd! lsp_signature
   packadd! luasnip
+  packadd! null-ls.nvim
   packadd! nvim-autopairs
   packadd! nvim-bqf
   packadd! nvim-cmp
@@ -53,7 +54,6 @@ packadd! vim-dispatch
 packadd! vim-gitgutter
 packadd! vim-move
 packadd! vim-pasta
-" packadd! vim-project
 packadd! vim-repeat
 packadd! vim-rhubarb
 packadd! vim-spacejam
