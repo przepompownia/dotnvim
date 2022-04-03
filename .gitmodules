@@ -193,3 +193,6 @@
 [submodule "pack/bundle/opt/null-ls.nvim"]
 	path = pack/bundle/opt/null-ls.nvim
 	url = https://github.com/jose-elias-alvarez/null-ls.nvim
+[submodule "pack/bundle/opt/lightspeed.nvim"]
+	path = pack/bundle/opt/lightspeed.nvim
+	url = https://github.com/ggandor/lightspeed.nvim

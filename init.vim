@@ -21,6 +21,7 @@ if has('nvim')
   packadd! cmp-nvim-lsp
   packadd! cmp-path
   packadd! colorscheme-modus
+  packadd! lightspeed.nvim
   packadd! litee.nvim
   packadd! litee-symboltree.nvim
   packadd! lsp_signature
