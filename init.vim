@@ -41,6 +41,7 @@ if has('nvim')
   packadd! nvim-treesitter-textobjects
   packadd! nvim-ts-context-commentstring
   packadd! nvim-ts-rainbow
+  packadd! osv-dap-nvim
   packadd! plenary.nvim
   packadd! schemastore.nvim
   packadd! telescope-fzf-native.nvim
