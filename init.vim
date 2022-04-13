@@ -15,7 +15,7 @@ packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 if has('nvim')
-  " packadd! nlua.nvim
+  packadd! nlua.nvim
   packadd! cmp-buffer
   packadd! cmp-luasnip
   packadd! cmp-nvim-lsp
@@ -35,11 +35,11 @@ if has('nvim')
   packadd! nvim-dap-ui
   packadd! nvim-echo-diagnostics
   packadd! nvim-lspconfig
-  packadd! nvim-revJ
   packadd! nvim-treesitter
   packadd! nvim-treesitter-context
   packadd! nvim-treesitter-refactor
   packadd! nvim-treesitter-textobjects
+  packadd! nvim-trevJ.lua
   packadd! nvim-ts-context-commentstring
   packadd! nvim-ts-rainbow
   packadd! osv-dap-nvim
@@ -48,8 +48,6 @@ if has('nvim')
   packadd! telescope-fzf-native.nvim
   packadd! telescope.nvim
 endif
-packadd! vim-textobj-user
-packadd! vim-textobj-parameter
 packadd! phpactor
 packadd! surround
 packadd! vim-commentary

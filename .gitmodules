@@ -136,15 +136,6 @@
 [submodule "pack/bundle/opt/nvim-ts-rainbow"]
 	path = pack/bundle/opt/nvim-ts-rainbow
 	url = https://github.com/p00f/nvim-ts-rainbow
-[submodule "pack/bundle/opt/nvim-revJ"]
-	path = pack/bundle/opt/nvim-revJ
-	url = https://github.com/AckslD/nvim-revJ.lua
-[submodule "pack/bundle/opt/vim-textobj-parameter"]
-	path = pack/bundle/opt/vim-textobj-parameter
-	url = https://github.com/sgur/vim-textobj-parameter
-[submodule "pack/bundle/opt/vim-textobj-user"]
-	path = pack/bundle/opt/vim-textobj-user
-	url = https://github.com/kana/vim-textobj-user
 [submodule "pack/bundle/opt/cmp-luasnip"]
 	path = pack/bundle/opt/cmp-luasnip
 	url = https://github.com/saadparwaiz1/cmp_luasnip
@@ -196,3 +187,6 @@
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
+[submodule "pack/bundle/opt/nvim-trevJ.lua"]
+	path = pack/bundle/opt/nvim-trevJ.lua
+	url = https://github.com/AckslD/nvim-trevJ.lua
