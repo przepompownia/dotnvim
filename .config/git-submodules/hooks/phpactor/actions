@@ -9,5 +9,7 @@ runComposer() {
 
 declare -A patternToAction
 
-patternToAction['^composer\.(json|lock)$']='runComposer'
-[[ ! -d ./vendor ]] && runComposer
+patternToAction['(\.php|^composer\.(json|lock))$']='runComposer'
+if [[ ! -d ./vendor ]]; then
+    runComposer
+fi
