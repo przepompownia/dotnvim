@@ -15,7 +15,6 @@ packadd! fern.vim
 packadd! fzf
 packadd! fzf.vim
 if has('nvim')
-  packadd! nlua.nvim
   packadd! cmp-buffer
   packadd! cmp-luasnip
   packadd! cmp-nvim-lsp
