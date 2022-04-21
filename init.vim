@@ -12,7 +12,6 @@ endif
 packadd! fugitive
 packadd! FixCursorHold.nvim
 packadd! fern.vim
-packadd! fzf
 if has('nvim')
   packadd! cmp-buffer
   packadd! cmp-luasnip
