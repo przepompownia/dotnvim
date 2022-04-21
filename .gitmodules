@@ -49,10 +49,6 @@
 	path = pack/bundle/opt/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
 	branch = master
-[submodule "pack/bundle/opt/fzf.vim"]
-	path = pack/bundle/opt/fzf.vim
-	url = https://github.com/przepompownia/fzf.vim
-	branch = unmerged-to-upstream
 [submodule "pack/bundle/opt/phpactor"]
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
