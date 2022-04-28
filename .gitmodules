@@ -110,7 +110,7 @@
 	url = https://github.com/neovim/nvim-lspconfig
 [submodule "pack/bundle/opt/nvim-treesitter-context"]
 	path = pack/bundle/opt/nvim-treesitter-context
-	url = https://github.com/romgrk/nvim-treesitter-context.git
+	url = https://github.com/lewis6991/nvim-treesitter-context
 [submodule "pack/bundle/opt/nvim-autopairs"]
 	path = pack/bundle/opt/nvim-autopairs
 	url = https://github.com/windwp/nvim-autopairs
@@ -184,6 +184,3 @@
 [submodule "pack/bundle/opt/nvim-trevJ.lua"]
 	path = pack/bundle/opt/nvim-trevJ.lua
 	url = https://github.com/AckslD/nvim-trevJ.lua
-[submodule "telescope.nvim"]
-	url = https://github.com/przepompownia/telescope.nvim
-	branch = arctgx
