@@ -52,10 +52,6 @@
 [submodule "pack/bundle/opt/phpactor"]
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
-[submodule "pack/bundle/opt/vader.vim"]
-	path = pack/bundle/opt/vader.vim
-	url = https://github.com/junegunn/vader.vim
-	branch = master
 [submodule "pack/bundle/opt/arctgx"]
 	path = pack/bundle/opt/arctgx
 	url = https://github.com/przepompownia/vim-arctgx
