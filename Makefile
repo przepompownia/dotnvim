@@ -36,6 +36,9 @@ fzf-build:
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
+git-submodules-sync:
+	git submodule sync --recursive
+
 start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install fzf-build install-vscode-php-debug
 
 check-requirements:

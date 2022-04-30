@@ -4,6 +4,11 @@ runInstallHooks() {
     make git-submodules-hooks-install
 }
 
+syncSubmodules() {
+    make git-submodules-sync
+}
+
 declare -A patternToAction
 
 patternToAction['^.config/git-submodules/.config$']='runInstallHooks'
+patternToAction['^.gitmodules$']='syncSubmodules'
