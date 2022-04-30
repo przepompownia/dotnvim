@@ -62,6 +62,7 @@ packadd! vim-unimpaired
 packadd! vim-dadbod
 packadd! vim-dadbod-ui
 packadd! arctgx
+packadd! nvim-notify
 packadd! lightline.vim
 
 let s:vimrc_per_host = g:initialVimDirectory . '/' . 'vimrc_per_host.vim'
