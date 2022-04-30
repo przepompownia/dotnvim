@@ -44,6 +44,8 @@ if has('nvim')
   packadd! schemastore.nvim
   packadd! telescope-fzf-native.nvim
   packadd! telescope.nvim
+  packadd impatient.nvim
+  lua require('impatient')
 endif
 packadd! phpactor
 packadd! surround

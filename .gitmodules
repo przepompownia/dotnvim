@@ -184,3 +184,6 @@
 [submodule "pack/bundle/opt/nvim-trevJ.lua"]
 	path = pack/bundle/opt/nvim-trevJ.lua
 	url = https://github.com/AckslD/nvim-trevJ.lua
+[submodule "pack/bundle/opt/impatient.nvim"]
+	path = pack/bundle/opt/impatient.nvim
+	url = https://github.com/lewis6991/impatient.nvim
