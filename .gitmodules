@@ -182,3 +182,6 @@
 [submodule "pack/bundle/opt/nvim-notify"]
 	path = pack/bundle/opt/nvim-notify
 	url = https://github.com/rcarriga/nvim-notify
+[submodule "pack/bundle/opt/treesitter-playground"]
+	path = pack/bundle/opt/treesitter-playground
+	url = https://github.com/nvim-treesitter/playground
