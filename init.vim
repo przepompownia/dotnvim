@@ -19,7 +19,7 @@ if has('nvim')
   packadd! cmp-path
   packadd! colorscheme-modus
   packadd! gitsigns.nvim
-  packadd! lightspeed.nvim
+  packadd! leap.nvim
   packadd! litee.nvim
   packadd! litee-symboltree.nvim
   packadd! lsp_signature

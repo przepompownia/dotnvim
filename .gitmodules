@@ -164,9 +164,6 @@
 [submodule "pack/bundle/opt/null-ls.nvim"]
 	path = pack/bundle/opt/null-ls.nvim
 	url = https://github.com/jose-elias-alvarez/null-ls.nvim
-[submodule "pack/bundle/opt/lightspeed.nvim"]
-	path = pack/bundle/opt/lightspeed.nvim
-	url = https://github.com/ggandor/lightspeed.nvim
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
@@ -185,3 +182,6 @@
 [submodule "pack/bundle/opt/lualine.nvim"]
 	path = pack/bundle/opt/lualine.nvim
 	url = https://github.com/nvim-lualine/lualine.nvim
+[submodule "pack/bundle/opt/leap.nvim"]
+	path = pack/bundle/opt/leap.nvim
+	url = https://github.com/ggandor/leap.nvim
