@@ -23,6 +23,7 @@ if has('nvim')
   packadd! litee.nvim
   packadd! litee-symboltree.nvim
   packadd! lsp_signature
+  packadd! lualine.nvim
   packadd! luasnip
   packadd! null-ls.nvim
   packadd! nvim-autopairs
@@ -63,7 +64,6 @@ packadd! vim-dadbod
 packadd! vim-dadbod-ui
 packadd! arctgx
 packadd! nvim-notify
-packadd! lightline.vim
 
 let s:vimrc_per_host = g:initialVimDirectory . '/' . 'vimrc_per_host.vim'
 if filereadable(expand(s:vimrc_per_host))

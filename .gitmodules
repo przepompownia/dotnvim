@@ -67,9 +67,6 @@
 	path = pack/bundle/opt/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
 	branch = master
-[submodule "pack/bundle/opt/lightline.vim"]
-	path = pack/bundle/opt/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
 [submodule "pack/bundle/opt/nvim-bqf"]
 	path = pack/bundle/opt/nvim-bqf
 	url = https://github.com/kevinhwang91/nvim-bqf
@@ -185,3 +182,6 @@
 [submodule "pack/bundle/opt/treesitter-playground"]
 	path = pack/bundle/opt/treesitter-playground
 	url = https://github.com/nvim-treesitter/playground
+[submodule "pack/bundle/opt/lualine.nvim"]
+	path = pack/bundle/opt/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim
