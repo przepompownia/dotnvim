@@ -76,6 +76,7 @@
 [submodule "pack/bundle/opt/fern.vim"]
 	path = pack/bundle/opt/fern.vim
 	url = https://github.com/lambdalisue/fern.vim.git
+	branch = main
 [submodule "pack/bundle/opt/nvim-treesitter"]
 	path = pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
