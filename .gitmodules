@@ -150,12 +150,6 @@
 [submodule "pack/bundle/opt/schemastore.nvim"]
 	path = pack/bundle/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
-[submodule "pack/bundle/opt/litee.nvim"]
-	path = pack/bundle/opt/litee.nvim
-	url = https://github.com/ldelossa/litee.nvim
-[submodule "pack/bundle/opt/litee-symboltree.nvim"]
-	path = pack/bundle/opt/litee-symboltree.nvim
-	url = https://github.com/ldelossa/litee-symboltree.nvim
 [submodule "pack/bundle/opt/nvim-treesitter-textobjects"]
 	path = pack/bundle/opt/nvim-treesitter-textobjects
 	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects

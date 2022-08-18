@@ -20,8 +20,6 @@ if has('nvim')
   packadd! colorscheme-modus
   packadd! gitsigns.nvim
   packadd! leap.nvim
-  packadd! litee.nvim
-  packadd! litee-symboltree.nvim
   packadd! lsp_signature
   packadd! lualine.nvim
   packadd! luasnip
