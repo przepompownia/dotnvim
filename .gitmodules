@@ -70,9 +70,6 @@
 [submodule "pack/bundle/opt/nvim-bqf"]
 	path = pack/bundle/opt/nvim-bqf
 	url = https://github.com/kevinhwang91/nvim-bqf
-[submodule "pack/bundle/opt/FixCursorHold.nvim"]
-	path = pack/bundle/opt/FixCursorHold.nvim
-	url = https://github.com/antoinemadec/FixCursorHold.nvim.git
 [submodule "pack/bundle/opt/fern.vim"]
 	path = pack/bundle/opt/fern.vim
 	url = https://github.com/lambdalisue/fern.vim.git
