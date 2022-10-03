@@ -29,10 +29,6 @@
 	path = pack/bundle/opt/vim-pasta
 	url = https://github.com/sickill/vim-pasta.git
 	branch = master
-[submodule "pack/bundle/opt/vim-twig"]
-	path = pack/bundle/opt/vim-twig
-	url = https://github.com/lumiliet/vim-twig
-	branch = master
 [submodule "pack/bundle/opt/vim-dispatch"]
 	path = pack/bundle/opt/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git

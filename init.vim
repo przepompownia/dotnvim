@@ -55,7 +55,6 @@ packadd! vim-repeat
 packadd! vim-rhubarb
 packadd! vim-spacejam
 packadd! vim-test
-packadd! vim-twig
 packadd! vim-unimpaired
 packadd! vim-dadbod
 packadd! vim-dadbod-ui
