@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 runTsUpdate() {
-    nvim --headless -c 'TSUpdateSync' -c messages -c 'Notifications' -c 'q'
+    nvim --headless -c 'TSUpdateSync' -c 'q'
     echo
 }
 
