@@ -173,3 +173,6 @@
 [submodule "pack/bundle/opt/leap.nvim"]
 	path = pack/bundle/opt/leap.nvim
 	url = https://github.com/ggandor/leap.nvim
+[submodule "pack/bundle/opt/nvim-tree.lua"]
+	path = pack/bundle/opt/nvim-tree.lua
+	url = https://github.com/nvim-tree/nvim-tree.lua

@@ -10,7 +10,7 @@ if filereadable(expand(g:vimrc_init_per_host))
 endif
 
 packadd! fugitive
-packadd! fern.vim
+" packadd! fern.vim
 if has('nvim')
   packadd! cmp-buffer
   packadd! cmp-luasnip
@@ -37,6 +37,7 @@ if has('nvim')
   packadd! nvim-trevJ.lua
   packadd! nvim-ts-context-commentstring
   packadd! nvim-ts-rainbow
+  packadd! nvim-tree.lua
   packadd! osv-dap-nvim
   packadd! plenary.nvim
   packadd! schemastore.nvim
