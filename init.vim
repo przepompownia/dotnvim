@@ -43,10 +43,11 @@ if has('nvim')
   packadd! schemastore.nvim
   packadd! telescope-fzf-native.nvim
   packadd! telescope.nvim
+  packadd! nvim-notify
+  packadd! phpactor
   packadd impatient.nvim
   lua require('impatient')
 endif
-packadd! phpactor
 packadd! surround
 packadd! vim-commentary
 packadd! vim-dispatch
@@ -60,7 +61,6 @@ packadd! vim-unimpaired
 packadd! vim-dadbod
 packadd! vim-dadbod-ui
 packadd! arctgx
-packadd! nvim-notify
 
 let s:vimrc_per_host = g:initialVimDirectory . '/' . 'vimrc_per_host.vim'
 if filereadable(expand(s:vimrc_per_host))
