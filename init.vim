@@ -10,7 +10,6 @@ if filereadable(expand(g:vimrc_init_per_host))
 endif
 
 packadd! fugitive
-" packadd! fern.vim
 if has('nvim')
   packadd! cmp-buffer
   packadd! cmp-luasnip
