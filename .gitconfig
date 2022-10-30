@@ -8,7 +8,6 @@
 	list-non-submodules = !bash -c 'git list-submodules | sort | comm -13 - <(ls -1d "$(git top)/pack/bundle/"*/*)'
 	ci-submodules = commit -m 'Upgrade extensions'
 	cvs = !git add-submodules && git ci-submodules
-	ci-coc-extensions = "!git add --update \"$(git top)/.config/coc/extensions\"; git commit -m 'Upgrade CoC extensions'"
 	su = submodule update --init --recursive
 	sur = submodule update --init --recursive --remote
 	list-submodules-on-configured-branch = "!git submodule foreach --quiet 'branch=`git -C \"$toplevel\" config --file \"$toplevel/.gitmodules\" --get submodule.$name.branch || echo master`; \"$toplevel/.config/bin/git-does-head-belong-to\" origin \"$branch\" && echo \"$displaypath\" || printf \"\\t\\e[31m✗ %s has HEAD not on %s/%s (is on %s)\\e[0m\\n\" \"$displaypath\" origin \"$branch\" \"$(git branch --contains HEAD)\" >&2'"
