@@ -42,6 +42,7 @@ if has('nvim')
   packadd! schemastore.nvim
   packadd! telescope-fzf-native.nvim
   packadd! telescope.nvim
+  packadd! telescope-ui-select.nvim
   packadd! nvim-notify
   packadd! phpactor
   packadd impatient.nvim

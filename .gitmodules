@@ -172,3 +172,6 @@
 [submodule "pack/bundle/opt/nvim-tree.lua"]
 	path = pack/bundle/opt/nvim-tree.lua
 	url = https://github.com/nvim-tree/nvim-tree.lua
+[submodule "pack/bundle/opt/telescope-ui-select.nvim"]
+	path = pack/bundle/opt/telescope-ui-select.nvim
+	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
