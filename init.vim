@@ -44,6 +44,8 @@ if has('nvim')
   packadd! telescope.nvim
   packadd! telescope-ui-select.nvim
   packadd! nvim-notify
+  " packadd! nui.nvim
+  " packadd! noice.nvim
   packadd! phpactor
   packadd impatient.nvim
   lua require('impatient')

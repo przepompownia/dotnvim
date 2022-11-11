@@ -175,3 +175,9 @@
 [submodule "pack/bundle/opt/telescope-ui-select.nvim"]
 	path = pack/bundle/opt/telescope-ui-select.nvim
 	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
+[submodule "pack/bundle/opt/nui.nvim"]
+	path = pack/bundle/opt/nui.nvim
+	url = https://github.com/MunifTanjim/nui.nvim
+[submodule "pack/bundle/opt/noice.nvim"]
+	path = pack/bundle/opt/noice.nvim
+	url = https://github.com/folke/noice.nvim
