@@ -29,13 +29,17 @@ coc-install:
 submodule-update:
 	git su
 
+telescope-fzf-native-build:
+	cd $(DIR)/pack/bundle/opt/telescope-fzf-native.nvim
+	make -j
+
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
 git-submodules-sync:
 	git submodule sync --recursive
 
-start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install install-vscode-php-debug
+start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install telescope-fzf-native-build install-vscode-php-debug
 
 check-requirements:
 	$(DIR)/.config/bin/check-requirements
