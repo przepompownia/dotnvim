@@ -29,17 +29,13 @@ coc-install:
 submodule-update:
 	git su
 
-fzf-build:
-	cd $(DIR)/pack/bundle/opt/fzf
-	make -j4 install
-
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
 
 git-submodules-sync:
 	git submodule sync --recursive
 
-start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install fzf-build install-vscode-php-debug
+start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install install-vscode-php-debug
 
 check-requirements:
 	$(DIR)/.config/bin/check-requirements
