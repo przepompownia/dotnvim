@@ -99,9 +99,6 @@
 [submodule "pack/bundle/opt/colorscheme-modus"]
 	path = pack/bundle/opt/colorscheme-modus
 	url = https://github.com/ishan9299/modus-theme-vim
-[submodule "pack/bundle/opt/nvim-echo-diagnostics"]
-	path = pack/bundle/opt/nvim-echo-diagnostics
-	url = https://github.com/seblj/nvim-echo-diagnostics
 [submodule "pack/bundle/opt/nvim-treesitter-refactor"]
 	path = pack/bundle/opt/nvim-treesitter-refactor
 	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
