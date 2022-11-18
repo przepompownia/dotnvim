@@ -67,5 +67,3 @@ let s:vimrc_per_host = g:initialVimDirectory . '/' . 'vimrc_per_host.vim'
 if filereadable(expand(s:vimrc_per_host))
   execute 'source ' . expand(s:vimrc_per_host)
 endif
-
-set secure
