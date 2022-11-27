@@ -178,3 +178,6 @@
 [submodule "pack/bundle/opt/noice.nvim"]
 	path = pack/bundle/opt/noice.nvim
 	url = https://github.com/folke/noice.nvim
+[submodule "pack/bundle/opt/treesj"]
+	path = pack/bundle/opt/treesj
+	url = https://github.com/Wansmer/treesj

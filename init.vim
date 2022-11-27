@@ -36,7 +36,7 @@ if has('nvim')
   packadd! nvim-treesitter-context
   packadd! nvim-treesitter-refactor
   packadd! nvim-treesitter-textobjects
-  packadd! nvim-trevJ.lua
+  packadd! treesj
   packadd! nvim-ts-context-commentstring
   packadd! nvim-ts-rainbow
   packadd! nvim-tree.lua
