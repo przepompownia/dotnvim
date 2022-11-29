@@ -31,6 +31,7 @@ if has('nvim')
   packadd! nvim-cmp
   packadd! nvim-dap
   packadd! nvim-dap-ui
+  packadd! nvim-dap-virtual-text
   packadd! nvim-lspconfig
   packadd! nvim-treesitter
   packadd! nvim-treesitter-context
