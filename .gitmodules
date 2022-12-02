@@ -187,3 +187,6 @@
 [submodule "pack/colorscheme/opt/nord.nvim"]
 	path = pack/colorscheme/opt/nord.nvim
 	url = https://github.com/gbprod/nord.nvim
+[submodule "pack/bundle/opt/nvim-colorizer.lua"]
+	path = pack/bundle/opt/nvim-colorizer.lua
+	url = https://github.com/norcalli/nvim-colorizer.lua
