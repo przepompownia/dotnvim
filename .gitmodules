@@ -182,5 +182,5 @@
 	path = pack/bundle/opt/treesj
 	url = https://github.com/Wansmer/treesj
 [submodule "pack/colorscheme/opt/nvim-dap-virtual-text"]
-	path = pack/colorscheme/opt/nvim-dap-virtual-text
+	path = pack/bundle/opt/nvim-dap-virtual-text
 	url = https://github.com/theHamsta/nvim-dap-virtual-text
