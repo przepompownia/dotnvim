@@ -50,6 +50,7 @@ if has('nvim')
   packadd! nvim-notify
   packadd! nui.nvim
   packadd! noice.nvim
+  packadd! nord.nvim
   packadd! phpactor
   packadd impatient.nvim
   lua require('impatient')

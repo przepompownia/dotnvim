@@ -184,3 +184,6 @@
 [submodule "pack/colorscheme/opt/nvim-dap-virtual-text"]
 	path = pack/bundle/opt/nvim-dap-virtual-text
 	url = https://github.com/theHamsta/nvim-dap-virtual-text
+[submodule "pack/colorscheme/opt/nord.nvim"]
+	path = pack/colorscheme/opt/nord.nvim
+	url = https://github.com/gbprod/nord.nvim
