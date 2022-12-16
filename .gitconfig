@@ -5,7 +5,7 @@
 	list-submodules = submodule foreach --quiet 'echo $toplevel/$sm_path'
 	add-submodules = !"bash -c 'mapfile -t submodules < <(git list-submodules-on-configured-branch); git add --verbose \"${submodules[@]}\"'"
 	list-changed-submodules = !"bash -c 'mapfile -t submodules < <(git list-submodules); git diff --name-only --ignore-submodules=dirty \"${submodules[@]}\"'"
-	list-non-submodules = !bash -c 'git list-submodules | sort | comm -13 - <(ls -1d "$(git top)/pack/bundle/"*/*)'
+	list-non-submodules = !bash -c 'git list-submodules | sort | comm -13 - <(ls -1d "$(git top)/pack/"*/*/*)'
 	ci-submodules = commit -m 'Upgrade extensions'
 	cvs = !git add-submodules && git ci-submodules
 	su = submodule update --init --recursive
