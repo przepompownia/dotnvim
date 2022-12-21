@@ -190,3 +190,6 @@
 [submodule "pack/bundle/opt/nvim-colorizer.lua"]
 	path = pack/bundle/opt/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
+[submodule "pack/arctgx/opt/nvim-dap-tab"]
+	path = pack/arctgx/opt/nvim-dap-tab
+	url = https://github.com/przepompownia/nvim-dap-tab

@@ -4,6 +4,7 @@ let g:initialVimDirectory = expand('<sfile>:p:h')
 let g:bundle_dirs = [
       \ expand(g:initialVimDirectory . '/pack/bundle/opt'),
       \ expand(g:initialVimDirectory . '/pack/colorscheme/opt'),
+      \ expand(g:initialVimDirectory . '/pack/arctgx/opt'),
       \ ]
 let &runtimepath = g:initialVimDirectory.','.&runtimepath.','.g:initialVimDirectory.'/after'
 let &packpath = &runtimepath
@@ -31,6 +32,7 @@ if has('nvim')
   packadd! nvim-cmp
   packadd! nvim-dap
   packadd! nvim-dap-ui
+  packadd! nvim-dap-tab
   packadd! nvim-dap-virtual-text
   packadd! nvim-lspconfig
   packadd! nvim-treesitter
