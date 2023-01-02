@@ -41,7 +41,6 @@ if has('nvim')
   packadd! nvim-treesitter-textobjects
   packadd! treesj
   packadd! nvim-ts-context-commentstring
-  packadd! nvim-ts-rainbow
   packadd! nvim-tree.lua
   packadd! osv-dap-nvim
   packadd! plenary.nvim
