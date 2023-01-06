@@ -2,6 +2,7 @@ scriptencoding utf-8
 
 let g:initialVimDirectory = expand('<sfile>:p:h')
 let g:bundle_dirs = [
+      \ expand(g:initialVimDirectory . '/pack/unmerged/opt'),
       \ expand(g:initialVimDirectory . '/pack/bundle/opt'),
       \ expand(g:initialVimDirectory . '/pack/colorscheme/opt'),
       \ expand(g:initialVimDirectory . '/pack/arctgx/opt'),
