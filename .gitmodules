@@ -49,7 +49,7 @@
 	path = pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
 [submodule "pack/bundle/opt/arctgx"]
-	path = pack/bundle/opt/arctgx
+	path = pack/arctgx/opt/arctgx
 	url = https://github.com/przepompownia/nvim-arctgx
 [submodule "pack/bundle/opt/vimspector"]
 	path = pack/bundle/opt/vimspector
