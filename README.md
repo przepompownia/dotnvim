@@ -1,7 +1,7 @@
-# Portable vim environment
+# Portable Neovim environment
 
 ## Goals
-- Have more than one independent vim environment that not share data and configuration with any other. You can test plugin combinations unusual for you without changing your regular vim environment.
+- Have more than one independent Neovim environment that not share data and configuration with any other. You can test plugin combinations unusual for you without changing your regular Neovim environment.
 - Allow easily disable extensions from running (by commenting `packadd!` in `init.vim`) or remove.
 
 ## Install and configure extensions
@@ -14,6 +14,6 @@
 ./bin/nvim
 ```
 
-You can append `"</path/to/this/project>/bin"` to `"$PATH"` in your shell environment if you want to use some copy of this project as a regular vim environment. Then check if the above executables replace the previously used `vim` and `neovim` (`command -V nvim` for example). It also simplifies using this executables by GUI (`nvim-qt`, `vim -G`).
+You can append `"</path/to/this/project>/bin"` to `"$PATH"` in your shell environment if you want to use some copy of this project as a regular Neovim environment. Then check if the above executables replace the previously used `vim` and `nvim` (`command -V nvim` for example). It also simplifies using this executables by GUI (`nvim-qt`, `vim -G`).
 
 Note that some extensions are not loaded by `packadd!` from `init.vim`.
