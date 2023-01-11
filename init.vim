@@ -49,7 +49,6 @@ if has('nvim')
   packadd! telescope-fzf-native.nvim
   packadd! telescope.nvim
   packadd! telescope-ui-select.nvim
-  packadd! nvim-notify
   packadd! nui.nvim
   packadd! noice.nvim
   packadd! nord.nvim
