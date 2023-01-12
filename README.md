@@ -2,7 +2,7 @@
 
 ## Goals
 - Have more than one independent Neovim environment that not share data and configuration with any other. You can test plugin combinations unusual for you without changing your regular Neovim environment.
-- Allow easily disable extensions from running (by commenting `packadd!` in `init.vim`) or remove.
+- Allow easily disable extensions from running (by commenting `packadd`-ed entry in `init.lua`) or remove.
 
 ## Install and configure extensions
 - Run `make check-requirements` to check requirements that may be needed to use extensions used there
@@ -10,10 +10,9 @@
 
 ## Running
 ```sh
-./bin/vim
 ./bin/nvim
 ```
 
-You can append `"</path/to/this/project>/bin"` to `"$PATH"` in your shell environment if you want to use some copy of this project as a regular Neovim environment. Then check if the above executables replace the previously used `vim` and `nvim` (`command -V nvim` for example). It also simplifies using this executables by GUI (`nvim-qt`, `vim -G`).
+You can append `"</path/to/this/project>/bin"` to `"$PATH"` in your shell environment if you want to use some copy of this project as a regular Neovim environment. Then check if the above executables replace the previously used `nvim` (`command -V nvim` for example). It also simplifies using this executables by GUI (`nvim-qt`).
 
-Note that some extensions are not loaded by `packadd!` from `init.vim`.
+Note that some extensions are not loaded by `packadd!` from `init.lua`.
