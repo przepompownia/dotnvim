@@ -187,3 +187,6 @@
 [submodule "pack/arctgx/opt/nvim-dap-tab"]
 	path = pack/arctgx/opt/nvim-dap-tab
 	url = https://github.com/przepompownia/nvim-dap-tab
+[submodule "pack/bundle/opt/neodev.nvim"]
+	path = pack/bundle/opt/neodev.nvim
+	url = https://github.com/folke/neodev.nvim

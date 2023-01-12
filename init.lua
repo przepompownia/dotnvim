@@ -30,6 +30,7 @@ local extensions = {
   {name = 'nvim-dap-ui'},
   {name = 'nvim-dap-tab'},
   {name = 'nvim-dap-virtual-text'},
+  {name = 'neodev.nvim'},
   {name = 'nvim-lspconfig'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
