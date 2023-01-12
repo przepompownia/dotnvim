@@ -19,7 +19,6 @@ local extensions = {
   {name = 'colorscheme-modus'},
   {name = 'gitsigns.nvim'},
   {name = 'leap.nvim'},
-  -- {name = 'lsp_signature'},
   {name = 'lualine.nvim'},
   {name = 'luasnip'},
   {name = 'null-ls.nvim'},
