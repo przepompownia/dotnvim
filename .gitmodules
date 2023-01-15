@@ -1,189 +1,189 @@
 [submodule "pack/bundle/opt/fugitive"]
-	path = pack/bundle/opt/fugitive
+	path = nvim/pack/bundle/opt/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
 [submodule "pack/bundle/opt/surround"]
-	path = pack/bundle/opt/surround
+	path = nvim/pack/bundle/opt/surround
 	url = https://github.com/tpope/vim-surround.git
 	branch = master
 [submodule "pack/bundle/opt/snippets"]
-	path = pack/bundle/opt/snippets
+	path = nvim/pack/bundle/opt/snippets
 	url = https://github.com/honza/vim-snippets.git
 	branch = master
 [submodule "pack/bundle/opt/vim-lucius"]
-	path = pack/bundle/opt/vim-lucius
+	path = nvim/pack/bundle/opt/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
 [submodule "pack/bundle/opt/vim-move"]
-	path = pack/bundle/opt/vim-move
+	path = nvim/pack/bundle/opt/vim-move
 	url = https://github.com/matze/vim-move.git
 	branch = master
 [submodule "pack/bundle/opt/vim-unimpaired"]
-	path = pack/bundle/opt/vim-unimpaired
+	path = nvim/pack/bundle/opt/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 	branch = master
 [submodule "pack/bundle/opt/vim-spacejam"]
-	path = pack/bundle/opt/vim-spacejam
+	path = nvim/pack/bundle/opt/vim-spacejam
 	url = https://github.com/rondale-sc/vim-spacejam.git
 	branch = master
 [submodule "pack/bundle/opt/vim-pasta"]
-	path = pack/bundle/opt/vim-pasta
+	path = nvim/pack/bundle/opt/vim-pasta
 	url = https://github.com/sickill/vim-pasta.git
 	branch = master
 [submodule "pack/bundle/opt/vim-dispatch"]
-	path = pack/bundle/opt/vim-dispatch
+	path = nvim/pack/bundle/opt/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
 	branch = master
 [submodule "pack/bundle/opt/vim-test"]
-	path = pack/bundle/opt/vim-test
+	path = nvim/pack/bundle/opt/vim-test
 	url = https://github.com/janko-m/vim-test.git
 	branch = master
 [submodule "pack/bundle/opt/vim-repeat"]
-	path = pack/bundle/opt/vim-repeat
+	path = nvim/pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat
 	branch = master
 [submodule "pack/bundle/opt/vim-rhubarb"]
-	path = pack/bundle/opt/vim-rhubarb
+	path = nvim/pack/bundle/opt/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
 	branch = master
 [submodule "pack/bundle/opt/phpactor"]
-	path = pack/bundle/opt/phpactor
+	path = nvim/pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
 [submodule "pack/bundle/opt/arctgx"]
-	path = pack/arctgx/opt/arctgx
+	path = nvim/pack/arctgx/opt/arctgx
 	url = https://github.com/przepompownia/nvim-arctgx
 [submodule "pack/bundle/opt/vimspector"]
 	path = pack/bundle/opt/vimspector
 	url = https://github.com/puremourning/vimspector.git
 	branch = master
 [submodule "pack/bundle/opt/vim-dadbod"]
-	path = pack/bundle/opt/vim-dadbod
+	path = nvim/pack/bundle/opt/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod
 	branch = master
 [submodule "pack/bundle/opt/vim-dadbod-ui"]
-	path = pack/bundle/opt/vim-dadbod-ui
+	path = nvim/pack/bundle/opt/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
 	branch = master
 [submodule "pack/bundle/opt/nvim-bqf"]
-	path = pack/bundle/opt/nvim-bqf
+	path = nvim/pack/bundle/opt/nvim-bqf
 	url = https://github.com/kevinhwang91/nvim-bqf
 [submodule "pack/bundle/opt/nvim-treesitter"]
-	path = pack/bundle/opt/nvim-treesitter
+	path = nvim/pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
 [submodule "pack/bundle/opt/vim-commentary"]
-	path = pack/bundle/opt/vim-commentary
+	path = nvim/pack/bundle/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule "pack/bundle/opt/vim-tmux-focus-events"]
-	path = pack/bundle/opt/vim-tmux-focus-events
+	path = nvim/pack/bundle/opt/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
 [submodule "pack/bundle/opt/cmp-nvim-lsp"]
-	path = pack/bundle/opt/cmp-nvim-lsp
+	path = nvim/pack/bundle/opt/cmp-nvim-lsp
 	url = https://github.com/hrsh7th/cmp-nvim-lsp
 [submodule "pack/bundle/opt/nvim-cmp"]
-	path = pack/bundle/opt/nvim-cmp
+	path = nvim/pack/bundle/opt/nvim-cmp
 	url = https://github.com/hrsh7th/nvim-cmp.git
 [submodule "pack/bundle/opt/nvim-lspconfig"]
-	path = pack/bundle/opt/nvim-lspconfig
+	path = nvim/pack/bundle/opt/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
 [submodule "pack/bundle/opt/nvim-treesitter-context"]
-	path = pack/bundle/opt/nvim-treesitter-context
+	path = nvim/pack/bundle/opt/nvim-treesitter-context
 	url = https://github.com/lewis6991/nvim-treesitter-context
 [submodule "pack/bundle/opt/nvim-autopairs"]
-	path = pack/bundle/opt/nvim-autopairs
+	path = nvim/pack/bundle/opt/nvim-autopairs
 	url = https://github.com/windwp/nvim-autopairs
 [submodule "pack/bundle/opt/nvim-ts-context-commentstring"]
-	path = pack/bundle/opt/nvim-ts-context-commentstring
+	path = nvim/pack/bundle/opt/nvim-ts-context-commentstring
 	url = https://github.com/JoosepAlviste/nvim-ts-context-commentstring
 [submodule "pack/bundle/opt/colorscheme-modus"]
-	path = pack/bundle/opt/colorscheme-modus
+	path = nvim/pack/bundle/opt/colorscheme-modus
 	url = https://github.com/ishan9299/modus-theme-vim
 [submodule "pack/bundle/opt/nvim-treesitter-refactor"]
-	path = pack/bundle/opt/nvim-treesitter-refactor
+	path = nvim/pack/bundle/opt/nvim-treesitter-refactor
 	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
 [submodule "pack/bundle/opt/cmp-luasnip"]
-	path = pack/bundle/opt/cmp-luasnip
+	path = nvim/pack/bundle/opt/cmp-luasnip
 	url = https://github.com/saadparwaiz1/cmp_luasnip
 [submodule "pack/bundle/opt/luasnip"]
-	path = pack/bundle/opt/luasnip
+	path = nvim/pack/bundle/opt/luasnip
 	url = https://github.com/L3MON4D3/LuaSnip
 [submodule "pack/bundle/opt/cmp-buffer"]
-	path = pack/bundle/opt/cmp-buffer
+	path = nvim/pack/bundle/opt/cmp-buffer
 	url = https://github.com/hrsh7th/cmp-buffer
 [submodule "pack/bundle/opt/plenary.nvim"]
-	path = pack/bundle/opt/plenary.nvim
+	path = nvim/pack/bundle/opt/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
 [submodule "pack/bundle/opt/telescope.nvim"]
-	path = pack/bundle/opt/telescope.nvim
+	path = nvim/pack/bundle/opt/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim
 	branch = master
 [submodule "pack/bundle/opt/telescope-fzf-native.nvim"]
-	path = pack/bundle/opt/telescope-fzf-native.nvim
+	path = nvim/pack/bundle/opt/telescope-fzf-native.nvim
 	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
 [submodule "pack/bundle/opt/nvim-dap"]
-	path = pack/bundle/opt/nvim-dap
+	path = nvim/pack/bundle/opt/nvim-dap
 	url = https://github.com/mfussenegger/nvim-dap
 [submodule "pack/bundle/opt/nvim-dap-ui"]
-	path = pack/bundle/opt/nvim-dap-ui
+	path = nvim/pack/bundle/opt/nvim-dap-ui
 	url = https://github.com/rcarriga/nvim-dap-ui
 [submodule "pack/bundle/opt/cmp-path"]
-	path = pack/bundle/opt/cmp-path
+	path = nvim/pack/bundle/opt/cmp-path
 	url = https://github.com/hrsh7th/cmp-path
 [submodule "pack/bundle/opt/schemastore.nvim"]
-	path = pack/bundle/opt/schemastore.nvim
+	path = nvim/pack/bundle/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
 [submodule "pack/bundle/opt/nvim-treesitter-textobjects"]
-	path = pack/bundle/opt/nvim-treesitter-textobjects
+	path = nvim/pack/bundle/opt/nvim-treesitter-textobjects
 	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 [submodule "pack/bundle/opt/osv-dap-nvim"]
-	path = pack/bundle/opt/osv-dap-nvim
+	path = nvim/pack/bundle/opt/osv-dap-nvim
 	url = https://github.com/jbyuki/one-small-step-for-vimkind
 [submodule "pack/bundle/opt/null-ls.nvim"]
-	path = pack/bundle/opt/null-ls.nvim
+	path = nvim/pack/bundle/opt/null-ls.nvim
 	url = https://github.com/jose-elias-alvarez/null-ls.nvim
 [submodule "pack/bundle/opt/gitsigns.nvim"]
-	path = pack/bundle/opt/gitsigns.nvim
+	path = nvim/pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
 [submodule "pack/bundle/opt/nvim-trevJ.lua"]
-	path = pack/bundle/opt/nvim-trevJ.lua
+	path = nvim/pack/bundle/opt/nvim-trevJ.lua
 	url = https://github.com/AckslD/nvim-trevJ.lua
 [submodule "pack/bundle/opt/impatient.nvim"]
-	path = pack/bundle/opt/impatient.nvim
+	path = nvim/pack/bundle/opt/impatient.nvim
 	url = https://github.com/lewis6991/impatient.nvim
 [submodule "pack/bundle/opt/treesitter-playground"]
-	path = pack/bundle/opt/treesitter-playground
+	path = nvim/pack/bundle/opt/treesitter-playground
 	url = https://github.com/nvim-treesitter/playground
 [submodule "pack/bundle/opt/lualine.nvim"]
-	path = pack/bundle/opt/lualine.nvim
+	path = nvim/pack/bundle/opt/lualine.nvim
 	url = https://github.com/nvim-lualine/lualine.nvim
 [submodule "pack/bundle/opt/leap.nvim"]
-	path = pack/bundle/opt/leap.nvim
+	path = nvim/pack/bundle/opt/leap.nvim
 	url = https://github.com/ggandor/leap.nvim
 [submodule "pack/bundle/opt/nvim-tree.lua"]
-	path = pack/bundle/opt/nvim-tree.lua
+	path = nvim/pack/bundle/opt/nvim-tree.lua
 	url = https://github.com/nvim-tree/nvim-tree.lua
 [submodule "pack/bundle/opt/telescope-ui-select.nvim"]
-	path = pack/bundle/opt/telescope-ui-select.nvim
+	path = nvim/pack/bundle/opt/telescope-ui-select.nvim
 	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
 [submodule "pack/bundle/opt/nui.nvim"]
-	path = pack/bundle/opt/nui.nvim
+	path = nvim/pack/bundle/opt/nui.nvim
 	url = https://github.com/MunifTanjim/nui.nvim
 [submodule "pack/bundle/opt/noice.nvim"]
-	path = pack/bundle/opt/noice.nvim
+	path = nvim/pack/bundle/opt/noice.nvim
 	url = https://github.com/folke/noice.nvim
 [submodule "pack/bundle/opt/treesj"]
-	path = pack/bundle/opt/treesj
+	path = nvim/pack/bundle/opt/treesj
 	url = https://github.com/Wansmer/treesj
 [submodule "pack/colorscheme/opt/nvim-dap-virtual-text"]
-	path = pack/bundle/opt/nvim-dap-virtual-text
+	path = nvim/pack/bundle/opt/nvim-dap-virtual-text
 	url = https://github.com/theHamsta/nvim-dap-virtual-text
 [submodule "pack/colorscheme/opt/nord.nvim"]
-	path = pack/colorscheme/opt/nord.nvim
+	path = nvim/pack/colorscheme/opt/nord.nvim
 	url = https://github.com/gbprod/nord.nvim
 [submodule "pack/bundle/opt/nvim-colorizer.lua"]
-	path = pack/bundle/opt/nvim-colorizer.lua
+	path = nvim/pack/bundle/opt/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
 [submodule "pack/arctgx/opt/nvim-dap-tab"]
-	path = pack/arctgx/opt/nvim-dap-tab
+	path = nvim/pack/arctgx/opt/nvim-dap-tab
 	url = https://github.com/przepompownia/nvim-dap-tab
 [submodule "pack/bundle/opt/neodev.nvim"]
-	path = pack/bundle/opt/neodev.nvim
+	path = nvim/pack/bundle/opt/neodev.nvim
 	url = https://github.com/folke/neodev.nvim
