@@ -7,12 +7,12 @@ vscodePhpDebugVersion := '1.30.0'
 
 .ONESHELL:
 phpactor-install:
-	cd $(DIR)/pack/bundle/opt/phpactor
+	cd $(DIR)/nvim/pack/bundle/opt/phpactor
 	composer install
 
 .ONESHELL:
 phpactor-start-server:
-	cd pack/bundle/opt/phpactor
+	cd nvim/pack/bundle/opt/phpactor
 	./bin/phpactor language-server --address=127.0.0.1:8888
 
 gitconfig-include-local:
@@ -20,7 +20,7 @@ gitconfig-include-local:
 
 .ONESHELL:
 coc-install:
-	cd $(DIR)/pack/bundle/opt/coc.nvim
+	cd $(DIR)/nvim/pack/bundle/opt/coc.nvim
 	git remote set-head origin master
 	yarn install --frozen-lockfile
 	cd $(DIR)/.config/coc/extensions
@@ -30,7 +30,7 @@ submodule-update:
 	git su
 
 telescope-fzf-native-build:
-	cd $(DIR)/pack/bundle/opt/telescope-fzf-native.nvim
+	cd $(DIR)/nvim/pack/bundle/opt/telescope-fzf-native.nvim
 	make -j
 
 git-submodules-hooks-install:
