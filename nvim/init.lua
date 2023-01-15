@@ -1,14 +1,22 @@
-vim.g.initialVimDirectory = vim.fn.expand('<sfile>:p:h')
-vim.opt.runtimepath:prepend(vim.g.initialVimDirectory)
-vim.opt.packpath:prepend(vim.g.initialVimDirectory)
-vim.opt.runtimepath:append(vim.g.initialVimDirectory .. '/after')
+local configDir = vim.fn.expand('<sfile>:p:h:h')
+
+vim.env['XDG_CONFIG_HOME'] = configDir
+vim.env['XDG_DATA_HOME'] = configDir .. '/xdg/data'
+vim.env['XDG_STATE_HOME'] = configDir .. '/xdg/state'
+vim.env['XDG_CACHE_HOME'] = configDir .. '/xdg/cache'
+local stdPathConfig = vim.fn.stdpath('config')
+
+vim.opt.runtimepath:prepend(stdPathConfig)
+vim.opt.packpath:prepend(stdPathConfig)
+vim.opt.runtimepath:append(stdPathConfig .. '/after')
 
 vim.g.bundle_dirs = {
-     vim.fn.expand(vim.g.initialVimDirectory .. '/pack/unmerged/opt'),
-     vim.fn.expand(vim.g.initialVimDirectory .. '/pack/bundle/opt'),
-     vim.fn.expand(vim.g.initialVimDirectory .. '/pack/colorscheme/opt'),
-     vim.fn.expand(vim.g.initialVimDirectory .. '/pack/arctgx/opt'),
+     vim.fn.expand(stdPathConfig .. '/pack/unmerged/opt'),
+     vim.fn.expand(stdPathConfig .. '/pack/bundle/opt'),
+     vim.fn.expand(stdPathConfig .. '/pack/colorscheme/opt'),
+     vim.fn.expand(stdPathConfig .. '/pack/arctgx/opt'),
 }
+vim.g.initialVimDirectory = stdPathConfig
 
 local extensions = {
   {name = 'fugitive'},
