@@ -2,9 +2,7 @@
 
 currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
 initFile="${currentDir}/init.lua"
-VIMINIT="$(printf 'source %s' "$initFile")"
-export VIMINIT
 
 command -p nvim \
-    -i "${currentDir}/.config/nvim/shada/main.shada" \
+    -u "$initFile" \
     "$@"
