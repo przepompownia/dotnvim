@@ -1,4 +1,4 @@
-.PHONY: phpactor-install-extensions phpactor-start-server gitconfig-include-local coc-install
+.PHONY: phpactor-install-extensions phpactor-start-server gitconfig-include-local
 MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
@@ -18,14 +18,6 @@ phpactor-start-server:
 gitconfig-include-local:
 	git config --local include.path "$$(git rev-parse --show-toplevel)/.gitconfig"
 
-.ONESHELL:
-coc-install:
-	cd $(DIR)/nvim/pack/bundle/opt/coc.nvim
-	git remote set-head origin master
-	yarn install --frozen-lockfile
-	cd $(DIR)/.config/coc/extensions
-	yarn
-	
 submodule-update:
 	git su
 

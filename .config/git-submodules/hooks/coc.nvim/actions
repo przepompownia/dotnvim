@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-runYarn() {
-    yarn install --frozen-lockfile
-}
-
-declare -A patternToAction
-
-patternToAction['(\.ts$|^yarn.lock$)']='runYarn'
