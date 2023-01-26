@@ -3,6 +3,6 @@
 currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
 initFile="${currentDir}/init.lua"
 
-command -p nvim \
+exec command -p nvim \
     -u "$initFile" \
     "$@"

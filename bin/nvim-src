@@ -2,6 +2,6 @@
 
 currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
 initFile="${currentDir}/nvim/init.lua"
-"${NVIM_FROM_SRC_DIR}/bin/nvim" \
+exec "${NVIM_FROM_SRC_DIR}/bin/nvim" \
     -u "$initFile" \
     "$@"
