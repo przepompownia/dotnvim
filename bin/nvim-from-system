@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
-initFile="${currentDir}/init.lua"
+initFile="${currentDir}/nvim/init.lua"
 
-exec command -p nvim \
-    -u "$initFile" \
-    "$@"
+exec "$(command -pv nvim)" -u "$initFile" "$@"
