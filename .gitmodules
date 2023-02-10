@@ -93,9 +93,6 @@
 [submodule "pack/bundle/opt/nvim-ts-context-commentstring"]
 	path = nvim/pack/bundle/opt/nvim-ts-context-commentstring
 	url = https://github.com/JoosepAlviste/nvim-ts-context-commentstring
-[submodule "pack/bundle/opt/colorscheme-modus"]
-	path = nvim/pack/bundle/opt/colorscheme-modus
-	url = https://github.com/ishan9299/modus-theme-vim
 [submodule "pack/bundle/opt/nvim-treesitter-refactor"]
 	path = nvim/pack/bundle/opt/nvim-treesitter-refactor
 	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
@@ -187,3 +184,6 @@
 [submodule "pack/bundle/opt/neodev.nvim"]
 	path = nvim/pack/bundle/opt/neodev.nvim
 	url = https://github.com/folke/neodev.nvim
+[submodule "nvim/pack/colorscheme/opt/onedark.nvim"]
+	path = nvim/pack/colorscheme/opt/onedark.nvim
+	url = https://github.com/navarasu/onedark.nvim
