@@ -62,7 +62,6 @@ local extensions = {
   {name = 'vim-move'},
   {name = 'vim-pasta'},
   {name = 'vim-repeat'},
-  {name = 'vim-rhubarb'},
   {name = 'vim-spacejam'},
   {name = 'vim-test'},
   {name = 'unimpaired.nvim'},

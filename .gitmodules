@@ -30,10 +30,6 @@
 	path = nvim/pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat
 	branch = master
-[submodule "pack/bundle/opt/vim-rhubarb"]
-	path = nvim/pack/bundle/opt/vim-rhubarb
-	url = https://github.com/tpope/vim-rhubarb.git
-	branch = master
 [submodule "pack/bundle/opt/phpactor"]
 	path = nvim/pack/bundle/opt/phpactor
 	url = https://github.com/phpactor/phpactor.git
