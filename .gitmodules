@@ -124,9 +124,6 @@
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = nvim/pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
-[submodule "pack/bundle/opt/nvim-trevJ.lua"]
-	path = nvim/pack/bundle/opt/nvim-trevJ.lua
-	url = https://github.com/AckslD/nvim-trevJ.lua
 [submodule "pack/bundle/opt/impatient.nvim"]
 	path = nvim/pack/bundle/opt/impatient.nvim
 	url = https://github.com/lewis6991/impatient.nvim
