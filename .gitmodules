@@ -6,9 +6,6 @@
 	path = nvim/pack/bundle/opt/snippets
 	url = https://github.com/honza/vim-snippets.git
 	branch = master
-[submodule "pack/bundle/opt/vim-lucius"]
-	path = nvim/pack/bundle/opt/vim-lucius
-	url = https://github.com/jonathanfilip/vim-lucius.git
 [submodule "pack/bundle/opt/vim-move"]
 	path = nvim/pack/bundle/opt/vim-move
 	url = https://github.com/matze/vim-move.git
