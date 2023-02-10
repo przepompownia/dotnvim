@@ -13,10 +13,6 @@
 	path = nvim/pack/bundle/opt/vim-move
 	url = https://github.com/matze/vim-move.git
 	branch = master
-[submodule "pack/bundle/opt/vim-unimpaired"]
-	path = nvim/pack/bundle/opt/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
-	branch = master
 [submodule "pack/bundle/opt/vim-spacejam"]
 	path = nvim/pack/bundle/opt/vim-spacejam
 	url = https://github.com/rondale-sc/vim-spacejam.git
@@ -186,3 +182,6 @@
 [submodule "nvim/pack/bundle/opt/nvim-surround"]
 	path = nvim/pack/bundle/opt/nvim-surround
 	url = https://github.com/kylechui/nvim-surround
+[submodule "nvim/pack/bundle/opt/unimpaired.nvim"]
+	path = nvim/pack/bundle/opt/unimpaired.nvim
+	url = https://github.com/Tummetott/unimpaired.nvim
