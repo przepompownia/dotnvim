@@ -2,10 +2,6 @@
 	path = nvim/pack/bundle/opt/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
-[submodule "pack/bundle/opt/surround"]
-	path = nvim/pack/bundle/opt/surround
-	url = https://github.com/tpope/vim-surround.git
-	branch = master
 [submodule "pack/bundle/opt/snippets"]
 	path = nvim/pack/bundle/opt/snippets
 	url = https://github.com/honza/vim-snippets.git
@@ -187,3 +183,6 @@
 [submodule "nvim/pack/colorscheme/opt/onedark.nvim"]
 	path = nvim/pack/colorscheme/opt/onedark.nvim
 	url = https://github.com/navarasu/onedark.nvim
+[submodule "nvim/pack/bundle/opt/nvim-surround"]
+	path = nvim/pack/bundle/opt/nvim-surround
+	url = https://github.com/kylechui/nvim-surround
