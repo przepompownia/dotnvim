@@ -14,10 +14,6 @@
 	path = nvim/pack/bundle/opt/vim-spacejam
 	url = https://github.com/rondale-sc/vim-spacejam.git
 	branch = master
-[submodule "pack/bundle/opt/vim-pasta"]
-	path = nvim/pack/bundle/opt/vim-pasta
-	url = https://github.com/sickill/vim-pasta.git
-	branch = master
 [submodule "pack/bundle/opt/vim-dispatch"]
 	path = nvim/pack/bundle/opt/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
@@ -175,3 +171,6 @@
 [submodule "nvim/pack/bundle/opt/comment.nvim"]
 	path = nvim/pack/bundle/opt/comment.nvim
 	url = https://github.com/numToStr/Comment.nvim
+[submodule "nvim/pack/bundle/opt/nvim-pasta"]
+	path = nvim/pack/bundle/opt/nvim-pasta
+	url = https://github.com/hrsh7th/nvim-pasta
