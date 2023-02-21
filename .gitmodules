@@ -14,14 +14,6 @@
 	path = nvim/pack/bundle/opt/vim-spacejam
 	url = https://github.com/rondale-sc/vim-spacejam.git
 	branch = master
-[submodule "pack/bundle/opt/vim-dispatch"]
-	path = nvim/pack/bundle/opt/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch.git
-	branch = master
-[submodule "pack/bundle/opt/vim-test"]
-	path = nvim/pack/bundle/opt/vim-test
-	url = https://github.com/janko-m/vim-test.git
-	branch = master
 [submodule "pack/bundle/opt/vim-repeat"]
 	path = nvim/pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat

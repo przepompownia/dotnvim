@@ -58,12 +58,10 @@ local extensions = {
   {name = 'nord.nvim'},
   {name = 'phpactor'},
   {name = 'nvim-surround'},
-  {name = 'vim-dispatch'},
   {name = 'vim-move'},
   {name = 'nvim-pasta'},
   {name = 'vim-repeat'},
   {name = 'vim-spacejam'},
-  {name = 'vim-test'},
   {name = 'unimpaired.nvim'},
   {name = 'vim-dadbod'},
   {name = 'vim-dadbod-ui'},
@@ -72,10 +70,11 @@ local extensions = {
 }
 
 for _, config in ipairs(extensions) do
-  if config.bang == nil then
-    bang = true
+  local bang = true
+  if config.bang ~= nil then
+    bang = config.bang
   end
-  vim.cmd.packadd({args = {config.name}, bang = bang or cmd.bang})
+  vim.cmd.packadd({args = {config.name}, bang = bang})
 end
 require('impatient')
 
