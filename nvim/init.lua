@@ -16,7 +16,6 @@ vim.g.pluginDirs = {
      vim.fn.expand(stdPathConfig .. '/pack/colorscheme/opt'),
      vim.fn.expand(stdPathConfig .. '/pack/arctgx/opt'),
 }
-vim.g.bundle_dirs = vim.g.pluginDirs
 vim.g.initialVimDirectory = stdPathConfig
 
 local extensions = {
@@ -61,6 +60,7 @@ local extensions = {
   {name = 'nvim-surround'},
   {name = 'vim-move'},
   {name = 'nvim-pasta'},
+  {name = 'statuscol.nvim'},
   {name = 'vim-repeat'},
   {name = 'vim-spacejam'},
   {name = 'unimpaired.nvim'},
@@ -75,7 +75,10 @@ for _, config in ipairs(extensions) do
   if config.bang ~= nil then
     bang = config.bang
   end
-  vim.cmd.packadd({args = {config.name}, bang = bang})
+  vim.cmd.packadd({
+    args = {config.name},
+    bang = bang,
+  })
 end
 require('impatient')
 

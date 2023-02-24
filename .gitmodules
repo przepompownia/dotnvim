@@ -166,3 +166,6 @@
 [submodule "nvim/pack/bundle/opt/nvim-pasta"]
 	path = nvim/pack/bundle/opt/nvim-pasta
 	url = https://github.com/hrsh7th/nvim-pasta
+[submodule "nvim/pack/bundle/opt/statuscol.nvim"]
+	path = nvim/pack/bundle/opt/statuscol.nvim
+	url = https://github.com/luukvbaal/statuscol.nvim
