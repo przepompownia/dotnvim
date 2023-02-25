@@ -8,3 +8,4 @@
 /.xdg/cache/
 /.xdg/data/
 /.xdg/state/
+/nvim/initPerHost.lua
