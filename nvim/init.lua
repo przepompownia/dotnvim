@@ -76,10 +76,15 @@ for _, config in ipairs(extensions) do
   if config.bang ~= nil then
     bang = config.bang
   end
-  vim.cmd.packadd({
+  local ok, error = pcall(vim.cmd.packadd, {
     args = {config.name},
     bang = bang,
   })
+  if not ok then
+    vim.api.nvim_create_autocmd('UIEnter', {once = true, callback = function ()
+      vim.notify(error, vim.log.levels.ERROR)
+    end})
+  end
 end
 require('impatient')
 
