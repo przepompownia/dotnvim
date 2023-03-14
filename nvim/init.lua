@@ -11,10 +11,10 @@ vim.opt.packpath:prepend(stdPathConfig)
 vim.opt.runtimepath:append(stdPathConfig .. '/after')
 
 vim.g.pluginDirs = {
-     vim.fn.expand(stdPathConfig .. '/pack/unmerged/opt'),
-     vim.fn.expand(stdPathConfig .. '/pack/bundle/opt'),
-     vim.fn.expand(stdPathConfig .. '/pack/colorscheme/opt'),
-     vim.fn.expand(stdPathConfig .. '/pack/arctgx/opt'),
+  vim.fn.expand(stdPathConfig .. '/pack/unmerged/opt'),
+  vim.fn.expand(stdPathConfig .. '/pack/bundle/opt'),
+  vim.fn.expand(stdPathConfig .. '/pack/colorscheme/opt'),
+  vim.fn.expand(stdPathConfig .. '/pack/arctgx/opt'),
 }
 vim.g.initialVimDirectory = stdPathConfig
 
