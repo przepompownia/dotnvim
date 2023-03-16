@@ -3,7 +3,6 @@ go
 php
 node
 python3
-vint https://github.com/Vimjas/vint
 vim-language-server https://github.com/iamcco/vim-language-server
 bash-language-server https://github.com/bash-lsp/bash-language-server (yarn global add bash-language-server)
 composer https://getcomposer.org
@@ -13,6 +12,4 @@ phpstan composer global require phpstan/phpstan
 phan composer global require phan/phan
 sqls https://github.com/lighttiger2505/sqls
 git
-delta https://github.com/dandavison/delta/releases
 shellcheck https://github.com/koalaman/shellcheck (may be installable from your distribution)
-batcat (may be installable from your distribution)
