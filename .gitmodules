@@ -24,10 +24,6 @@
 [submodule "pack/bundle/opt/arctgx"]
 	path = nvim/pack/arctgx/opt/arctgx
 	url = https://github.com/przepompownia/nvim-arctgx
-[submodule "pack/bundle/opt/vimspector"]
-	path = pack/bundle/opt/vimspector
-	url = https://github.com/puremourning/vimspector.git
-	branch = master
 [submodule "pack/bundle/opt/vim-dadbod"]
 	path = nvim/pack/bundle/opt/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod
