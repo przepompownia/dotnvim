@@ -81,10 +81,13 @@ for _, config in ipairs(extensions) do
     bang = bang,
   })
   if not ok then
-    vim.api.nvim_create_autocmd('UIEnter', {once = true, callback = function ()
-      vim.notify(error, vim.log.levels.ERROR)
-    end})
-  end
+    vim.api.nvim_create_autocmd('UIEnter', {
+      once = true,
+      callback = function()
+        vim.notify(error, vim.log.levels.ERROR)
+			end,
+		})
+	end
 end
 require('impatient')
 
