@@ -105,9 +105,6 @@
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = nvim/pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
-[submodule "pack/bundle/opt/impatient.nvim"]
-	path = nvim/pack/bundle/opt/impatient.nvim
-	url = https://github.com/lewis6991/impatient.nvim
 [submodule "pack/bundle/opt/treesitter-playground"]
 	path = nvim/pack/bundle/opt/treesitter-playground
 	url = https://github.com/nvim-treesitter/playground

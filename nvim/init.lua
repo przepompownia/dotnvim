@@ -18,6 +18,8 @@ vim.g.pluginDirs = {
 }
 vim.g.initialVimDirectory = stdPathConfig
 
+vim.loader.enable()
+
 local extensions = {
   {name = 'fugitive'},
   {name = 'cmp-buffer'},
@@ -68,7 +70,6 @@ local extensions = {
   {name = 'vim-dadbod'},
   {name = 'vim-dadbod-ui'},
   {name = 'arctgx'},
-  {name = 'impatient.nvim', bang = false},
 }
 
 for _, config in ipairs(extensions) do
@@ -89,7 +90,6 @@ for _, config in ipairs(extensions) do
 		})
 	end
 end
-require('impatient')
 
 local initPerHost = vim.g.initialVimDirectory .. '/initPerHost.lua'
 if vim.fn.filereadable(initPerHost) == 1 then
