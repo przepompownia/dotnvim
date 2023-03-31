@@ -165,3 +165,5 @@
 [submodule "nvim/pack/bundle/opt/diffview.nvim"]
 	path = nvim/pack/bundle/opt/diffview.nvim
 	url = https://github.com/sindrets/diffview.nvim
+[submodule "./nvim/pack/bundle/opt/vim-tmux-focus-events"]
+	url = https://github.com/przepompownia/vim-tmux-focus-events
