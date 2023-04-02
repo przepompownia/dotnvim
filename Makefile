@@ -4,6 +4,8 @@ MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
 DIR := ${CURDIR}
 vscodePhpDebugVersion := '1.32.1'
+bashDebugVersion := '0.3.9'
+bashDebugUrl := 'https://github.com/rogalmic/vscode-bash-debug/releases/download/untagged-438733f35feb8659d939/bash-debug-0.3.9.vsix'
 
 .ONESHELL:
 phpactor-install:
@@ -37,5 +39,9 @@ check-requirements:
 	$(DIR)/.config/bin/check-requirements
 
 install-vscode-php-debug:
-	$(DIR)/bin/vscode-php-debug install $(vscodePhpDebugVersion)
-	$(DIR)/bin/vscode-php-debug setAsCurrent $(vscodePhpDebugVersion)
+	$(DIR)/bin/dap-adapter-utils install xdebug vscode-php-debug $(vscodePhpDebugVersion)
+	$(DIR)/bin/dap-adapter-utils setAsCurrent vscode-php-debug $(vscodePhpDebugVersion)
+
+install-vscode-bash-debug:
+	$(DIR)/bin/dap-adapter-utils install rogalmic vscode-bash-debug $(bashDebugVersion) $(bashDebugUrl)
+	$(DIR)/bin/dap-adapter-utils setAsCurrent vscode-bash-debug $(bashDebugVersion)

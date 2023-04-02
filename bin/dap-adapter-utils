@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
+
+toolsDir="${currentDir}/tools"
+
+command="${1?install|run}"
+shift
+
+installAdapter() {
+    declare dest file name version untaggedVersion url defaultUrl
+    vendor="${1}"
+    name="${2}"
+    version="${3}"
+    url="${4}"
+    dest="${toolsDir}/${name}/${version}"
+    mkdir -p "$dest"
+    cd "$dest"
+    file="${name}-${version}.vsix"
+    defaultUrl="https://github.com/${vendor}/${name}/releases/download/v${version}/${file#vscode-}"
+    curl -C - -o "$file" -LR "${url:-$defaultUrl}" || return
+    unzip -n "$file"
+}
+
+setAsCurrent() {
+    declare name version
+    name="${1}"
+    version="${2}"
+    cd "${toolsDir}/${name}" || return
+    ln --no-target-directory --symbolic --force "$version" 'current'
+}
+
+runAdapter() {
+    declare version executableName script
+    executableName="${1}"
+    version="${2?missing version}"
+    script="${toolsDir}/${name}/${version}/extension/out/${executableName}.js"
+    if [[ ! -f $script ]]; then
+        echo Cannot find script "$script" >&2
+        return 1
+    fi
+
+    node "$script"
+}
+
+case "$command" in
+    install)
+        vendor="${1?missing vendor}"
+        name="${2?missing adapter name}"
+        version="${3?missing version}"
+        url="${4}"
+        installAdapter "$vendor" "$name" "$version" "$url"
+        ;;
+    setAsCurrent)
+        name="${1?missing adapter name}"
+        version="${2?missing version}"
+        setAsCurrent "$name" "$version"
+        ;;
+    run)
+        executableName="${1:missing executable name}"
+        name="${2?missing adapter name}"
+        version="${2:-current}"
+        runAdapter "$name" "executableName" "$version"
+        ;;
+esac
