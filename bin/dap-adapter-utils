@@ -32,8 +32,9 @@ setAsCurrent() {
 
 runAdapter() {
     declare version executableName script
-    executableName="${1}"
-    version="${2?missing version}"
+    name="${1}"
+    executableName="${2}"
+    version="${3?missing version}"
     script="${toolsDir}/${name}/${version}/extension/out/${executableName}.js"
     if [[ ! -f $script ]]; then
         echo Cannot find script "$script" >&2
@@ -57,9 +58,9 @@ case "$command" in
         setAsCurrent "$name" "$version"
         ;;
     run)
-        executableName="${1:missing executable name}"
-        name="${2?missing adapter name}"
-        version="${2:-current}"
-        runAdapter "$name" "executableName" "$version"
+        name="${1?missing adapter name}"
+        executableName="${2?missing executable name}"
+        version="${3:-current}"
+        runAdapter "$name" "$executableName" "$version"
         ;;
 esac
