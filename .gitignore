@@ -9,3 +9,4 @@
 /.xdg/data/
 /.xdg/state/
 /nvim/initPerHost.lua
+/bin/nvim
