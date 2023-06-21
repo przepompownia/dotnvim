@@ -10,10 +10,6 @@
 	path = nvim/pack/bundle/opt/vim-move
 	url = https://github.com/matze/vim-move.git
 	branch = master
-[submodule "pack/bundle/opt/vim-spacejam"]
-	path = nvim/pack/bundle/opt/vim-spacejam
-	url = https://github.com/rondale-sc/vim-spacejam.git
-	branch = master
 [submodule "pack/bundle/opt/vim-repeat"]
 	path = nvim/pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat

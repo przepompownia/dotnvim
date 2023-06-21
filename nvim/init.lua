@@ -65,7 +65,6 @@ local extensions = {
   {name = 'nvim-pasta'},
   {name = 'statuscol.nvim'},
   {name = 'vim-repeat'},
-  {name = 'vim-spacejam'},
   {name = 'unimpaired.nvim'},
   {name = 'vim-dadbod'},
   {name = 'vim-dadbod-ui'},
