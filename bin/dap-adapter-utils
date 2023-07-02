@@ -8,17 +8,16 @@ command="${1?install|setAsCurrent|run}"
 shift
 
 installAdapter() {
-    declare dest file name version untaggedVersion url defaultUrl
+    declare dest file name version url
     vendor="${1}"
     name="${2}"
     version="${3}"
     url="${4}"
     dest="${toolsDir}/${name}/${version}"
     mkdir -p "$dest"
-    cd "$dest"
+    cd "$dest" || return 1
     file="${name}-${version}.vsix"
-    defaultUrl="https://github.com/${vendor}/${name}/releases/download/v${version}/${file#vscode-}"
-    curl -C - -o "$file" -LR "${url:-$defaultUrl}" || return
+    echo curl --continue-at - --output "$file" --remote-time --location "${url}" || return
     unzip -n "$file"
 }
 
