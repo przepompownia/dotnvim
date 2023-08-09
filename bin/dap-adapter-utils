@@ -17,7 +17,7 @@ installAdapter() {
     mkdir -p "$dest"
     cd "$dest" || return 1
     file="${name}-${version}.vsix"
-    echo curl --continue-at - --output "$file" --remote-time --location "${url}" || return
+    curl --continue-at - --output "$file" --remote-time --location "${url}" || return
     unzip -n "$file"
 }
 
