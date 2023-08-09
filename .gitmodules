@@ -27,9 +27,6 @@
 [submodule "pack/bundle/opt/nvim-bqf"]
 	path = nvim/pack/bundle/opt/nvim-bqf
 	url = https://github.com/kevinhwang91/nvim-bqf
-[submodule "pack/bundle/opt/vim-tmux-focus-events"]
-	path = nvim/pack/bundle/opt/vim-tmux-focus-events
-	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
 [submodule "pack/bundle/opt/cmp-nvim-lsp"]
 	path = nvim/pack/bundle/opt/cmp-nvim-lsp
 	url = https://github.com/hrsh7th/cmp-nvim-lsp
@@ -156,3 +153,6 @@
 	url = https://github.com/sindrets/diffview.nvim
 [submodule "./nvim/pack/bundle/opt/vim-tmux-focus-events"]
 	url = https://github.com/przepompownia/vim-tmux-focus-events
+[submodule "nvim/pack/bundle/opt/nvim-treesitter"]
+	path = nvim/pack/bundle/opt/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
