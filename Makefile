@@ -3,8 +3,8 @@ MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
 DIR := ${CURDIR}
-vscodePhpDebugVersion := '1.32.1'
-vscodePhpDebugUrl := 'https://github.com/xdebug/vscode-php-debug/releases/download/v1.32.1/php-debug-1.32.1.vsix'
+vscodePhpDebugVersion := '1.33.0'
+vscodePhpDebugUrl := 'https://github.com/xdebug/vscode-php-debug/releases/download/v1.33.0/php-debug-1.33.0.vsix'
 bashDebugVersion := '0.3.9'
 bashDebugUrl := 'https://github.com/rogalmic/vscode-bash-debug/releases/download/untagged-438733f35feb8659d939/bash-debug-0.3.9.vsix'
 cpptoolsVersion := '1.16.3'
@@ -42,7 +42,7 @@ check-requirements:
 	$(DIR)/.config/bin/check-requirements
 
 install-vscode-php-debug:
-	$(DIR)/bin/dap-adapter-utils install xdebug vscode-php-debug $(vscodePhpDebugVersion)
+	$(DIR)/bin/dap-adapter-utils install xdebug vscode-php-debug $(vscodePhpDebugVersion) $(vscodePhpDebugUrl)
 	$(DIR)/bin/dap-adapter-utils setAsCurrent vscode-php-debug $(vscodePhpDebugVersion)
 
 install-vscode-bash-debug:
