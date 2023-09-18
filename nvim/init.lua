@@ -20,12 +20,14 @@ vim.g.initialVimDirectory = stdPathConfig
 
 vim.loader.enable()
 
+---@type NvimPlugins
 local extensions = {
   {name = 'fugitive'},
   {name = 'cmp-buffer'},
   {name = 'cmp-luasnip'},
   {name = 'cmp-nvim-lsp'},
   {name = 'cmp-path'},
+  {name = 'nvim-cmp'},
   {name = 'comment.nvim'},
   {name = 'diffview.nvim'},
   {name = 'onedark.nvim'},
@@ -36,7 +38,6 @@ local extensions = {
   {name = 'null-ls.nvim'},
   {name = 'nvim-autopairs'},
   {name = 'nvim-bqf'},
-  {name = 'nvim-cmp'},
   {name = 'nvim-dap'},
   {name = 'nvim-dap-ui'},
   {name = 'nvim-dap-tab'},
@@ -71,24 +72,7 @@ local extensions = {
   {name = 'arctgx'},
 }
 
-for _, config in ipairs(extensions) do
-  local bang = true
-  if config.bang ~= nil then
-    bang = config.bang
-  end
-  local ok, error = pcall(vim.cmd.packadd, {
-    args = {config.name},
-    bang = bang,
-  })
-  if not ok then
-    vim.api.nvim_create_autocmd('UIEnter', {
-      once = true,
-      callback = function()
-        vim.notify(error, vim.log.levels.ERROR)
-			end,
-		})
-	end
-end
+require('dotnvim.plugin').packadd(extensions)
 
 local initPerHost = vim.g.initialVimDirectory .. '/initPerHost.lua'
 if vim.fn.filereadable(initPerHost) == 1 then
