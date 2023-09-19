@@ -1,9 +1,5 @@
 local stdPathConfig = vim.fn.stdpath('config')
 
-vim.opt.runtimepath:prepend(stdPathConfig)
-vim.opt.packpath:prepend(stdPathConfig)
-vim.opt.runtimepath:append(stdPathConfig .. '/after')
-
 vim.g.pluginDirs = {
   vim.fn.expand(stdPathConfig .. '/pack/unmerged/opt'),
   vim.fn.expand(stdPathConfig .. '/pack/bundle/opt'),
@@ -36,7 +32,7 @@ local extensions = {
   {name = 'nvim-dap-ui'},
   {name = 'nvim-dap-tab'},
   {name = 'nvim-dap-virtual-text'},
-  {name = 'neodev.nvim'},
+  -- {name = 'neodev.nvim'},
   {name = 'nvim-lspconfig'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
@@ -72,3 +68,8 @@ local initPerHost = vim.g.initialVimDirectory .. '/initPerHost.lua'
 if vim.fn.filereadable(initPerHost) == 1 then
   dofile(initPerHost)
 end
+
+function hello(x)
+end
+
+hello()
