@@ -1,9 +1,3 @@
-local configDir = vim.fn.expand('<sfile>:p:h:h')
-
-vim.env['XDG_CONFIG_HOME'] = configDir
-vim.env['XDG_DATA_HOME'] = configDir .. '/.xdg/data'
-vim.env['XDG_STATE_HOME'] = configDir .. '/.xdg/state'
-vim.env['XDG_CACHE_HOME'] = configDir .. '/.xdg/cache'
 local stdPathConfig = vim.fn.stdpath('config')
 
 vim.opt.runtimepath:prepend(stdPathConfig)

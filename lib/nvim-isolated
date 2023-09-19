@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+runIsolated() {
+    declare -a bindPaths
+    declare nvimExecutable
+
+    nvimExecutable="$1"
+    shift
+
+    if ! [[ -e $nvimExecutable ]]; then
+        echo Cannot find executable "$nvimExecutable". >&2
+        return 1
+    fi
+
+    mapfile -t bindPaths <<-EOF
+	${PWD}/${NVIM_APPNAME:-nvim}:${HOME}/.config/${NVIM_APPNAME:-nvim}
+	${PWD}/.xdg/cache:${HOME}/.cache/${NVIM_APPNAME:-nvim}
+	${PWD}/.xdg/data:${HOME}/.local/share/${NVIM_APPNAME:-nvim}
+	${PWD}/.xdg/state:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
+	EOF
+
+    systemd-run --user -t -p PrivateUsers=yes \
+        -p WorkingDirectory="$PWD" \
+        -p BindPaths="${bindPaths[*]}" \
+        -- "$nvimExecutable" "$@"
+}
