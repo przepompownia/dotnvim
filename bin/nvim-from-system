@@ -4,4 +4,4 @@ currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
 
 . "${currentDir}/lib/nvim-isolated"
 
-runIsolated "$currentDir" "${NVIM_FROM_SRC_DIR}/bin/nvim" "$@"
+runIsolated "$currentDir" "$(command -pv nvim)" "$@"
