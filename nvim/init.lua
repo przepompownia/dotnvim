@@ -32,7 +32,7 @@ local extensions = {
   {name = 'nvim-dap-ui'},
   {name = 'nvim-dap-tab'},
   {name = 'nvim-dap-virtual-text'},
-  -- {name = 'neodev.nvim'},
+  {name = 'neodev.nvim'},
   {name = 'nvim-lspconfig'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
@@ -68,8 +68,3 @@ local initPerHost = vim.g.initialVimDirectory .. '/initPerHost.lua'
 if vim.fn.filereadable(initPerHost) == 1 then
   dofile(initPerHost)
 end
-
-function hello(x)
-end
-
-hello()
