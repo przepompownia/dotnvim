@@ -26,8 +26,8 @@ runIsolated() {
 	${dataDir}:${HOME}/.local/share/${NVIM_APPNAME:-nvim}
 	${stateDir}:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
 	EOF
-    
-        systemd-run --user --pty --pipe \
+
+    systemd-run --user --pty --pipe \
         --property=PrivateUsers=yes \
         --property=WorkingDirectory="$PWD" \
         --property=BindPaths="${bindPaths[*]}" \
