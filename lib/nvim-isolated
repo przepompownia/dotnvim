@@ -2,11 +2,18 @@
 
 runIsolated() {
     declare -a bindPaths
-    declare nvimExecutable
+    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir
 
     configDir="$1"
     nvimExecutable="$2"
     shift 2
+
+    nvimAppDir="${configDir}/${NVIM_APPNAME:-nvim}"
+    cacheDir="${configDir}/.xdg/cache"
+    dataDir="${configDir}/.xdg/data"
+    stateDir="${configDir}/.xdg/state"
+
+    mkdir -p "$nvimAppDir" "$cacheDir" "$dataDir" "$stateDir"
 
     if ! [[ -e $nvimExecutable ]]; then
         echo Cannot find executable "$nvimExecutable". >&2
@@ -14,14 +21,15 @@ runIsolated() {
     fi
 
     mapfile -t bindPaths <<-EOF
-	${configDir}/${NVIM_APPNAME:-nvim}:${HOME}/.config/${NVIM_APPNAME:-nvim}
-	${configDir}/.xdg/cache:${HOME}/.cache/${NVIM_APPNAME:-nvim}
-	${configDir}/.xdg/data:${HOME}/.local/share/${NVIM_APPNAME:-nvim}
-	${configDir}/.xdg/state:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
+	${nvimAppDir}:${HOME}/.config/${NVIM_APPNAME:-nvim}
+	${cacheDir}:${HOME}/.cache/${NVIM_APPNAME:-nvim}
+	${dataDir}:${HOME}/.local/share/${NVIM_APPNAME:-nvim}
+	${stateDir}:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
 	EOF
     
-    systemd-run --user -t -p PrivateUsers=yes \
-        -p WorkingDirectory="$PWD" \
-        -p BindPaths="${bindPaths[*]}" \
+        systemd-run --user --pty \
+        --property=PrivateUsers=yes \
+        --property=WorkingDirectory="$PWD" \
+        --property=BindPaths="${bindPaths[*]}" \
         -- "$nvimExecutable" "$@"
 }
