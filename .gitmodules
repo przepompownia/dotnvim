@@ -127,9 +127,6 @@
 [submodule "pack/arctgx/opt/nvim-dap-tab"]
 	path = nvim/pack/arctgx/opt/nvim-dap-tab
 	url = https://github.com/przepompownia/nvim-dap-tab
-[submodule "pack/bundle/opt/neodev.nvim"]
-	path = nvim/pack/bundle/opt/neodev.nvim
-	url = https://github.com/folke/neodev.nvim
 [submodule "nvim/pack/colorscheme/opt/onedark.nvim"]
 	path = nvim/pack/colorscheme/opt/onedark.nvim
 	url = https://github.com/navarasu/onedark.nvim
