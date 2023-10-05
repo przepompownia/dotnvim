@@ -2,13 +2,14 @@
 
 runIsolated() {
     declare -a bindPaths
-    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir
+    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir sandboxedNvimAppDir sandboxedCwd
 
     configDir="$1"
     nvimExecutable="$2"
     shift 2
 
     nvimAppDir="${configDir}/${NVIM_APPNAME:-nvim}"
+    sandboxedNvimAppDir=${HOME}/.config/${NVIM_APPNAME:-nvim}
     cacheDir="${configDir}/.xdg/cache"
     dataDir="${configDir}/.xdg/data"
     stateDir="${configDir}/.xdg/state"
@@ -20,8 +21,11 @@ runIsolated() {
         return 1
     fi
 
+    # only need for lua-ls to avoid excluding project dir from generated workspace library 
+    sandboxedCwd="${PWD/#${nvimAppDir}/${sandboxedNvimAppDir}}"
+
     mapfile -t bindPaths <<-EOF
-	${nvimAppDir}:${HOME}/.config/${NVIM_APPNAME:-nvim}
+	${nvimAppDir}:${sandboxedNvimAppDir}
 	${cacheDir}:${HOME}/.cache/${NVIM_APPNAME:-nvim}
 	${dataDir}:${HOME}/.local/share/${NVIM_APPNAME:-nvim}
 	${stateDir}:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
@@ -31,5 +35,6 @@ runIsolated() {
         --property=PrivateUsers=yes \
         --property=WorkingDirectory="$PWD" \
         --property=BindPaths="${bindPaths[*]}" \
+        --setenv=NVIM_SANDBOXED_CWD="${sandboxedCwd}" \
         -- "$nvimExecutable" "$@"
 }
