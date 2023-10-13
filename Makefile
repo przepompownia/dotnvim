@@ -52,3 +52,7 @@ install-vscode-bash-debug:
 install-vscode-cpptools-debug:
 	$(DIR)/bin/dap-adapter-utils install microsoft vscode-cpptools $(cpptoolsVersion) $(cpptoolsUrl)
 	$(DIR)/bin/dap-adapter-utils setAsCurrent vscode-cpptools $(cpptoolsVersion)
+
+arctgx-lua-ls-workspace-library:
+	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
+	nvim -u $(DIR)/nvim/init.lua -l lua/arctgx/luaLs/workLibGen.lua
