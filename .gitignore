@@ -4,9 +4,9 @@
 /.config/vim/viminfo
 /.githooks
 /.nvimlog
-/tools
 /.xdg/cache/
 /.xdg/data/
 /.xdg/state/
 /nvim/initPerHost.lua
 /bin/nvim
+/nvim/pack/unmerged/opt/
