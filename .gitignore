@@ -10,3 +10,4 @@
 /nvim/initPerHost.lua
 /bin/nvim
 /nvim/pack/unmerged/opt/
+/Session.vim
