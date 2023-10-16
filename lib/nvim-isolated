@@ -36,5 +36,6 @@ runIsolated() {
         --property=WorkingDirectory="$PWD" \
         --property=BindPaths="${bindPaths[*]}" \
         --setenv=NVIM_SANDBOXED_CWD="${sandboxedCwd}" \
+        --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
         -- "$nvimExecutable" "$@"
 }
