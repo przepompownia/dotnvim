@@ -37,7 +37,7 @@ check-requirements:
 
 arctgx-lua-ls-workspace-library:
 	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
-	nvim -u $(DIR)/nvim/init.lua -l lua/arctgx/luaLs/workLibGen.lua
+	nvim -u $(DIR)/nvim/init.lua -l lua/arctgx/luaLs/generateLuarcJson.lua
 
 arctgx-start:
 	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
