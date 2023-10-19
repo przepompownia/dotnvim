@@ -3,6 +3,8 @@ MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
 DIR := ${CURDIR}
+nvimArctgxDir = $(DIR)/nvim/pack/arctgx/opt/arctgx
+nvimInit = $(DIR)/nvim/init.lua
 
 .ONESHELL:
 phpactor-install:
@@ -35,10 +37,17 @@ start: gitconfig-include-local submodule-update git-submodules-hooks-install php
 check-requirements:
 	$(DIR)/.config/bin/check-requirements
 
-arctgx-lua-ls-workspace-library:
-	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
-	nvim -u $(DIR)/nvim/init.lua -l lua/arctgx/luaLs/generateLuarcJson.lua
+.ONESHELL:
+luarc:
+	cd $(nvimArctgxDir)
+	$(MAKE) luarc nvimInit=$(nvimInit) projectDir=$(DIR)
 
+.ONESHELL:
+arctgx-luarc:
+	cd $(nvimArctgxDir)
+	$(MAKE) luarc nvimInit=$(nvimInit)
+
+.ONESHELL:
 arctgx-start:
 	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
 	$(MAKE) start

@@ -6,7 +6,8 @@ runInstallHooks() {
 
 syncSubmodules() {
     make git-submodules-sync
-    make arctgx-lua-ls-workspace-library
+    make arctgx-luarc
+    make luarc
 }
 
 declare -A patternToAction
