@@ -52,7 +52,6 @@ local extensions = {
   {name = 'phpactor'},
   {name = 'nvim-surround'},
   {name = 'vim-move'},
-  {name = 'nvim-pasta'},
   {name = 'statuscol.nvim'},
   {name = 'vim-repeat'},
   {name = 'unimpaired.nvim'},
