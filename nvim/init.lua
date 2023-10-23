@@ -50,7 +50,6 @@ local extensions = {
   {name = 'nord.nvim'},
   {name = 'phpactor'},
   {name = 'nvim-surround'},
-  {name = 'vim-move'},
   {name = 'statuscol.nvim'},
   {name = 'vim-repeat'},
   {name = 'unimpaired.nvim'},
