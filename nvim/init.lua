@@ -12,7 +12,6 @@ vim.loader.enable()
 
 ---@type NvimPlugins
 local extensions = {
-  {name = 'fugitive'},
   {name = 'cmp-buffer'},
   {name = 'cmp-luasnip'},
   {name = 'cmp-nvim-lsp'},

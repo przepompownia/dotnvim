@@ -1,7 +1,3 @@
-[submodule "pack/bundle/opt/fugitive"]
-	path = nvim/pack/bundle/opt/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-	branch = master
 [submodule "pack/bundle/opt/vim-move"]
 	path = nvim/pack/bundle/opt/vim-move
 	url = https://github.com/matze/vim-move.git
