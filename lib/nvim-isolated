@@ -31,7 +31,7 @@ runIsolated() {
 	${stateDir}:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
 	EOF
 
-    systemd-run --user --pty --pipe \
+        systemd-run --quiet --user --pty --pipe \
         --property=PrivateUsers=yes \
         --property=WorkingDirectory="$PWD" \
         --property=BindPaths="${bindPaths[*]}" \
