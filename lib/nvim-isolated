@@ -8,6 +8,11 @@ runIsolated() {
     nvimExecutable="$2"
     shift 2
 
+    if [[ $NVIM ]] && systemd-detect-virt --private-users; then
+        "$nvimExecutable" "$@"
+        return $?
+    fi
+
     nvimAppDir="${configDir}/${NVIM_APPNAME:-nvim}"
     sandboxedNvimAppDir=${HOME}/.config/${NVIM_APPNAME:-nvim}
     cacheDir="${configDir}/.xdg/cache"
