@@ -36,11 +36,11 @@ runIsolated() {
 	${stateDir}:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
 	EOF
 
-        systemd-run --quiet --user --pty --pipe \
-        --property=PrivateUsers=yes \
-        --property=WorkingDirectory="$PWD" \
-        --property=BindPaths="${bindPaths[*]}" \
-        --setenv=NVIM_SANDBOXED_CWD="${sandboxedCwd}" \
-        --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
-        -- "$nvimExecutable" "$@"
+    systemd-run --quiet --user --pty --pipe \
+    --property=PrivateUsers=yes \
+    --property=WorkingDirectory="$PWD" \
+    --property=BindPaths="${bindPaths[*]}" \
+    --setenv=NVIM_SANDBOXED_CWD="${sandboxedCwd}" \
+    --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
+    -- "$nvimExecutable" "$@"
 }
