@@ -2,7 +2,7 @@
 
 runIsolated() {
     declare -a bindPaths
-    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir sandboxedNvimAppDir sandboxedCwd
+    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir sandboxedNvimAppDir sandboxedCwd nvimAppName
 
     configDir="$1"
     nvimExecutable="$2"
@@ -13,8 +13,9 @@ runIsolated() {
         return $?
     fi
 
-    nvimAppDir="${configDir}/${NVIM_APPNAME:-nvim}"
-    sandboxedNvimAppDir=${HOME}/.config/${NVIM_APPNAME:-nvim}
+    nvimAppName="${NVIM_APPNAME:-nvim}"
+    nvimAppDir="${configDir}/${nvimAppName}"
+    sandboxedNvimAppDir=${HOME}/.config/${nvimAppName}
     cacheDir="${configDir}/.xdg/cache"
     dataDir="${configDir}/.xdg/data"
     stateDir="${configDir}/.xdg/state"
@@ -31,14 +32,13 @@ runIsolated() {
 
     mapfile -t bindPaths <<-EOF
 	${nvimAppDir}:${sandboxedNvimAppDir}
-	${cacheDir}:${HOME}/.cache/${NVIM_APPNAME:-nvim}
-	${dataDir}:${HOME}/.local/share/${NVIM_APPNAME:-nvim}
-	${stateDir}:${HOME}/.local/state/${NVIM_APPNAME:-nvim}
+	${cacheDir}:${HOME}/.cache/${nvimAppName}
+	${dataDir}:${HOME}/.local/share/${nvimAppName}
+	${stateDir}:${HOME}/.local/state/${nvimAppName}
 	EOF
 
-    systemd-run --quiet --user --pty --pipe \
+    exec systemd-run --quiet --user --pty --pipe --same-dir \
         --property=PrivateUsers=yes \
-        --property=WorkingDirectory="$PWD" \
         --property=BindPaths="${bindPaths[*]}" \
         --setenv=NVIM_SANDBOXED_CWD="${sandboxedCwd}" \
         --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
