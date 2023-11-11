@@ -9,7 +9,7 @@ runIsolated() {
     shift 2
 
     if [[ $NVIM ]] && systemd-detect-virt --private-users; then
-        "$nvimExecutable" "$@"
+        exec "$nvimExecutable" "$@"
         return $?
     fi
 
