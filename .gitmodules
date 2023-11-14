@@ -135,3 +135,9 @@
 [submodule "nvim/pack/bundle/opt/nvim-treesitter"]
 	path = nvim/pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "nvim/pack/bundle/opt/neotest"]
+	path = nvim/pack/bundle/opt/neotest
+	url = https://github.com/nvim-neotest/neotest
+[submodule "nvim/pack/bundle/opt/neotest-phpunit"]
+	path = nvim/pack/bundle/opt/neotest-phpunit
+	url = https://github.com/olimorris/neotest-phpunit
