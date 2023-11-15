@@ -6,6 +6,12 @@ runIsolated() {
 
     configDir="$1"
     nvimExecutable="$2"
+
+    if ! [[ -e $nvimExecutable ]]; then
+        echo Cannot find executable "$nvimExecutable". >&2
+        return 1
+    fi
+
     shift 2
 
     if [[ $NVIM ]] && systemd-detect-virt --private-users; then
@@ -21,11 +27,6 @@ runIsolated() {
     stateDir="${configDir}/.xdg/state"
 
     mkdir -p "$nvimAppDir" "$cacheDir" "$dataDir" "$stateDir"
-
-    if ! [[ -e $nvimExecutable ]]; then
-        echo Cannot find executable "$nvimExecutable". >&2
-        return 1
-    fi
 
     # only need for lua-ls to avoid excluding project dir from generated workspace library 
     sandboxedCwd="${PWD/#${nvimAppDir}/${sandboxedNvimAppDir}}"
