@@ -38,6 +38,7 @@ runIsolated() {
 	${stateDir}:${HOME}/.local/state/${nvimAppName}
 	EOF
 
+    # Try to increase /proc/sys/fs/inotify/max_user_instances against "too many open files"
     exec systemd-run --quiet --user --pty --pipe --same-dir \
         --property=PrivateUsers=yes \
         --property=BindPaths="${bindPaths[*]}" \
