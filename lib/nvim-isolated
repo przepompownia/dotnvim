@@ -2,7 +2,7 @@
 
 runIsolated() {
     declare -a bindPaths
-    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir sandboxedNvimAppDir sandboxedCwd nvimAppName
+    declare nvimExecutable nvimAppDir cacheDir dataDir stateDir sandboxedNvimAppDir nvimAppName
 
     configDir="$1"
     nvimExecutable="$2"
@@ -28,9 +28,6 @@ runIsolated() {
 
     mkdir -p "$nvimAppDir" "$cacheDir" "$dataDir" "$stateDir"
 
-    # only need for lua-ls to avoid excluding project dir from generated workspace library 
-    sandboxedCwd="${PWD/#${nvimAppDir}/${sandboxedNvimAppDir}}"
-
     mapfile -t bindPaths <<-EOF
 	${nvimAppDir}:${sandboxedNvimAppDir}
 	${cacheDir}:${HOME}/.cache/${nvimAppName}
@@ -42,7 +39,7 @@ runIsolated() {
     exec systemd-run --quiet --user --pty --pipe --same-dir \
         --property=PrivateUsers=yes \
         --property=BindPaths="${bindPaths[*]}" \
-        --setenv=NVIM_SANDBOXED_CWD="${sandboxedCwd}" \
+        --setenv=NVIM_UNSANDBOXED_CONFIGDIR="${nvimAppDir}" \
         --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
         -- "$nvimExecutable" "$@"
 }
