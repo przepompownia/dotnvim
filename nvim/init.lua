@@ -61,9 +61,4 @@ local extensions = {
 
 require('dotnvim.plugin').packadd(extensions)
 
-local initPerHost = vim.g.initialVimDirectory .. '/initPerHost.lua'
-if vim.fn.filereadable(initPerHost) == 1 then
-  dofile(initPerHost)
-end
-
 vim.go.exrc = true
