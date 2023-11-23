@@ -1,11 +1,11 @@
-local stdPathConfig = vim.fn.stdpath('config')
-
-vim.g.pluginDirs = {
-  vim.fn.expand(stdPathConfig .. '/pack/unmerged/opt'),
-  vim.fn.expand(stdPathConfig .. '/pack/bundle/opt'),
-  vim.fn.expand(stdPathConfig .. '/pack/colorscheme/opt'),
-  vim.fn.expand(stdPathConfig .. '/pack/arctgx/opt'),
-}
+vim.g.pluginDirs = vim.iter({
+  'unmerged',
+  'bundle',
+  'arctgx',
+  'colorscheme',
+}):map(function (group)
+  return vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
+end):totable()
 
 vim.loader.enable()
 
