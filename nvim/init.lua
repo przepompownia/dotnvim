@@ -6,7 +6,6 @@ vim.g.pluginDirs = {
   vim.fn.expand(stdPathConfig .. '/pack/colorscheme/opt'),
   vim.fn.expand(stdPathConfig .. '/pack/arctgx/opt'),
 }
-vim.g.initialVimDirectory = stdPathConfig
 
 vim.loader.enable()
 
