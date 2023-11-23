@@ -4,6 +4,7 @@ vim.g.pluginDirs = vim.iter({
   'arctgx',
   'colorscheme',
 }):map(function (group)
+  ---@diagnostic disable-next-line: param-type-mismatch
   return vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
 end):totable()
 
@@ -45,13 +46,13 @@ local extensions = {
   {name = 'schemastore.nvim'},
   {name = 'telescope-fzf-native.nvim'},
   {name = 'telescope.nvim'},
-  {name = 'telescope-ui-select.nvim'},
+  -- {name = 'telescope-ui-select.nvim'},
   {name = 'nui.nvim'},
   {name = 'noice.nvim'},
   {name = 'nord.nvim'},
   {name = 'phpactor'},
   {name = 'nvim-surround'},
-  {name = 'statuscol.nvim'},
+  -- {name = 'statuscol.nvim'},
   {name = 'unimpaired.nvim'},
   {name = 'vim-dadbod'},
   {name = 'vim-dadbod-ui'},
