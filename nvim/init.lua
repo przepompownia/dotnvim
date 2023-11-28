@@ -61,4 +61,11 @@ local extensions = {
 
 require('dotnvim.plugin').packadd(extensions)
 
+if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONFIGDIR}, vim.uv.cwd()) then
+  local exrc = vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.lua')
+  if nil ~= vim.secure.read(exrc) then
+    dofile(exrc)
+  end
+end
+
 vim.go.exrc = true
