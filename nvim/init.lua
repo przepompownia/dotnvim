@@ -56,6 +56,7 @@ local extensions = {
   {name = 'unimpaired.nvim'},
   {name = 'vim-dadbod'},
   {name = 'vim-dadbod-ui'},
+  {name = 'nvim-tab-drop'},
   {name = 'arctgx'},
 }
 

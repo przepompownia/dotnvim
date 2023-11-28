@@ -141,3 +141,6 @@
 [submodule "nvim/pack/bundle/opt/neotest-phpunit"]
 	path = nvim/pack/bundle/opt/neotest-phpunit
 	url = https://github.com/olimorris/neotest-phpunit
+[submodule "nvim/pack/arctgx/opt/nvim-tab-drop"]
+	path = nvim/pack/arctgx/opt/nvim-tab-drop
+	url = https://github.com/przepompownia/nvim-tab-drop
