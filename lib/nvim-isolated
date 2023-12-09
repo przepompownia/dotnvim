@@ -41,7 +41,7 @@ runIsolated() {
         --property=BindPaths="${bindPaths[*]}" \
         --setenv=NVIM_UNSANDBOXED_CONFIGDIR="${nvimAppDir}" \
         --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
-        --setenv=SSH_TTY="${SSH_TTY}" \
-        --setenv=TMUX="${TMUX}" \
+        ${SSH_TTY:+--setenv=SSH_TTY=\""$SSH_TTY"\"} \
+        ${TMUX:+--setenv=TMUX=\""$TMUX"\"} \
         -- "$nvimExecutable" "$@"
 }
