@@ -12,6 +12,7 @@ vim.loader.enable()
 
 ---@type NvimPlugins
 local extensions = {
+  {name = 'actions-preview.nvim'},
   {name = 'cmp-buffer'},
   {name = 'cmp-luasnip'},
   {name = 'cmp-nvim-lsp'},

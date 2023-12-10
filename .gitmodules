@@ -145,3 +145,6 @@
 	path = nvim/pack/arctgx/opt/nvim-tab-drop
 	url = https://github.com/przepompownia/nvim-tab-drop
 	branch = main
+[submodule "nvim/pack/bundle/opt/actions-preview.nvim"]
+	path = nvim/pack/bundle/opt/actions-preview.nvim
+	url = https://github.com/aznhe21/actions-preview.nvim
