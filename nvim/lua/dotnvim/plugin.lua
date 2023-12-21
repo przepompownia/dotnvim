@@ -16,7 +16,7 @@ function Plugin.packadd(extensions)
     if not ok then
       vim.api.nvim_create_autocmd('UIEnter', {
         once = true,
-        callback = function()
+        callback = function ()
           vim.notify(error, vim.log.levels.ERROR)
         end,
       })
