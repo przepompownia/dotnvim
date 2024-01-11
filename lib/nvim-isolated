@@ -43,5 +43,6 @@ runIsolated() {
         --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
         ${SSH_TTY:+--setenv=SSH_TTY=\""$SSH_TTY"\"} \
         ${TMUX:+--setenv=TMUX=\""$TMUX"\"} \
+        ${COLORTERM:+--setenv=COLORTERM=\""$COLORTERM"\"} \
         -- "$nvimExecutable" "$@"
 }
