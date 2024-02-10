@@ -1,4 +1,4 @@
-.PHONY: phpactor-install-extensions phpactor-start-server gitconfig-include-local
+.PHONY: *
 MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash

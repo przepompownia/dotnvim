@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+actions="$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+
+if [[ -f $actions ]]; then
+    . "$actions"
+fi
+
+. "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../../bin")/run-post-checkout-actions"
+
+exit 0
