@@ -2,7 +2,12 @@
 
 set -e
 
-. "$(dirname "${BASH_SOURCE[0]}")/actions"
+actions="$(realpath "$(dirname "${BASH_SOURCE[0]}")")/actions"
+
+if [[ -f $actions ]]; then
+    . "$actions"
+fi
+
 . "$(dirname "${BASH_SOURCE[0]}")/../../../bin/run-post-merge-actions"
 
 exit 0
