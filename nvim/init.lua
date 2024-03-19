@@ -25,6 +25,7 @@ local extensions = {
   {name = 'leap.nvim'},
   {name = 'lualine.nvim'},
   {name = 'luasnip'},
+  {name = 'nvim-nio'},
   {name = 'neotest'},
   {name = 'neotest-phpunit'},
   {name = 'null-ls.nvim'},

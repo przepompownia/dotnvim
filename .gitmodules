@@ -147,3 +147,6 @@
 [submodule "nvim/pack/arctgx/opt/git-utils.nvim"]
 	path = nvim/pack/arctgx/opt/git-utils.nvim
 	url = https://github.com/przepompownia/git-utils.nvim
+[submodule "nvim/pack/bundle/opt/nvim-nio"]
+	path = nvim/pack/bundle/opt/nvim-nio
+	url = https://github.com/nvim-neotest/nvim-nio
