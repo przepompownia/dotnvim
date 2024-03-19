@@ -66,16 +66,11 @@ require('dotnvim.plugin').packadd(extensions)
 
 if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONFIGDIR}, vim.uv.cwd()) then
   local exrc = vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.lua')
-  vim.uv.fs_stat(exrc, function (_error, stats)
-    if nil == stats then
-      return
-    end
-
-    vim.schedule(function ()
-      assert(loadstring(vim.secure.read(exrc) or '', 'Cannot load Lua script from ' .. exrc))()
-    end)
-  end)
-
+  local ok = pcall(vim.uv.fs_stat, exrc)
+  if not ok then
+    return
+  end
+  assert(loadstring(vim.secure.read(exrc) or '', 'Cannot load Lua script from ' .. exrc))()
 end
 
 vim.go.exrc = true
