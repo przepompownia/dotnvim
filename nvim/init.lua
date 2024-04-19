@@ -1,12 +1,14 @@
-vim.g.pluginDirs = vim.iter({
+local pluginDirs = {}
+for _, group in ipairs({
   'unmerged',
   'bundle',
   'arctgx',
   'colorscheme',
-}):map(function (group)
+}) do
   ---@diagnostic disable-next-line: param-type-mismatch
-  return vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
-end):totable()
+  pluginDirs[#pluginDirs + 1] = vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
+end
+vim.g.pluginDirs = pluginDirs
 
 vim.loader.enable()
 
