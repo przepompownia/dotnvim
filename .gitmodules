@@ -30,9 +30,6 @@
 [submodule "pack/bundle/opt/nvim-autopairs"]
 	path = nvim/pack/bundle/opt/nvim-autopairs
 	url = https://github.com/windwp/nvim-autopairs
-[submodule "pack/bundle/opt/nvim-ts-context-commentstring"]
-	path = nvim/pack/bundle/opt/nvim-ts-context-commentstring
-	url = https://github.com/JoosepAlviste/nvim-ts-context-commentstring
 [submodule "pack/bundle/opt/nvim-treesitter-refactor"]
 	path = nvim/pack/bundle/opt/nvim-treesitter-refactor
 	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor
@@ -122,9 +119,6 @@
 [submodule "nvim/pack/bundle/opt/unimpaired.nvim"]
 	path = nvim/pack/bundle/opt/unimpaired.nvim
 	url = https://github.com/Tummetott/unimpaired.nvim
-[submodule "nvim/pack/bundle/opt/comment.nvim"]
-	path = nvim/pack/bundle/opt/comment.nvim
-	url = https://github.com/numToStr/Comment.nvim
 [submodule "nvim/pack/bundle/opt/statuscol.nvim"]
 	path = nvim/pack/bundle/opt/statuscol.nvim
 	url = https://github.com/luukvbaal/statuscol.nvim
