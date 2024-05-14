@@ -72,8 +72,8 @@
 	path = nvim/pack/bundle/opt/osv-dap-nvim
 	url = https://github.com/jbyuki/one-small-step-for-vimkind
 [submodule "pack/bundle/opt/null-ls.nvim"]
-	path = nvim/pack/bundle/opt/null-ls.nvim
-	url = https://github.com/jose-elias-alvarez/null-ls.nvim
+	path = nvim/pack/bundle/opt/none-ls.nvim
+	url = https://github.com/nvimtools/none-ls.nvim
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = nvim/pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
