@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for pattern in "${!patternToAction[@]}" ; do
+for pattern in "${!patternToAction[@]}"; do
     git matches-filename-changed-between-commits "$pattern" "$1" "$2" && "${patternToAction[$pattern]}"
 done
 
