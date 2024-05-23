@@ -2,10 +2,12 @@
 
 currentDir="$(dirname "$(dirname "$(realpath "${BASH_SOURCE[0]}")")")"
 
+localXdgDir='.xdg2'
+
 export XDG_CONFIG_HOME="${currentDir}"
-export XDG_DATA_HOME="${currentDir}/.xdg/data"
-export XDG_STATE_HOME="${currentDir}/.xdg/state"
-export XDG_CACHE_HOME="${currentDir}/.xdg/cache"
+export XDG_DATA_HOME="${currentDir}/${localXdgDir}/data"
+export XDG_STATE_HOME="${currentDir}/${localXdgDir}/state"
+export XDG_CACHE_HOME="${currentDir}/${localXdgDir}/cache"
 
 mkdir -p "$XDG_CACHE_HOME" "$XDG_STATE_HOME" "$XDG_DATA_HOME"
 
