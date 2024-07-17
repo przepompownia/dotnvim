@@ -15,5 +15,5 @@ DEFAULT_NVIM_BINARY="$(command -pv nvim)"
 
 "${NVIM_BINARY:-$DEFAULT_NVIM_BINARY}" \
     --cmd "set runtimepath+=${XDG_CONFIG_HOME}/nvim packpath+=${XDG_CONFIG_HOME}/nvim" \
-    -u "${XDG_CONFIG_HOME}/nvim/init.lua"
+    -u "${XDG_CONFIG_HOME}/nvim/init.lua" \
     "$@"
