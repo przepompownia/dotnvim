@@ -38,7 +38,6 @@ local extensions = {
   {name = 'nvim-treesitter-textobjects'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
-  {name = 'nvim-treesitter-refactor'},
   {name = 'treesj'},
   {name = 'nvim-tree.lua'},
   {name = 'osv-dap-nvim'},
