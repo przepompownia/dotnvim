@@ -9,11 +9,11 @@ export XDG_DATA_HOME="${currentDir}/${localXdgDir}/data"
 export XDG_STATE_HOME="${currentDir}/${localXdgDir}/state"
 export XDG_CACHE_HOME="${currentDir}/${localXdgDir}/cache"
 
-mkdir -p "$XDG_CACHE_HOME" "$XDG_STATE_HOME" "$XDG_DATA_HOME"
+mkdir -p "$XDG_CACHE_HOME/${NVIM_APPNAME:-nvim}" "$XDG_STATE_HOME" "$XDG_DATA_HOME"
 
 DEFAULT_NVIM_BINARY="$(command -pv nvim)"
 
 "${NVIM_BINARY:-$DEFAULT_NVIM_BINARY}" \
-    --cmd "set runtimepath+=${XDG_CONFIG_HOME}/nvim packpath+=${XDG_CONFIG_HOME}/nvim" \
-    -u "${XDG_CONFIG_HOME}/nvim/init.lua" \
+    --cmd "set runtimepath+=${XDG_CONFIG_HOME}/${NVIM_APPNAME:-nvim} packpath+=${XDG_CONFIG_HOME}/${NVIM_APPNAME:-nvim}" \
+    -u "${XDG_CONFIG_HOME}/${NVIM_APPNAME:-nvim}/init.lua" \
     "$@"
