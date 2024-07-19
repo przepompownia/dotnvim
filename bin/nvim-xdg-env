@@ -13,7 +13,12 @@ mkdir -p "$XDG_CACHE_HOME/${NVIM_APPNAME:-nvim}" "$XDG_STATE_HOME" "$XDG_DATA_HO
 
 DEFAULT_NVIM_BINARY="$(command -pv nvim)"
 
-"${NVIM_BINARY:-$DEFAULT_NVIM_BINARY}" \
+if [[ -z ${NVIM_BINARY:="$(command -pv nvim)"} || ! -x ${NVIM_BINARY} ]]; then
+    echo 'Try to set NVIM_BINARY first' >&2
+    exit 1
+fi
+
+"${NVIM_BINARY:-${DEFAULT_NVIM_BINARY}}" \
     --cmd "set runtimepath+=${XDG_CONFIG_HOME}/${NVIM_APPNAME:-nvim} packpath+=${XDG_CONFIG_HOME}/${NVIM_APPNAME:-nvim}" \
     -u "${XDG_CONFIG_HOME}/${NVIM_APPNAME:-nvim}/init.lua" \
     "$@"
