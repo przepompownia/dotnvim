@@ -127,6 +127,7 @@
 [submodule "nvim/pack/bundle/opt/nvim-treesitter"]
 	path = nvim/pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+	branch = main
 [submodule "nvim/pack/bundle/opt/neotest"]
 	path = nvim/pack/bundle/opt/neotest
 	url = https://github.com/nvim-neotest/neotest
