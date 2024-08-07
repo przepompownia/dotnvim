@@ -36,8 +36,9 @@ runIsolated() {
 	EOF
 
     # Try to increase /proc/sys/fs/inotify/max_user_instances against "too many open files"
+    # BindPaths implies PrivateUsers: the owner inside /etc/ssh/ssh_config.d becomes`nobody`
     exec systemd-run --quiet --user --pty --pipe --same-dir \
-        --property=PrivateUsers=yes \
+        --property=InaccessiblePaths=/etc/ssh/ssh_config.d \
         --property=BindPaths="${bindPaths[*]}" \
         --setenv=NVIM_UNSANDBOXED_CONFIGDIR="${nvimAppDir}" \
         --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
