@@ -86,12 +86,6 @@
 [submodule "pack/bundle/opt/telescope-ui-select.nvim"]
 	path = nvim/pack/bundle/opt/telescope-ui-select.nvim
 	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
-[submodule "pack/bundle/opt/nui.nvim"]
-	path = nvim/pack/bundle/opt/nui.nvim
-	url = https://github.com/MunifTanjim/nui.nvim
-[submodule "pack/bundle/opt/noice.nvim"]
-	path = nvim/pack/bundle/opt/noice.nvim
-	url = https://github.com/folke/noice.nvim
 [submodule "pack/bundle/opt/treesj"]
 	path = nvim/pack/bundle/opt/treesj
 	url = https://github.com/Wansmer/treesj
@@ -141,3 +135,6 @@
 [submodule "nvim/pack/bundle/opt/nvim-nio"]
 	path = nvim/pack/bundle/opt/nvim-nio
 	url = https://github.com/nvim-neotest/nvim-nio
+[submodule "nvim/pack/bundle/opt/mini.notify"]
+	path = nvim/pack/bundle/opt/mini.notify
+	url = https://github.com/echasnovski/mini.notify
