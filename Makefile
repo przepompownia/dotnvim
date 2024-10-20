@@ -51,3 +51,9 @@ arctgx-luarc:
 arctgx-start:
 	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
 	$(MAKE) start
+
+edit-init:
+	nvim nvim/init.lua
+
+edit-local-init:
+	nvim nvim/.nvim.lua
