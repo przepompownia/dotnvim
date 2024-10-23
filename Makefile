@@ -53,7 +53,4 @@ arctgx-start:
 	$(MAKE) start
 
 edit-init:
-	nvim nvim/init.lua
-
-edit-local-init:
-	nvim nvim/.nvim.lua
+	nvim -O nvim/init.lua nvim/.nvim.lua
