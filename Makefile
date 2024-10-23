@@ -47,8 +47,12 @@ arctgx-start:
 	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
 	$(MAKE) start
 
+helptags:
+	nvim -c 'helptags ALL' -c quit
+
 .ONESHELL:
 edit-init:
 	nvim -O $(nvimInit) nvim/.nvim.lua
 	$(MAKE) luarc
 	$(MAKE) arctgx-luarc
+	$(MAKE) helptags
