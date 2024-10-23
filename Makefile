@@ -11,11 +11,6 @@ phpactor-install:
 	cd $(DIR)/nvim/pack/bundle/opt/phpactor
 	composer install
 
-.ONESHELL:
-phpactor-start-server:
-	cd nvim/pack/bundle/opt/phpactor
-	./bin/phpactor language-server --address=127.0.0.1:8888
-
 gitconfig-include-local:
 	git config --local include.path "$$(git rev-parse --show-toplevel)/.gitconfig"
 
