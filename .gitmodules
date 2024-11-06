@@ -27,9 +27,6 @@
 [submodule "pack/bundle/opt/nvim-treesitter-context"]
 	path = nvim/pack/bundle/opt/nvim-treesitter-context
 	url = https://github.com/nvim-treesitter/nvim-treesitter-context
-[submodule "pack/bundle/opt/nvim-autopairs"]
-	path = nvim/pack/bundle/opt/nvim-autopairs
-	url = https://github.com/windwp/nvim-autopairs
 [submodule "pack/bundle/opt/cmp-luasnip"]
 	path = nvim/pack/bundle/opt/cmp-luasnip
 	url = https://github.com/saadparwaiz1/cmp_luasnip
@@ -138,3 +135,6 @@
 [submodule "feline.nvim"]
 	path = nvim/pack/plugins/opt/feline.nvim
 	url = https://github.com/freddiehaddad/feline.nvim
+[submodule "ultimate-autopair.nvim"]
+	path = nvim/pack/plugins/opt/ultimate-autopair.nvim
+	url = https://github.com/altermo/ultimate-autopair.nvim
