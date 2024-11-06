@@ -1,5 +1,6 @@
 vim.g.pluginDirs = vim.iter({
   'unmerged',
+  'plugins',
   'bundle',
   'arctgx',
   'colorscheme',
@@ -22,7 +23,7 @@ local extensions = {
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
   {name = 'leap.nvim'},
-  {name = 'lualine.nvim'},
+  {name = 'feline.nvim'},
   {name = 'luasnip'},
   {name = 'mini.notify'},
   {name = 'nvim-nio'},

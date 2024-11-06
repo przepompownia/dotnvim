@@ -74,9 +74,6 @@
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = nvim/pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
-[submodule "pack/bundle/opt/lualine.nvim"]
-	path = nvim/pack/bundle/opt/lualine.nvim
-	url = https://github.com/nvim-lualine/lualine.nvim
 [submodule "pack/bundle/opt/leap.nvim"]
 	path = nvim/pack/bundle/opt/leap.nvim
 	url = https://github.com/ggandor/leap.nvim
@@ -138,3 +135,6 @@
 [submodule "nvim/pack/bundle/opt/mini.notify"]
 	path = nvim/pack/bundle/opt/mini.notify
 	url = https://github.com/echasnovski/mini.notify
+[submodule "feline.nvim"]
+	path = nvim/pack/plugins/opt/feline.nvim
+	url = https://github.com/freddiehaddad/feline.nvim
