@@ -9,7 +9,7 @@
 	ci-submodules = commit -m 'Upgrade extensions'
 	cvs = !git add-submodules && git ci-submodules
 	su = submodule update --init --recursive
-	sur = submodule update --init --recursive --remote
+	sur = su --remote
 	sr = !git list-submodules | parallel --group -- 'echo {} && git sur -- {}'
 	list-submodules-on-configured-branch = "!git submodule foreach --quiet 'branch=`git -C \"$toplevel\" config --file \"$toplevel/.gitmodules\" --get submodule.$name.branch || basename $(git rev-parse --abbrev-ref origin/HEAD)`; \"$toplevel/.config/bin/git-does-head-belong-to\" origin \"$branch\" && echo \"$displaypath\" || printf \"\\t\\e[31m✗ %s has HEAD not on %s/%s (is on %s)\\e[0m\\n\" \"$displaypath\" origin \"$branch\" \"$(git branch --contains HEAD)\" >&2'"
     list-files-changed-after-merge = "!f(){ git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD; }; f"
