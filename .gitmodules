@@ -129,12 +129,12 @@
 [submodule "nvim/pack/bundle/opt/nvim-nio"]
 	path = nvim/pack/bundle/opt/nvim-nio
 	url = https://github.com/nvim-neotest/nvim-nio
-[submodule "nvim/pack/bundle/opt/mini.notify"]
-	path = nvim/pack/bundle/opt/mini.notify
-	url = https://github.com/echasnovski/mini.notify
 [submodule "feline.nvim"]
 	path = nvim/pack/plugins/opt/feline.nvim
 	url = https://github.com/freddiehaddad/feline.nvim
 [submodule "ultimate-autopair.nvim"]
 	path = nvim/pack/plugins/opt/ultimate-autopair.nvim
 	url = https://github.com/altermo/ultimate-autopair.nvim
+[submodule "msg-show.nvim"]
+	path = nvim/pack/arctgx/opt/msg-show.nvim
+	url = https://github.com/przepompownia/msg-show.nvim
