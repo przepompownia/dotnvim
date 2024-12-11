@@ -42,6 +42,8 @@ runIsolated() {
         --property=BindPaths="${bindPaths[*]}" \
         --setenv=NVIM_UNSANDBOXED_CONFIGDIR="${nvimAppDir}" \
         --setenv=NVIM_FROM_SRC_DIR="${NVIM_FROM_SRC_DIR}" \
+        --setenv=GIT_DIR="${GIT_DIR}" \
+        --setenv=GIT_WORK_TREE="${GIT_WORK_TREE}" \
         --setenv=PWD="${PWD}" \
         ${SSH_TTY:+--setenv=SSH_TTY="$SSH_TTY"} \
         ${TMUX:+--setenv=TMUX="$TMUX"} \
