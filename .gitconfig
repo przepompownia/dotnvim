@@ -12,7 +12,7 @@
 	sur = su --remote
 	sr = !git list-submodules | parallel --group -- 'git sur -- {} | xargs -r echo {}'
 	sun = !git config --local --list | command grep 'submodule\\..*\\.update'
-	update-non-submodule-plugins = !"git list-non-submodules | parallel --group -- 'echo git --git-dir={}/.git pull | xargs -r echo {}'"
+	update-non-submodule-plugins = !"git list-non-submodules | parallel --group -- 'git --git-dir={}/.git pull | xargs -r echo {}'"
 	list-submodules-on-configured-branch = "!git submodule foreach --quiet 'branch=`git -C \"$toplevel\" config --file \"$toplevel/.gitmodules\" --get submodule.$name.branch || basename $(git rev-parse --abbrev-ref origin/HEAD)`; \"$toplevel/.config/bin/git-does-head-belong-to\" origin \"$branch\" && echo \"$displaypath\" || printf \"\\t\\e[31m✗ %s has HEAD not on %s/%s (is on %s)\\e[0m\\n\" \"$displaypath\" origin \"$branch\" \"$(git branch --contains HEAD)\" >&2'"
     list-files-changed-after-merge = "!f(){ git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD; }; f"
     matches-filename-changed-after-merge = "!f(){ test -z \"$1\" && { echo 'Required regex to match files'>&2; return 1; }; git list-files-changed-after-merge | command grep -Eq -- \"$1\"; }; f"
