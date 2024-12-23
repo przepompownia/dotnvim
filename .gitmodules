@@ -138,3 +138,7 @@
 [submodule "msg-show.nvim"]
 	path = nvim/pack/arctgx/opt/msg-show.nvim
 	url = https://github.com/przepompownia/msg-show.nvim
+[submodule "nvim-snippets"]
+	path = nvim/pack/plugins/opt/nvim-snippets
+	url = https://github.com/przepompownia/nvim-snippets
+	branch = allowed-filetypes

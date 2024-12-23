@@ -19,6 +19,7 @@ local extensions = {
   {name = 'cmp-nvim-lsp'},
   {name = 'cmp-path'},
   {name = 'nvim-cmp'},
+  {name = 'nvim-snippets'},
   {name = 'diffview.nvim'},
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
