@@ -98,9 +98,6 @@
 [submodule "nvim/pack/colorscheme/opt/onedark.nvim"]
 	path = nvim/pack/colorscheme/opt/onedark.nvim
 	url = https://github.com/navarasu/onedark.nvim
-[submodule "nvim/pack/bundle/opt/nvim-surround"]
-	path = nvim/pack/bundle/opt/nvim-surround
-	url = https://github.com/kylechui/nvim-surround
 [submodule "nvim/pack/bundle/opt/unimpaired.nvim"]
 	path = nvim/pack/bundle/opt/unimpaired.nvim
 	url = https://github.com/Tummetott/unimpaired.nvim
@@ -142,3 +139,6 @@
 	path = nvim/pack/plugins/opt/nvim-snippets
 	url = https://github.com/przepompownia/nvim-snippets
 	branch = allowed-filetypes
+[submodule "mini.surround"]
+	path = nvim/pack/plugins/opt/mini.surround
+	url = https://github.com/echasnovski/mini.surround
