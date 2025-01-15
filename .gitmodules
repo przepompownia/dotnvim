@@ -1,6 +1,3 @@
-[submodule "pack/bundle/opt/phpactor"]
-	path = nvim/pack/bundle/opt/phpactor
-	url = https://github.com/phpactor/phpactor.git
 [submodule "pack/bundle/opt/arctgx"]
 	path = nvim/pack/arctgx/opt/arctgx
 	url = https://github.com/przepompownia/nvim-arctgx
@@ -142,3 +139,7 @@
 [submodule "mini.surround"]
 	path = nvim/pack/plugins/opt/mini.surround
 	url = https://github.com/echasnovski/mini.surround
+[submodule "phpactor"]
+	path = nvim/pack/plugins/opt/phpactor
+	url = https://github.com/przepompownia/phpactor
+	branch = experimental
