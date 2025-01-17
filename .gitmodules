@@ -9,9 +9,6 @@
 	path = nvim/pack/bundle/opt/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
 	branch = master
-[submodule "pack/bundle/opt/nvim-bqf"]
-	path = nvim/pack/bundle/opt/nvim-bqf
-	url = https://github.com/kevinhwang91/nvim-bqf
 [submodule "pack/bundle/opt/cmp-nvim-lsp"]
 	path = nvim/pack/bundle/opt/cmp-nvim-lsp
 	url = https://github.com/hrsh7th/cmp-nvim-lsp
@@ -143,3 +140,7 @@
 	path = nvim/pack/plugins/opt/phpactor
 	url = https://github.com/przepompownia/phpactor
 	branch = experimental
+[submodule "nvim-bqf"]
+	path = nvim/pack/plugins/opt/nvim-bqf
+	url = https://github.com/przepompownia/nvim-bqf
+	branch = treesitter-main
