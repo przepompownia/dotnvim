@@ -9,6 +9,12 @@ vim.g.pluginDirs = vim.iter({
   return vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
 end):totable()
 
+for _, path in ipairs(vim.opt.runtimepath:get()) do
+  if vim.startswith(path, '/etc/') or vim.startswith(path, '/usr/') then
+    vim.opt.runtimepath:remove(path)
+  end
+end
+
 vim.loader.enable()
 
 ---@type NvimPlugins
