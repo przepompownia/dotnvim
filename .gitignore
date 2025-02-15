@@ -13,3 +13,5 @@
 /nvim/pack/unmerged/opt/
 /Session.vim
 /.xdg2/
+/.luarc.jsonc
+/nvim/spell/
