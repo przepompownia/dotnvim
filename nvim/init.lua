@@ -55,6 +55,7 @@ local extensions = {
   {name = 'telescope-fzf-native.nvim'},
   {name = 'telescope.nvim'},
   {name = 'telescope-ui-select.nvim'},
+  {name = 'namu.nvim'},
   {name = 'nord.nvim'},
   {name = 'phpactor'},
   {name = 'mini.surround'},
