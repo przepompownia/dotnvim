@@ -5,7 +5,6 @@ vim.g.pluginDirs = vim.iter({
   'arctgx',
   'colorscheme',
 }):map(function (group)
-  ---@diagnostic disable-next-line: param-type-mismatch
   return vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
 end):totable()
 
