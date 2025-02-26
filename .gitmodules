@@ -33,10 +33,6 @@
 [submodule "pack/bundle/opt/plenary.nvim"]
 	path = nvim/pack/bundle/opt/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
-[submodule "pack/bundle/opt/telescope.nvim"]
-	path = nvim/pack/bundle/opt/telescope.nvim
-	url = https://github.com/nvim-telescope/telescope.nvim
-	branch = master
 [submodule "pack/bundle/opt/telescope-fzf-native.nvim"]
 	path = nvim/pack/bundle/opt/telescope-fzf-native.nvim
 	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
@@ -147,3 +143,7 @@
 [submodule "namu.nvim"]
 	path = nvim/pack/plugins/opt/namu.nvim
 	url = https://github.com/bassamsdata/namu.nvim
+[submodule "telescope.nvim"]
+	path = nvim/pack/plugins/opt/telescope.nvim
+	url = https://github.com/przepompownia/telescope.nvim
+	branch = custom
