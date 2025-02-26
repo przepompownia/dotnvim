@@ -48,10 +48,6 @@
 [submodule "pack/bundle/opt/schemastore.nvim"]
 	path = nvim/pack/bundle/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
-[submodule "pack/bundle/opt/nvim-treesitter-textobjects"]
-	path = nvim/pack/bundle/opt/nvim-treesitter-textobjects
-	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-	branch = main
 [submodule "pack/bundle/opt/osv-dap-nvim"]
 	path = nvim/pack/bundle/opt/osv-dap-nvim
 	url = https://github.com/jbyuki/one-small-step-for-vimkind
@@ -146,4 +142,8 @@
 [submodule "telescope.nvim"]
 	path = nvim/pack/plugins/opt/telescope.nvim
 	url = https://github.com/przepompownia/telescope.nvim
+	branch = custom
+[submodule "nvim-treesitter-textobjects"]
+	path = nvim/pack/plugins/opt/nvim-treesitter-textobjects
+	url = https://github.com/przepompownia/nvim-treesitter-textobjects
 	branch = custom
