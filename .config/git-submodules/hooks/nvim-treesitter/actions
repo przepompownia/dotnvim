@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 runTsUpdate() {
-    nvim --headless -c 'TSUpdate' -c 'q'
+    nvim --headless -c 'TSUpdateSync quit'
     echo
 }
 
