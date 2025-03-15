@@ -56,6 +56,6 @@ helptags:
 .ONESHELL:
 edit-init:
 	nvim -O $(nvimInit) nvim/.nvim.lua
+	$(MAKE) helptags
 	$(MAKE) luarc
 	$(MAKE) arctgx-luarc
-	$(MAKE) helptags
