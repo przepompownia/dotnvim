@@ -48,5 +48,6 @@ runIsolated() {
         ${SSH_TTY:+--setenv=SSH_TTY="$SSH_TTY"} \
         ${TMUX:+--setenv=TMUX="$TMUX"} \
         ${COLORTERM:+--setenv=COLORTERM="$COLORTERM"} \
+        ${NVIM_LOG_FILE:+--setenv=COLORTERM="$NVIM_LOG_FILE"} \
         -- "$nvimExecutable" "$@"
 }
