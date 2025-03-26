@@ -90,9 +90,6 @@
 [submodule "nvim/pack/bundle/opt/statuscol.nvim"]
 	path = nvim/pack/bundle/opt/statuscol.nvim
 	url = https://github.com/luukvbaal/statuscol.nvim
-[submodule "nvim/pack/bundle/opt/diffview.nvim"]
-	path = nvim/pack/bundle/opt/diffview.nvim
-	url = https://github.com/sindrets/diffview.nvim
 [submodule "nvim/pack/bundle/opt/nvim-treesitter"]
 	path = nvim/pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
@@ -147,3 +144,7 @@
 	path = nvim/pack/plugins/opt/nvim-treesitter-textobjects
 	url = https://github.com/przepompownia/nvim-treesitter-textobjects
 	branch = custom
+[submodule "diffview.nvim"]
+	path = nvim/pack/plugins/opt/diffview.nvim
+	url = https://github.com/przepompownia/diffview.nvim
+	branch = arctgx
