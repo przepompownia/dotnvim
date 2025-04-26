@@ -9,27 +9,15 @@
 	path = nvim/pack/bundle/opt/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
 	branch = master
-[submodule "pack/bundle/opt/cmp-nvim-lsp"]
-	path = nvim/pack/bundle/opt/cmp-nvim-lsp
-	url = https://github.com/hrsh7th/cmp-nvim-lsp
-[submodule "pack/bundle/opt/nvim-cmp"]
-	path = nvim/pack/bundle/opt/nvim-cmp
-	url = https://github.com/hrsh7th/nvim-cmp.git
 [submodule "pack/bundle/opt/nvim-lspconfig"]
 	path = nvim/pack/bundle/opt/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
 [submodule "pack/bundle/opt/nvim-treesitter-context"]
 	path = nvim/pack/bundle/opt/nvim-treesitter-context
 	url = https://github.com/nvim-treesitter/nvim-treesitter-context
-[submodule "pack/bundle/opt/cmp-luasnip"]
-	path = nvim/pack/bundle/opt/cmp-luasnip
-	url = https://github.com/saadparwaiz1/cmp_luasnip
 [submodule "pack/bundle/opt/luasnip"]
 	path = nvim/pack/bundle/opt/luasnip
 	url = https://github.com/L3MON4D3/LuaSnip
-[submodule "pack/bundle/opt/cmp-buffer"]
-	path = nvim/pack/bundle/opt/cmp-buffer
-	url = https://github.com/hrsh7th/cmp-buffer
 [submodule "pack/bundle/opt/plenary.nvim"]
 	path = nvim/pack/bundle/opt/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
@@ -42,9 +30,6 @@
 [submodule "pack/bundle/opt/nvim-dap-ui"]
 	path = nvim/pack/bundle/opt/nvim-dap-ui
 	url = https://github.com/rcarriga/nvim-dap-ui
-[submodule "pack/bundle/opt/cmp-path"]
-	path = nvim/pack/bundle/opt/cmp-path
-	url = https://github.com/hrsh7th/cmp-path
 [submodule "pack/bundle/opt/schemastore.nvim"]
 	path = nvim/pack/bundle/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
