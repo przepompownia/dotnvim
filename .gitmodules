@@ -9,9 +9,6 @@
 	path = nvim/pack/bundle/opt/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
 	branch = master
-[submodule "pack/bundle/opt/nvim-lspconfig"]
-	path = nvim/pack/bundle/opt/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig
 [submodule "pack/bundle/opt/nvim-treesitter-context"]
 	path = nvim/pack/bundle/opt/nvim-treesitter-context
 	url = https://github.com/nvim-treesitter/nvim-treesitter-context
@@ -21,9 +18,6 @@
 [submodule "pack/bundle/opt/plenary.nvim"]
 	path = nvim/pack/bundle/opt/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
-[submodule "pack/bundle/opt/telescope-fzf-native.nvim"]
-	path = nvim/pack/bundle/opt/telescope-fzf-native.nvim
-	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
 [submodule "pack/bundle/opt/nvim-dap"]
 	path = nvim/pack/bundle/opt/nvim-dap
 	url = https://github.com/mfussenegger/nvim-dap
@@ -75,8 +69,8 @@
 [submodule "nvim/pack/bundle/opt/statuscol.nvim"]
 	path = nvim/pack/bundle/opt/statuscol.nvim
 	url = https://github.com/luukvbaal/statuscol.nvim
-[submodule "nvim/pack/bundle/opt/nvim-treesitter"]
-	path = nvim/pack/bundle/opt/nvim-treesitter
+[submodule "nvim-treesitter"]
+	path = nvim/pack/plugins/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
 	branch = main
 [submodule "nvim/pack/bundle/opt/neotest"]
@@ -133,3 +127,9 @@
 	path = nvim/pack/plugins/opt/diffview.nvim
 	url = https://github.com/przepompownia/diffview.nvim
 	branch = arctgx
+[submodule "telescope-fzf-native.nvim"]
+	path = nvim/pack/plugins/opt/telescope-fzf-native.nvim
+	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
+[submodule "nvim-lspconfig"]
+	path = nvim/pack/plugins/opt/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
