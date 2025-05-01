@@ -17,9 +17,10 @@ gitconfig-include-local:
 submodule-update:
 	git su
 
+.ONESHELL:
 telescope-fzf-native-build:
 	cd $(DIR)/nvim/pack/plugins/opt/telescope-fzf-native.nvim
-	make -j
+	$(MAKE) -j CC=gcc
 
 git-submodules-hooks-install:
 	$(DIR)/.config/bin/git-submodules-hooks-install . .config/git-submodules/.config
