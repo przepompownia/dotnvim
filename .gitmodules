@@ -36,8 +36,8 @@
 [submodule "pack/bundle/opt/gitsigns.nvim"]
 	path = nvim/pack/bundle/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
-[submodule "pack/bundle/opt/leap.nvim"]
-	path = nvim/pack/bundle/opt/leap.nvim
+[submodule "leap.nvim"]
+	path = nvim/pack/plugins/opt/leap.nvim
 	url = https://github.com/ggandor/leap.nvim
 [submodule "pack/bundle/opt/nvim-tree.lua"]
 	path = nvim/pack/bundle/opt/nvim-tree.lua
