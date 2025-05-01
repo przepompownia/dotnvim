@@ -18,7 +18,7 @@ submodule-update:
 	git su
 
 telescope-fzf-native-build:
-	cd $(DIR)/nvim/pack/bundle/opt/telescope-fzf-native.nvim
+	cd $(DIR)/nvim/pack/plugins/opt/telescope-fzf-native.nvim
 	make -j
 
 git-submodules-hooks-install:
