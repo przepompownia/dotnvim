@@ -1,92 +1,92 @@
-[submodule "pack/bundle/opt/arctgx"]
+[submodule "arctgx"]
 	path = nvim/pack/arctgx/opt/arctgx
 	url = https://github.com/przepompownia/nvim-arctgx
-[submodule "pack/bundle/opt/vim-dadbod"]
-	path = nvim/pack/bundle/opt/vim-dadbod
+[submodule "vim-dadbod"]
+	path = nvim/pack/plugins/opt/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod
 	branch = master
-[submodule "pack/bundle/opt/vim-dadbod-ui"]
-	path = nvim/pack/bundle/opt/vim-dadbod-ui
+[submodule "vim-dadbod-ui"]
+	path = nvim/pack/plugins/opt/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
 	branch = master
-[submodule "pack/bundle/opt/nvim-treesitter-context"]
-	path = nvim/pack/bundle/opt/nvim-treesitter-context
+[submodule "nvim-treesitter-context"]
+	path = nvim/pack/plugins/opt/nvim-treesitter-context
 	url = https://github.com/nvim-treesitter/nvim-treesitter-context
-[submodule "pack/bundle/opt/luasnip"]
-	path = nvim/pack/bundle/opt/luasnip
+[submodule "luasnip"]
+	path = nvim/pack/plugins/opt/luasnip
 	url = https://github.com/L3MON4D3/LuaSnip
-[submodule "pack/bundle/opt/plenary.nvim"]
-	path = nvim/pack/bundle/opt/plenary.nvim
+[submodule "plenary.nvim"]
+	path = nvim/pack/plugins/opt/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
-[submodule "pack/bundle/opt/nvim-dap"]
-	path = nvim/pack/bundle/opt/nvim-dap
+[submodule "nvim-dap"]
+	path = nvim/pack/plugins/opt/nvim-dap
 	url = https://github.com/mfussenegger/nvim-dap
-[submodule "pack/bundle/opt/nvim-dap-ui"]
-	path = nvim/pack/bundle/opt/nvim-dap-ui
+[submodule "nvim-dap-ui"]
+	path = nvim/pack/plugins/opt/nvim-dap-ui
 	url = https://github.com/rcarriga/nvim-dap-ui
-[submodule "pack/bundle/opt/schemastore.nvim"]
-	path = nvim/pack/bundle/opt/schemastore.nvim
+[submodule "schemastore.nvim"]
+	path = nvim/pack/plugins/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
-[submodule "pack/bundle/opt/osv-dap-nvim"]
-	path = nvim/pack/bundle/opt/osv-dap-nvim
+[submodule "osv-dap-nvim"]
+	path = nvim/pack/plugins/opt/osv-dap-nvim
 	url = https://github.com/jbyuki/one-small-step-for-vimkind
-[submodule "pack/bundle/opt/null-ls.nvim"]
-	path = nvim/pack/bundle/opt/none-ls.nvim
+[submodule "null-ls.nvim"]
+	path = nvim/pack/plugins/opt/none-ls.nvim
 	url = https://github.com/nvimtools/none-ls.nvim
-[submodule "pack/bundle/opt/gitsigns.nvim"]
-	path = nvim/pack/bundle/opt/gitsigns.nvim
+[submodule "gitsigns.nvim"]
+	path = nvim/pack/plugins/opt/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
 [submodule "leap.nvim"]
 	path = nvim/pack/plugins/opt/leap.nvim
 	url = https://github.com/ggandor/leap.nvim
-[submodule "pack/bundle/opt/nvim-tree.lua"]
-	path = nvim/pack/bundle/opt/nvim-tree.lua
+[submodule "nvim-tree.lua"]
+	path = nvim/pack/plugins/opt/nvim-tree.lua
 	url = https://github.com/nvim-tree/nvim-tree.lua
-[submodule "pack/bundle/opt/telescope-ui-select.nvim"]
-	path = nvim/pack/bundle/opt/telescope-ui-select.nvim
+[submodule "telescope-ui-select.nvim"]
+	path = nvim/pack/plugins/opt/telescope-ui-select.nvim
 	url = https://github.com/nvim-telescope/telescope-ui-select.nvim
-[submodule "pack/bundle/opt/treesj"]
-	path = nvim/pack/bundle/opt/treesj
+[submodule "treesj"]
+	path = nvim/pack/plugins/opt/treesj
 	url = https://github.com/Wansmer/treesj
-[submodule "pack/colorscheme/opt/nvim-dap-virtual-text"]
-	path = nvim/pack/bundle/opt/nvim-dap-virtual-text
+[submodule "nvim-dap-virtual-text"]
+	path = nvim/pack/plugins/opt/nvim-dap-virtual-text
 	url = https://github.com/theHamsta/nvim-dap-virtual-text
-[submodule "pack/colorscheme/opt/nord.nvim"]
+[submodule "nord.nvim"]
 	path = nvim/pack/colorscheme/opt/nord.nvim
 	url = https://github.com/gbprod/nord.nvim
-[submodule "pack/bundle/opt/nvim-colorizer.lua"]
-	path = nvim/pack/bundle/opt/nvim-colorizer.lua
+[submodule "nvim-colorizer.lua"]
+	path = nvim/pack/plugins/opt/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
-[submodule "pack/arctgx/opt/nvim-dap-tab"]
+[submodule "nvim-dap-tab"]
 	path = nvim/pack/arctgx/opt/nvim-dap-tab
 	url = https://github.com/przepompownia/nvim-dap-tab
-[submodule "nvim/pack/colorscheme/opt/onedark.nvim"]
+[submodule "onedark.nvim"]
 	path = nvim/pack/colorscheme/opt/onedark.nvim
 	url = https://github.com/navarasu/onedark.nvim
-[submodule "nvim/pack/bundle/opt/unimpaired.nvim"]
-	path = nvim/pack/bundle/opt/unimpaired.nvim
+[submodule "unimpaired.nvim"]
+	path = nvim/pack/plugins/opt/unimpaired.nvim
 	url = https://github.com/Tummetott/unimpaired.nvim
-[submodule "nvim/pack/bundle/opt/statuscol.nvim"]
-	path = nvim/pack/bundle/opt/statuscol.nvim
+[submodule "statuscol.nvim"]
+	path = nvim/pack/plugins/opt/statuscol.nvim
 	url = https://github.com/luukvbaal/statuscol.nvim
 [submodule "nvim-treesitter"]
 	path = nvim/pack/plugins/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
 	branch = main
-[submodule "nvim/pack/bundle/opt/neotest"]
-	path = nvim/pack/bundle/opt/neotest
+[submodule "neotest"]
+	path = nvim/pack/plugins/opt/neotest
 	url = https://github.com/nvim-neotest/neotest
-[submodule "nvim/pack/bundle/opt/neotest-phpunit"]
-	path = nvim/pack/bundle/opt/neotest-phpunit
+[submodule "neotest-phpunit"]
+	path = nvim/pack/plugins/opt/neotest-phpunit
 	url = https://github.com/olimorris/neotest-phpunit
-[submodule "nvim/pack/bundle/opt/actions-preview.nvim"]
-	path = nvim/pack/bundle/opt/actions-preview.nvim
+[submodule "actions-preview.nvim"]
+	path = nvim/pack/plugins/opt/actions-preview.nvim
 	url = https://github.com/aznhe21/actions-preview.nvim
-[submodule "nvim/pack/arctgx/opt/git-utils.nvim"]
+[submodule "git-utils.nvim"]
 	path = nvim/pack/arctgx/opt/git-utils.nvim
 	url = https://github.com/przepompownia/git-utils.nvim
-[submodule "nvim/pack/bundle/opt/nvim-nio"]
-	path = nvim/pack/bundle/opt/nvim-nio
+[submodule "nvim-nio"]
+	path = nvim/pack/plugins/opt/nvim-nio
 	url = https://github.com/nvim-neotest/nvim-nio
 [submodule "feline.nvim"]
 	path = nvim/pack/plugins/opt/feline.nvim

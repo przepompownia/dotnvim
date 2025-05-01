@@ -1,7 +1,6 @@
 vim.g.pluginDirs = vim.iter({
   'unmerged',
   'plugins',
-  'bundle',
   'arctgx',
   'colorscheme',
 }):map(function (group)
