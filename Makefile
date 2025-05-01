@@ -8,7 +8,7 @@ nvimInit = $(DIR)/nvim/init.lua
 
 .ONESHELL:
 phpactor-install:
-	cd $(DIR)/nvim/pack/bundle/opt/phpactor
+	cd $(DIR)/nvim/pack/plugins/opt/phpactor
 	composer install
 
 gitconfig-include-local:
