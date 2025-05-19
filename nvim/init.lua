@@ -22,6 +22,7 @@ local extensions = {
   {name = 'diffview.nvim'},
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
+  {name = 'grug-far.nvim'},
   {name = 'leap.nvim'},
   {name = 'feline.nvim'},
   {name = 'luasnip'},

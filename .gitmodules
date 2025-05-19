@@ -133,3 +133,6 @@
 [submodule "nvim-lspconfig"]
 	path = nvim/pack/plugins/opt/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule "grug-far.nvim"]
+	path = nvim/pack/plugins/opt/grug-far.nvim
+	url = https://github.com/MagicDuck/grug-far.nvim
