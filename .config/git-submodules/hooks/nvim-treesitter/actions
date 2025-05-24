@@ -8,5 +8,3 @@ runTsUpdate() {
 declare -A patternToAction
 
 patternToAction['^lockfile\.json$']='runTsUpdate'
-
-DISABLE_GIT_SHOW=1
