@@ -7,4 +7,4 @@ runTsUpdate() {
 
 declare -A patternToAction
 
-patternToAction['^lockfile\.json$']='runTsUpdate'
+patternToAction['^lua/nvim-treesitter/parsers\.lua$']='runTsUpdate'
