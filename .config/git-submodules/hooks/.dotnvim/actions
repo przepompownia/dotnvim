@@ -10,7 +10,20 @@ syncSubmodules() {
     make luarc
 }
 
+submodulePattern() {
+    declare -a sub
+    declare IFS
+    mapfile -t sub < <(git submodule --quiet foreach 'realpath --relative-to="${HOME}" "$PWD"' | sed 's/\./\\./g')
+    IFS='|'
+    echo "${sub[*]}"
+}
+
+gitSubmoduleUpdate() {
+    git su
+}
+
 declare -A patternToAction
 
 patternToAction['^.config/git-submodules/.config$']='runInstallHooks'
 patternToAction['^.gitmodules$']='syncSubmodules'
+patternToAction["$(submodulePattern)"]='gitSubmoduleUpdate'
