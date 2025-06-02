@@ -1,7 +1,7 @@
 vim.g.pluginDirs = vim.iter({
-  'unmerged',
-  'plugins',
   'arctgx',
+  'plugins',
+  'unmerged',
   'colorscheme',
 }):map(function (group)
   return vim.fs.joinpath(vim.fn.stdpath('config'), 'pack', group, 'opt')
@@ -61,8 +61,6 @@ local extensions = {
   {name = 'arctgx'},
 }
 
-require('dotnvim.plugin').packadd(extensions)
-
 if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONFIGDIR}, vim.uv.cwd()) then
   local exrc = vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.lua')
   local ok = pcall(vim.uv.fs_stat, exrc)
@@ -71,5 +69,7 @@ if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONF
   end
   assert(loadstring(vim.secure.read(exrc) or '', 'Cannot load Lua script from ' .. exrc))()
 end
+
+require('dotnvim.plugin').packadd(extensions)
 
 vim.go.exrc = true
