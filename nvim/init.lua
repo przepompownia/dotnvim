@@ -61,7 +61,7 @@ local extensions = {
 }
 
 if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONFIGDIR}, vim.uv.cwd()) then
-  local exrc = vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.lua')
+  local exrc = vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.local.lua')
   local ok = pcall(vim.uv.fs_stat, exrc)
   if not ok then
     return
