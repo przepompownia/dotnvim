@@ -3,12 +3,13 @@ MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 SHELL := /bin/bash
 DIR := ${CURDIR}
-nvimArctgxDir = $(DIR)/nvim/pack/arctgx/opt/arctgx
-nvimInit = $(DIR)/nvim/init.lua
+nvimDir = $(DIR)/nvim
+nvimArctgxDir = $(nvimDir)/pack/arctgx/opt/arctgx
+nvimInit = $(nvimDir)/init.lua
 
 .ONESHELL:
 phpactor-install:
-	cd $(DIR)/nvim/pack/plugins/opt/phpactor
+	cd $(nvimDir)/pack/plugins/opt/phpactor
 	composer install
 
 gitconfig-include-local:
@@ -19,7 +20,7 @@ submodule-update:
 
 .ONESHELL:
 telescope-fzf-native-build:
-	cd $(DIR)/nvim/pack/plugins/opt/telescope-fzf-native.nvim
+	cd $(nvimDir)/pack/plugins/opt/telescope-fzf-native.nvim
 	$(MAKE) -j CC=gcc
 
 git-submodules-hooks-install:
@@ -39,7 +40,7 @@ check-requirements:
 .ONESHELL:
 luarc:
 	cd $(nvimArctgxDir)
-	$(MAKE) luarc nvimInit=$(nvimInit) projectDir=$(DIR)
+	$(MAKE) luarc nvimInit=$(nvimInit) projectDir=$(nvimDir)
 
 .ONESHELL:
 arctgx-luarc:
@@ -48,7 +49,7 @@ arctgx-luarc:
 
 .ONESHELL:
 arctgx-start:
-	cd $(DIR)/nvim/pack/arctgx/opt/arctgx 
+	cd $(nvimDir)/pack/arctgx/opt/arctgx 
 	$(MAKE) start
 
 helptags:
