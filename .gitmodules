@@ -21,9 +21,6 @@
 [submodule "nvim-dap"]
 	path = nvim/pack/plugins/opt/nvim-dap
 	url = https://github.com/mfussenegger/nvim-dap
-[submodule "nvim-dap-ui"]
-	path = nvim/pack/plugins/opt/nvim-dap-ui
-	url = https://github.com/rcarriga/nvim-dap-ui
 [submodule "schemastore.nvim"]
 	path = nvim/pack/plugins/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
@@ -57,9 +54,6 @@
 [submodule "nvim-colorizer.lua"]
 	path = nvim/pack/plugins/opt/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
-[submodule "nvim-dap-tab"]
-	path = nvim/pack/arctgx/opt/nvim-dap-tab
-	url = https://github.com/przepompownia/nvim-dap-tab
 [submodule "onedark.nvim"]
 	path = nvim/pack/colorscheme/opt/onedark.nvim
 	url = https://github.com/navarasu/onedark.nvim
@@ -136,3 +130,6 @@
 [submodule "grug-far.nvim"]
 	path = nvim/pack/plugins/opt/grug-far.nvim
 	url = https://github.com/MagicDuck/grug-far.nvim
+[submodule "nvim-dap-view"]
+	path = nvim/pack/plugins/opt/nvim-dap-view
+	url = https://github.com/igorlfs/nvim-dap-view
