@@ -3,7 +3,7 @@
 /.config/vim/.viminfo
 /.config/vim/viminfo
 /.githooks
-/nvim/.nvim.lua
+/nvim/.nvim.local.lua
 /.nvimlog
 /.xdg/cache/
 /.xdg/data/

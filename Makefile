@@ -56,7 +56,7 @@ helptags:
 
 .ONESHELL:
 edit-init:
-	nvim -O $(nvimInit) nvim/.nvim.lua
+	nvim $(nvimInit) -c "lua vim.cmd.vsplit(vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.local.lua'))"
 	$(MAKE) helptags
 	$(MAKE) luarc
 	$(MAKE) arctgx-luarc
