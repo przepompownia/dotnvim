@@ -30,7 +30,7 @@ git-submodules-sync:
 	git submodule sync --recursive
 
 update-non-submodule-plugins:
-	git list-non-submodules | parallel --group -- 'git -C {} pull || echo "Error on {}."' | command grep -v "Already up to date." || true
+	git list-unmerged-plugins | parallel --group -- 'git -C {} pull || echo "Error on {}."' | command grep -v "Already up to date." || true
 
 start: gitconfig-include-local submodule-update git-submodules-hooks-install phpactor-install telescope-fzf-native-build arctgx-start
 
