@@ -25,7 +25,6 @@ local extensions = {
   {name = 'grug-far.nvim'},
   {name = 'leap.nvim'},
   {name = 'feline.nvim'},
-  {name = 'luasnip'},
   {name = 'msg-show.nvim'},
   {name = 'nvim-nio'},
   {name = 'neotest'},

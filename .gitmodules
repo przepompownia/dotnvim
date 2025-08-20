@@ -12,9 +12,6 @@
 [submodule "nvim-treesitter-context"]
 	path = nvim/pack/plugins/opt/nvim-treesitter-context
 	url = https://github.com/nvim-treesitter/nvim-treesitter-context
-[submodule "luasnip"]
-	path = nvim/pack/plugins/opt/luasnip
-	url = https://github.com/L3MON4D3/LuaSnip
 [submodule "plenary.nvim"]
 	path = nvim/pack/plugins/opt/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
