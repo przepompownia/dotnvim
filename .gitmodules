@@ -79,9 +79,6 @@
 [submodule "nvim-nio"]
 	path = nvim/pack/plugins/opt/nvim-nio
 	url = https://github.com/nvim-neotest/nvim-nio
-[submodule "feline.nvim"]
-	path = nvim/pack/plugins/opt/feline.nvim
-	url = https://github.com/przepompownia/feline.nvim
 [submodule "ultimate-autopair.nvim"]
 	path = nvim/pack/plugins/opt/ultimate-autopair.nvim
 	url = https://github.com/altermo/ultimate-autopair.nvim
