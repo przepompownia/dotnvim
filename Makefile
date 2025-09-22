@@ -57,7 +57,9 @@ helptags:
 
 .ONESHELL:
 edit-init:
-	nvim $(nvimInit) -c "lua vim.cmd.vsplit(vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.local.lua'))"
+	nvim $(nvimInit) \
+		-c "lua vim.cmd.vsplit(vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.local.lua'))" \
+		-c 'autocmd BufWritePost <buffer> trust'
 	$(MAKE) helptags
 	$(MAKE) luarc
 	$(MAKE) arctgx-luarc
