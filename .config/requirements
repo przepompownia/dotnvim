@@ -13,3 +13,4 @@ phan composer global require phan/phan
 sqls https://github.com/lighttiger2505/sqls
 git
 shellcheck https://github.com/koalaman/shellcheck (may be installable from your distribution)
+parallel
