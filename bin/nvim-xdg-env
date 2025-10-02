@@ -12,9 +12,4 @@ nvimAppName="${NVIM_APPNAME:-nvim}"
 
 mkdir -p "$XDG_CACHE_HOME/${nvimAppName}" "$XDG_STATE_HOME" "$XDG_DATA_HOME"
 
-if [[ -z ${NVIM_BINARY:="$(command -pv nvim)"} || ! -x ${NVIM_BINARY} ]]; then
-    echo 'Try to set NVIM_BINARY first' >&2
-    exit 1
-fi
-
-"${NVIM_BINARY}" "$@"
+"${NVIM_FROM_SRC_DIR}/bin/nvim" "$@"
