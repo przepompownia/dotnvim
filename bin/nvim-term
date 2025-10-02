@@ -9,7 +9,7 @@ case "$terminal" in
         kitty -o font_size=14 -o shell_integration=no-title --start-as fullscreen --detach -- "${nvimCmd}" "$@"
         ;;
     alacritty)
-        alacritty --title "${title}" --option font.size=14 --command "}${nvimCmd}" "$@" &
+        alacritty --title "${title}" --option font.size=14 --command "${nvimCmd}" "$@" &
         ;;
     ghostty)
         # https://github.com/ghostty-org/ghostty/issues/8862
