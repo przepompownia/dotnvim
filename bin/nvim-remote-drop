@@ -1,0 +1,45 @@
+#!/usr/bin/env -S sh -c 'exec "`dirname $0`/nvim" -l "$0" "$@"'
+-- vim: ft=lua
+
+if #arg == 0 then
+  io.stderr:write(string.format(
+    "Usage: %s file [line [column]] \n",
+    debug.getinfo(1, 'S').source:sub(2)
+  ))
+  os.exit(1)
+end
+
+local _, file = pcall(vim.uv.fs_realpath, arg[1])
+file = file or arg[1]
+
+local defaultLine, defaultColumn = 'nil', 'nil'
+local line = arg[2] or defaultLine
+local column = tonumber(arg[3]) or defaultColumn
+
+local function getNvimOpts(defaultSocketFile)
+  if not vim.uv.fs_stat(defaultSocketFile) then
+    return ''
+  end
+
+  local socket = io.open(defaultSocketFile, 'r')
+  if nil == socket then
+    return ''
+  end
+
+  local content = socket:read('*a') or ''
+
+  return ('-es --server "%s"'):format(vim.trim(content))
+end
+
+local command =
+    ([[nvim %s --remote-send "<Esc>:lua require'arctgx.base'.editMappedPath('%s', %s, %s)<CR>"]]):format(
+      getNvimOpts('/tmp/nvim-default-socket'),
+      file,
+      line or 0,
+      column or 0
+    );
+
+local proc = assert(io.popen(command, 'r'))
+local output = proc:read('*all')
+proc:close()
+print(output)
