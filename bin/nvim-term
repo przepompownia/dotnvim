@@ -14,6 +14,7 @@ case "$terminal" in
     ghostty)
         # https://github.com/ghostty-org/ghostty/issues/8862
         # env=TMUX= does not work with -e
+        unset TMUX
         ghostty --title="${title}" --font-size=14 -e "${nvimCmd}" "$@" 2>/dev/null &
         ;;
     *)
