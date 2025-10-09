@@ -17,7 +17,7 @@
 	url = https://github.com/nvim-lua/plenary.nvim
 [submodule "nvim-dap"]
 	path = nvim/pack/plugins/opt/nvim-dap
-	url = https://github.com/mfussenegger/nvim-dap
+	url = https://codeberg.org/mfussenegger/nvim-dap
 [submodule "schemastore.nvim"]
 	path = nvim/pack/plugins/opt/schemastore.nvim
 	url = https://github.com/b0o/schemastore.nvim
