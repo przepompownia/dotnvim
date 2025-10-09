@@ -24,7 +24,6 @@ local extensions = {
   {name = 'gitsigns.nvim'},
   {name = 'grug-far.nvim'},
   {name = 'leap.nvim'},
-  {name = 'msg-show.nvim'},
   {name = 'nvim-nio'},
   {name = 'neotest'},
   {name = 'neotest-phpunit'},
