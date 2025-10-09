@@ -32,6 +32,7 @@ local extensions = {
   {name = 'ultimate-autopair.nvim'},
   {name = 'nvim-bqf'},
   {name = 'nvim-dap'},
+  {name = 'nvim-dap-tab'},
   {name = 'nvim-dap-view'},
   {name = 'nvim-dap-virtual-text'},
   {name = 'nvim-lspconfig'},

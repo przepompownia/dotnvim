@@ -127,3 +127,6 @@
 [submodule "nvim-dap-view"]
 	path = nvim/pack/plugins/opt/nvim-dap-view
 	url = https://github.com/igorlfs/nvim-dap-view
+[submodule "nvim-dap-tab"]
+	path = nvim/pack/arctgx/opt/nvim-dap-tab
+	url = https://github.com/przepompownia/nvim-dap-tab
