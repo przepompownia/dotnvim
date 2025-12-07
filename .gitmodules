@@ -32,7 +32,7 @@
 	url = https://github.com/lewis6991/gitsigns.nvim
 [submodule "leap.nvim"]
 	path = nvim/pack/plugins/opt/leap.nvim
-	url = https://github.com/ggandor/leap.nvim
+	url = https://codeberg.org/andyg/leap.nvim
 [submodule "nvim-tree.lua"]
 	path = nvim/pack/plugins/opt/nvim-tree.lua
 	url = https://github.com/nvim-tree/nvim-tree.lua
