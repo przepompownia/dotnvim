@@ -106,8 +106,8 @@
 	branch = custom
 [submodule "nvim-treesitter-textobjects"]
 	path = nvim/pack/plugins/opt/nvim-treesitter-textobjects
-	url = https://github.com/przepompownia/nvim-treesitter-textobjects
-	branch = custom
+	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+	branch = main
 [submodule "diffview.nvim"]
 	path = nvim/pack/plugins/opt/diffview.nvim
 	url = https://github.com/przepompownia/diffview.nvim
