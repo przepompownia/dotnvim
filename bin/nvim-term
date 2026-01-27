@@ -3,19 +3,20 @@
 terminal="${0##*/nvim-}"
 nvimCmd="$(command -v nvim)"
 title="Neovim (${PWD})"
+appId='arctgx.term.nvim'
 
 case "$terminal" in
     kitty)
-        kitty -o font_size=14 -o shell_integration=no-title --start-as fullscreen --detach -- "${nvimCmd}" "$@"
+        kitty --class="$appId" -o font_size=14 -o shell_integration=no-title --start-as fullscreen --detach -- "${nvimCmd}" "$@"
         ;;
     alacritty)
-        alacritty --title "${title}" --option font.size=14 --command "${nvimCmd}" "$@" &
+        alacritty --class "$appId" --title "${title}" --option font.size=14 --command "${nvimCmd}" "$@" &
         ;;
     ghostty)
         # https://github.com/ghostty-org/ghostty/issues/8862
         # env=TMUX= does not work with -e
         unset TMUX
-        ghostty --title="${title}" --font-size=14 -e "${nvimCmd}" "$@" 2>/dev/null &
+        ghostty --class="$appId" --title="${title}" --font-size=14 -e "${nvimCmd}" "$@" 2>/dev/null &
         ;;
     *)
         echo 'command not defined'
