@@ -7,16 +7,16 @@ appId='arctgx.term.nvim'
 
 case "$terminal" in
     kitty)
-        kitty --class="$appId" -o font_size=14 -o shell_integration=no-title --start-as fullscreen --detach -- "${nvimCmd}" "$@"
+        exec kitty --class="$appId" -o font_size=14 -o shell_integration=no-title --start-as fullscreen --detach -- "${nvimCmd}" "$@"
         ;;
     alacritty)
-        alacritty --class "$appId" --title "${title}" --option font.size=14 --command "${nvimCmd}" "$@" &
+        exec alacritty --class "$appId" --title "${title}" --option font.size=14 --command "${nvimCmd}" "$@" &
         ;;
     ghostty)
         # https://github.com/ghostty-org/ghostty/issues/8862
         # env=TMUX= does not work with -e
         unset TMUX
-        ghostty --class="$appId" --title="${title}" --font-size=14 -e "${nvimCmd}" "$@" 2>/dev/null &
+        exec ghostty --class="$appId" --title="${title}" --font-size=14 -e "${nvimCmd}" "$@" 2>/dev/null &
         ;;
     *)
         echo 'command not defined'
