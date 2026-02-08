@@ -31,28 +31,17 @@ local extensions = {
   {name = 'grug-far.nvim'},
   {name = 'leap.nvim'},
   {name = 'nvim-nio'},
-  {name = 'neotest'},
   {name = 'neotest-phpunit'},
   {name = 'none-ls.nvim'},
-  {name = 'ultimate-autopair.nvim'},
   {name = 'nvim-bqf'},
-  {name = 'nvim-dap'},
-  {name = 'nvim-dap-tab'},
-  {name = 'nvim-dap-view'},
-  {name = 'nvim-dap-virtual-text'},
   {name = 'nvim-lspconfig'},
   {name = 'nvim-treesitter-textobjects'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
   {name = 'treesj'},
-  {name = 'nvim-tree.lua'},
   {name = 'osv-dap-nvim'},
   {name = 'plenary.nvim'},
   {name = 'schemastore.nvim'},
-  {name = 'telescope-fzf-native.nvim'},
-  {name = 'telescope.nvim'},
-  {name = 'telescope-ui-select.nvim'},
-  {name = 'namu.nvim'},
   {name = 'nord.nvim'},
   {name = 'phpactor'},
   {name = 'mini.surround'},
@@ -62,6 +51,22 @@ local extensions = {
   {name = 'vim-dadbod-ui'},
   {name = 'git-utils.nvim'},
   {name = 'arctgx'},
+}
+
+-- advantage: smaller runtime
+-- disadvantage: no plugin commands until package is loaded
+vim.g.lazyPackaddedExtensions = {
+  'namu.nvim',
+  'nvim-tree.lua',
+  'neotest',
+  'nvim-dap',
+  'nvim-dap-view',
+  'nvim-dap-virtual-text',
+  'nvim-dap-tab',
+  'telescope-fzf-native.nvim',
+  'telescope.nvim',
+  'telescope-ui-select.nvim',
+  'ultimate-autopair.nvim',
 }
 
 if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONFIGDIR}, vim.uv.cwd()) then
