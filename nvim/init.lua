@@ -29,26 +29,17 @@ local extensions = {
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
   {name = 'grug-far.nvim'},
-  {name = 'leap.nvim'},
-  {name = 'nvim-nio'},
-  {name = 'neotest-phpunit'},
   {name = 'none-ls.nvim'},
-  {name = 'nvim-bqf'},
   {name = 'nvim-lspconfig'},
   {name = 'nvim-treesitter-textobjects'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
-  {name = 'treesj'},
-  {name = 'osv-dap-nvim'},
-  {name = 'plenary.nvim'},
   {name = 'schemastore.nvim'},
   {name = 'nord.nvim'},
   {name = 'phpactor'},
   {name = 'mini.surround'},
   {name = 'statuscol.nvim'},
   {name = 'unimpaired.nvim'},
-  {name = 'vim-dadbod'},
-  {name = 'vim-dadbod-ui'},
   {name = 'git-utils.nvim'},
   {name = 'arctgx'},
 }
@@ -56,9 +47,13 @@ local extensions = {
 -- advantage: smaller runtime
 -- disadvantage: no plugin commands until package is loaded
 vim.g.lazyPackaddedExtensions = {
+  'plenary.nvim',
+  'leap.nvim',
   'namu.nvim',
   'nvim-tree.lua',
+  'nvim-nio',
   'neotest',
+  'neotest-phpunit',
   'nvim-dap',
   'nvim-dap-view',
   'nvim-dap-virtual-text',
@@ -67,6 +62,11 @@ vim.g.lazyPackaddedExtensions = {
   'telescope.nvim',
   'telescope-ui-select.nvim',
   'ultimate-autopair.nvim',
+  'vim-dadbod',
+  'vim-dadbod-ui',
+  'treesj',
+  'osv-dap-nvim',
+  'nvim-bqf',
 }
 
 if not vim.tbl_contains({vim.fn.stdpath('config'), vim.env.NVIM_UNSANDBOXED_CONFIGDIR}, vim.uv.cwd()) then
