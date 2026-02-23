@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
 
+tsUpdate="$(cat <<LUA
+require('nvim-treesitter.install').update(nil, {summary = true})
+    :await(function(err)
+        if err then
+            vim.print(err)
+        end
+    end)
+LUA
+)"
+
 runTsUpdate() {
-    nvim --headless -c 'TSUpdateSync quit'
+    nvim --headless -c "lua ${tsUpdate}" -c 'quit'
     echo
 }
 
