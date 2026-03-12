@@ -96,7 +96,7 @@
 [submodule "nvim-bqf"]
 	path = nvim/pack/plugins/opt/nvim-bqf
 	url = https://github.com/przepompownia/nvim-bqf
-	branch = treesitter-main
+	branch = main
 [submodule "namu.nvim"]
 	path = nvim/pack/plugins/opt/namu.nvim
 	url = https://github.com/bassamsdata/namu.nvim
