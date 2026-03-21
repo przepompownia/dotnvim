@@ -1,18 +1,23 @@
 #!/usr/bin/env bash
 
-tsUpdate="$(cat <<LUA
+runTsUpdate() {
+    nvim -u ~/.config/nvim/init.lua -l /dev/stdin <<LUA
+local done = false
+local result = nil
+
 require('nvim-treesitter.install').update(nil, {summary = true})
     :await(function(err)
-        if err then
-            vim.print(err)
-        end
+        result = err
+        done = true
     end)
-LUA
-)"
 
-runTsUpdate() {
-    nvim --headless -c "lua ${tsUpdate}" -c 'quit'
-    echo
+vim.wait(60000, function() return done end, 100)
+
+if result then
+    vim.print(result)
+end
+LUA
+echo
 }
 
 declare -A patternToAction
