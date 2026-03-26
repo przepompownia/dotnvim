@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 currentDir="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
+envDir="$(realpath "${currentDir}/../../../..")"
 
 runTsUpdate() {
-    nvim-xdg-env -u "$(realpath "${currentDir}/../../../..")/nvim/init.lua" -l /dev/stdin <<LUA
+    "${envDir}/bin/nvim" -u "${envDir}/nvim/init.lua" -l /dev/stdin <<LUA
 require('nvim-treesitter.install').update(nil, {summary = true}):wait()
 LUA
 }
