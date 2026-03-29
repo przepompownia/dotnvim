@@ -6,6 +6,7 @@ DIR := ${CURDIR}
 nvimDir = $(DIR)/nvim
 nvimArctgxDir = $(nvimDir)/pack/arctgx/opt/arctgx
 nvimInit = $(nvimDir)/init.lua
+nvimExecutable = $(DIR)/bin/nvim
 
 .ONESHELL:
 phpactor-install:
@@ -45,7 +46,7 @@ luarc:
 .ONESHELL:
 arctgx-luarc:
 	cd $(nvimArctgxDir)
-	$(MAKE) luarc nvimInit=$(nvimInit)
+	$(MAKE) luarc nvimExecutable=$(nvimExecutable) nvimInit=$(nvimInit)
 
 .ONESHELL:
 arctgx-start:
@@ -53,11 +54,11 @@ arctgx-start:
 	$(MAKE) start
 
 helptags:
-	nvim -c 'helptags ALL' -c quit
+	$(nvimExecutable) -c 'helptags ALL' -c quit
 
 .ONESHELL:
 edit-init:
-	nvim $(nvimInit) \
+	$(nvimExecutable) $(nvimInit) \
 		-c "lua vim.cmd.vsplit(vim.fs.joinpath(vim.fn.stdpath('config'), '.nvim.local.lua'))" \
 		-c 'autocmd BufWritePost <buffer> trust'
 	$(MAKE) helptags
