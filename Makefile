@@ -41,7 +41,7 @@ check-requirements:
 .ONESHELL:
 luarc:
 	cd $(nvimArctgxDir)
-	$(MAKE) luarc nvimInit=$(nvimInit) projectDir=$(nvimDir)
+	$(MAKE) luarc nvimExecutable=$(nvimExecutable) nvimInit=$(nvimInit) projectDir=$(nvimDir)
 
 .ONESHELL:
 arctgx-luarc:
