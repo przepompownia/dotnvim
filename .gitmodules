@@ -110,8 +110,8 @@
 	branch = main
 [submodule "diffview.nvim"]
 	path = nvim/pack/plugins/opt/diffview.nvim
-	url = https://github.com/przepompownia/diffview.nvim
-	branch = arctgx
+	url = https://github.com/dlyongemallo/diffview.nvim
+	branch = main
 [submodule "telescope-fzf-native.nvim"]
 	path = nvim/pack/plugins/opt/telescope-fzf-native.nvim
 	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
