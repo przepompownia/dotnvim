@@ -30,7 +30,6 @@ local extensions = {
   {name = 'gitsigns.nvim'},
   {name = 'grug-far.nvim'},
   {name = 'none-ls.nvim'},
-  {name = 'nvim-lspconfig'},
   {name = 'nvim-treesitter-textobjects'},
   {name = 'nvim-treesitter'},
   {name = 'nvim-treesitter-context'},
@@ -42,6 +41,7 @@ local extensions = {
   {name = 'unimpaired.nvim'},
   {name = 'git-utils.nvim'},
   {name = 'arctgx'},
+  {name = 'nvim-lspconfig'},
 }
 
 -- advantage: smaller runtime
