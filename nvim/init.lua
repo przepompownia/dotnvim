@@ -34,7 +34,6 @@ local extensions = {
   {name = 'nvim-treesitter-context'},
   {name = 'schemastore.nvim'},
   {name = 'nord.nvim'},
-  {name = 'phpactor'},
   {name = 'mini.surround'},
   {name = 'statuscol.nvim'},
   {name = 'unimpaired.nvim'},
@@ -46,6 +45,7 @@ local extensions = {
 -- advantage: smaller runtime
 -- disadvantage: no plugin commands until package is loaded
 vim.g.lazyPackaddedExtensions = {
+  'phpactor',
   'plenary.nvim',
   'leap.nvim',
   'namu.nvim',
