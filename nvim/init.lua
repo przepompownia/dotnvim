@@ -24,7 +24,6 @@ vim.loader.enable()
 ---@type NvimPlugins
 local extensions = {
   {name = 'actions-preview.nvim'},
-  {name = 'nvim-snippets'},
   {name = 'diffview.nvim'},
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
