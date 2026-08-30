@@ -27,7 +27,6 @@ local extensions = {
   {name = 'diffview.nvim'},
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
-  {name = 'grug-far.nvim'},
   {name = 'none-ls.nvim'},
   {name = 'nvim-treesitter-textobjects'},
   {name = 'nvim-treesitter'},
@@ -45,6 +44,7 @@ local extensions = {
 -- advantage: smaller runtime
 -- disadvantage: no plugin commands until package is loaded
 vim.g.lazyPackaddedExtensions = {
+  'grug-far.nvim',
   'phpactor',
   'plenary.nvim',
   'leap.nvim',
