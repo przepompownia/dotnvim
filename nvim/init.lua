@@ -36,7 +36,6 @@ local extensions = {
   {name = 'mini.surround'},
   {name = 'statuscol.nvim'},
   {name = 'unimpaired.nvim'},
-  {name = 'git-utils.nvim'},
   {name = 'arctgx'},
   {name = 'nvim-lspconfig'},
 }
@@ -44,6 +43,7 @@ local extensions = {
 -- advantage: smaller runtime
 -- disadvantage: no plugin commands until package is loaded
 vim.g.lazyPackaddedExtensions = {
+  'git-utils.nvim',
   'grug-far.nvim',
   'phpactor',
   'plenary.nvim',
