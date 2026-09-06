@@ -23,7 +23,6 @@ vim.loader.enable()
 
 ---@type NvimPlugins
 local extensions = {
-  {name = 'actions-preview.nvim'},
   {name = 'onedark.nvim'},
   {name = 'gitsigns.nvim'},
   {name = 'none-ls.nvim'},
@@ -42,6 +41,7 @@ local extensions = {
 -- advantage: smaller runtime
 -- disadvantage: no plugin commands until package is loaded
 vim.g.lazyPackaddedExtensions = {
+  'actions-preview.nvim',
   'diffview.nvim',
   'git-utils.nvim',
   'grug-far.nvim',
